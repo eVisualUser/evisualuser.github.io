@@ -17,7 +17,7 @@ img.logo {
     height: 50px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .logo {
         margin-left: 50%;
     }
@@ -54,9 +54,4 @@ img.github {
     border-radius: 0 15% 15% 0;
 
     margin-left: -0.7%;
-}
-
-h1.wip_title {
-    color: white;
-    text-align: center;
 }
