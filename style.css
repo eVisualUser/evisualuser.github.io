@@ -3,36 +3,39 @@
 }
 
 body {
-    background-color: black;
-    background-image: url("./assets/background.png");
+    background-color: seagreen;
     background-size: 140%;
     background-repeat: no-repeat;
     background-position: center top;
-    background-blend-mode: hard-light;
 }
 
 img.logo {
-    border-radius: 20%;
+    border-radius: 10px;
     width: 50px;
     height: 50px;
-}
-
-@media only screen and (max-width: 1000px) {
-    .logo {
-        margin-left: 50%;
-    }
 }
 
 div.links {
     position: fixed;
 
     margin-left: 45%;
+    margin-right: 35%;
     bottom: 20px;
 
     background-color: transparent;
 
     border-radius: 50%;
 }
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        margin-left: 50%;
+    }
+    div.links {
+        margin-right: 15%;
+    }
+}
+
 
 img.linkedin {
     width: var(--link_image_size);
@@ -41,7 +44,7 @@ img.linkedin {
     background-color: white;
 
     padding: 10px 40px 10px 10px;
-    border-radius: 15% 0 0 15%;
+    border-radius: 15px 0 0 15px;
 }
 
 img.github {
@@ -51,7 +54,67 @@ img.github {
     background-color: black;
 
     padding: 10px 10px 10px 40px;
-    border-radius: 0 15% 15% 0;
+    border-radius: 0 15px 15px 0;
 
     margin-left: -0.7%;
+}
+
+@keyframes aboutAnim {
+    from {
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+    to {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}
+
+div.about {
+    background: sandybrown;
+    color: black;
+
+    margin-right: 25%;
+    margin-left: 25%;
+    
+    animation-duration: 1s;
+    animation-name: aboutAnim;
+    
+    border-radius: 5px;
+
+    text-align: center;
+
+    margin-top: 5%;
+    padding-inline: 1%;
+}
+
+button {
+    transition-duration: 1s;
+    color: white;
+    background-color: seagreen;
+    
+    border-radius: 5px;
+
+    border-width: 1px;
+    border-color: sandybrown;
+
+    box-shadow: 2px 2px 1px seagreen;
+
+    width: 150px;
+    height: 50px;
+}
+
+p {
+    font-family: fantasy;
+}
+
+button:hover {
+    transition-duration: 1s;
+    rotate: 1deg;
+    border-color: seagreen;
+}
+
+button:focus {
+    transition-duration: 0.1s;
+    box-shadow: inner 2px 2px 1px seagreen;
 }
