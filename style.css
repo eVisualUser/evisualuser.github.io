@@ -1,9 +1,11 @@
 :root {
     --link_image_size: 24px;
+    --custom-black: black;
+    --custom-background-color: red;
 }
 
 body {
-    background-color: seagreen;
+    background-color: var(--custom-black);
     background-size: 140%;
     background-repeat: no-repeat;
     background-position: center top;
@@ -13,6 +15,23 @@ img.logo {
     border-radius: 10px;
     width: 50px;
     height: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        margin-left: 50%;
+    }
+    div.links {
+        margin-right: 15%;
+    }
+}
+
+a.logo {
+    background-color: transparent;
+    position: fixed;
+}
+a.logo:hover {
+    background-color: transparent;
 }
 
 div.links {
@@ -26,16 +45,6 @@ div.links {
 
     border-radius: 50%;
 }
-
-@media only screen and (max-width: 1000px) {
-    .logo {
-        margin-left: 50%;
-    }
-    div.links {
-        margin-right: 15%;
-    }
-}
-
 
 img.linkedin {
     width: var(--link_image_size);
@@ -59,7 +68,7 @@ img.github {
     margin-left: -0.7%;
 }
 
-@keyframes aboutAnim {
+@keyframes contentAnimation {
     from {
         margin-right: 50%;
         margin-left: 50%;
@@ -70,21 +79,20 @@ img.github {
     }
 }
 
-div.about {
-    background: sandybrown;
-    color: black;
+div.content {
+    background: var(--custom-black);
+
+    border: 1px solid var(--custom-background-color);
 
     margin-right: 25%;
     margin-left: 25%;
     
     animation-duration: 1s;
-    animation-name: aboutAnim;
-    
-    border-radius: 5px;
+    animation-name: contentAnimation;
 
     text-align: center;
 
-    margin-top: 5%;
+    margin-top: 1%;
     padding-inline: 1%;
 }
 
@@ -104,8 +112,31 @@ button {
     height: 50px;
 }
 
-p {
+md-block h1 {
+    color: lightblue;
+}
+
+md-block h2 {
+    color: lightblue;
+}
+
+md-block h3 {
+    color: lightblue;
+}
+
+md-block ul {
     font-family: fantasy;
+    color: lightblue;
+}
+
+md-block table {
+    font-family: fantasy;
+    color: lightblue;
+}
+
+md-block p {
+    font-family: fantasy;
+    color: lightblue;
 }
 
 button:hover {
@@ -117,4 +148,16 @@ button:hover {
 button:focus {
     transition-duration: 0.1s;
     box-shadow: inner 2px 2px 1px seagreen;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover {
+    transition: 1s;
+    background-color: darkred;
+    color: white;
 }
