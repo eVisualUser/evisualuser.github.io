@@ -21,19 +21,10 @@
     <md-block>
       # Sylvain TOSONI
 
-      ⚠️ Work In Progress ⚠️
-
       Game Programming student at [Bellecour Ecole](https://www.bellecour.fr/).
-
-      ## Where are you ?
 
       Here you can find all informations about me.
       From the contacts to my projects.
-
-      ### Get documents
-
-      [Curriculum Vitae](assets/CurriculumVitae_Sylvain_TOSONI.pdf)
-
     </md-block>
   </div>
   <div class="content">
@@ -57,7 +48,7 @@
         - [X] Collaborate with 3 game designers.
         - [X] Making a story that is not too long.
       </md-block>
-
+      
       ## How to play
 
       You can play it online or using the native version.
@@ -83,13 +74,78 @@
       So we created a game where you play as Izydor during a Zombie apocalypse in Poland.
       You can try it on web, or if you are on Windows you can download it.
 
-      ⚠️ Your malware protection and Windows will warn you about the exectuable. ⚠️
+      Your malware protection and Windows will warn you about the executable.
 
       [Download](assets/Izydor_V1.2.zip)
 
       [Play Online](https://evisualuser.github.io/izydor/)
 
     </md-block>
+  </div>
+
+  <div class="content">
+    <md-block>
+      # Pretty Engine
+
+      <img alt="PrettyEngine Logo" src="assets/engine_logo.png" width="15%" height="15%"></img>
+
+      Work in progress game engine for 2D games.
+
+      I am currently working on, to learn game engine development.
+      It will end by making a game using it, probably an open-world 2D game.
+
+      For the creation part, you must code in C++ only, but with a simplified pipeline.
+      The editor manage all the artist part.
+
+      To create a game you need to duplicate the code of the engine and compile it yourself if you add some script,
+      this is to allow you to custom the engine, and also the C++ scripting part need it,
+      this allows the editor to have access to your custom Components and Entities.
+
+      For the organization you can script Entities that will work standalone, and you can use polymorphism on it.
+      You can also create components that is more dynamic but have some performances and memory cost.
+
+      It is written in C++ and using [CMake](https://cmake.org/).
+
+      Platform support:
+
+      |Platform|State|
+      |---|---|
+      |Window|Supported|
+      |Linux|Work in progress|
+      |macOS|Work in progress|
+
+      Dependencies:
+      |Library|Purpose|
+      |---|---|
+      |[Bullet](https://github.com/bulletphysics/bullet3)|Physics|
+      |[OpenAL Soft](https://openal-soft.org/)|Audio|
+      |[SQLite3](https://www.sqlite.org/index.html)|DataBase|
+      |[Assimp](https://github.com/assimp/assimp)|3D models loading|
+      |[GLAD (OpenGL)](https://glad.dav1d.de/)|Rendering|
+      |[GLFW](https://www.glfw.org/)|Windowing|
+      |[ImGUI](https://github.com/ocornut/imgui)|UI|
+      |[TomlPlusPlus](https://github.com/marzer/tomlplusplus)|Configuration, saving|
+      |[STB](https://github.com/nothings/stb)|Image decoding|
+
+      Tools:
+      |Tool|Purpose|
+      |---|---|
+      |[Sublime Text 3](https://www.sublimetext.com/)|Programing|
+      |[RenderDoc](https://renderdoc.org/)|Debugging|
+      |[SQLite Studio](https://sqlitestudio.pl/)|DataBase|
+      |[Notion](https://www.notion.so/fr-fr)|Organization|
+      |[GitHub](https://github.com/)|Version Control|
+
+      In a near future the engine will be available on GitHub under the MIT license.
+
+      If you have any questions or request please feel free to contact me at <a title="It's an alias to a real email." href="mailto:pretty-engine-publis.starlight778@passinbox.com">pretty-engine-publis.starlight778@passinbox.com</a>
+    </md-block>
+  </div>
+
+  <div class="content">
+  <md-block>
+    Last update: 03 september 2023.
+  </md-block>
   </div>
 
   <br/>
@@ -104,9 +160,9 @@
 
   <div class="links">
     <!-- LINKEDIN -->
-    <a href="https://www.linkedin.com/in/sylvain-tosoni"><img class="linkedin" src="./assets/linkedin.png"/></a>
+    <a href="https://www.linkedin.com/in/sylvain-tosoni"><img class="linkedin" src="./assets/linkedin.png" alt="linkedin logo"/></a>
     <!-- GITHUB -->
-    <a href="https://github.com/eVisualUser"><img class="github" src="./assets/github.png"/></a>
+    <a href="https://github.com/eVisualUser"><img class="github" src="./assets/github.png" alt="github logo"/></a>
   </div>
 
   </body>
