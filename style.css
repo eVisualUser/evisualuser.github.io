@@ -1,7 +1,9 @@
 :root {
     --link_image_size: 24px;
-    --custom-black: black;
-    --custom-background-color: red;
+    --custom-black: rgb(27, 28, 32);
+    --custom-red: rgb(83, 25, 43);
+    --link-color: rgb(159, 48, 82);
+    --text-color: rgb(134, 168, 179);
 }
 
 body {
@@ -82,10 +84,10 @@ img.github {
 div.content {
     background: var(--custom-black);
 
-    border: 1px solid var(--custom-background-color);
+    border: 1px solid var(--custom-red);
 
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 15%;
+    margin-left: 15%;
     
     animation-duration: 1s;
     animation-name: contentAnimation;
@@ -113,30 +115,39 @@ button {
 }
 
 md-block h1 {
-    color: lightblue;
+    color: var(--text-color);
 }
 
 md-block h2 {
-    color: lightblue;
+    color: var(--text-color);
 }
 
 md-block h3 {
-    color: lightblue;
+    color: var(--text-color);
 }
 
 md-block ul {
     font-family: fantasy;
-    color: lightblue;
+    color: var(--text-color);
+    text-align: left;
+}
+
+md-block li {
+    font-family: fantasy;
+    color: var(--text-color);
+    margin-left: 35%;
 }
 
 md-block table {
     font-family: fantasy;
-    color: lightblue;
+    color: var(--text-color);
+    text-align: left;
+    margin: 0 auto;
 }
 
 md-block p {
     font-family: fantasy;
-    color: lightblue;
+    color: var(--text-color);
 }
 
 button:hover {
@@ -147,17 +158,17 @@ button:hover {
 
 button:focus {
     transition-duration: 0.1s;
-    box-shadow: inner 2px 2px 1px seagreen;
+    box-shadow: 2px 2px 1px seagreen;
 }
 
 a {
-    color: red;
+    color: var(--link-color);
     text-decoration: none;
     transition: 1s;
 }
 
 a:hover {
     transition: 1s;
-    background-color: darkred;
-    color: white;
+    background-color: var(--link-color);
+    color: grey;
 }
