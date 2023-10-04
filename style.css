@@ -21,7 +21,9 @@ img.logo {
 
 @media only screen and (max-width: 1000px) {
     .logo {
-        margin-left: 50%;
+        margin-left: 85%;
+        margin-bottom: 50%;
+        margin-top: 50%;
     }
     div.links {
         margin-right: 15%;
@@ -82,9 +84,11 @@ img.github {
 }
 
 div.content {
+    border-radius: 15px;
+
     background: var(--custom-black);
 
-    border: 1px solid var(--custom-red);
+    border: 5px solid var(--custom-red);
 
     margin-right: 15%;
     margin-left: 15%;

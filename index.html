@@ -3,12 +3,10 @@
   <header>
     <title>Sylvain TOSONI</title>
 
-    <meta name="Sylvain TOSONI Website" content="Personnal website, Sylvain TOSONI, Game Programmer, Portfolio"/>
+    <meta name="Sylvain TOSONI Website" content="Personal website, Sylvain TOSONI, Game Programmer, Portfolio"/>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="text.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 
@@ -21,10 +19,14 @@
     <md-block>
       # Sylvain TOSONI
 
-      Game Programming student at [Bellecour Ecole](https://www.bellecour.fr/).
+      Game Programming student at [Bellecour Ecole](https://www.bellecour.fr/) from France.
 
-      Here you can find all informations about me.
-      From the contacts to my projects.
+      I have a passion for the Game Engine programming.
+      I like having a light and optimized solutions instead of using a big framework that do the most of the work.
+      Even if it requires complex programming.
+
+      Here you can find all the information about me,
+      from the contacts to my projects.
     </md-block>
   </div>
   <div class="content">
@@ -35,7 +37,7 @@
 
       I also used this project to try the creation of an editor using [Rust](https://www.rust-lang.org/) and [EFrame](https://crates.io/crates/eframe).
       So you can create your own game based on it.
-      
+
       You just have to go at [GitHub Releases](https://github.com/eVisualUser/bellecour-gamebook/releases),
       to find the last version of the client and the editor.
       The guide is [right here](https://sylvain-game.notion.site/Guide-c3600c02665f42b8a4689875f5d09d4b).
@@ -57,7 +59,7 @@
 
       ### Native
 
-      Those keys suppose that you are using an Azerty (French) keyboard.
+      Those keys suppose that you are using an AZERTY (French) keyboard.
 
       |Key|Action|
       |---|---|
@@ -103,10 +105,17 @@
       You can also create components that is more dynamic but have some performances and memory cost.
 
       It is written in C++ and using [CMake](https://cmake.org/).
+      I choose C++ because I wanted to create an engine that would train me to improve my skills in this language.
+      By C++ being very important in Game Engine development, I found it necessary to be sure that I learn things applicable to the industry.
+
+      For the launcher I use [Tauri](https://tauri.app/), to have a solution easy to maintain and get great visuals, compared to most of native GUI/UI frameworks.
+      And compared to [Electron](https://www.electronjs.org/) I get better performances and its based on my favorite programming language: [Rust](https://www.rust-lang.org/).
+
+      <img alt="Launcher screenshot" src="./assets/launcher.png" width="50%" height="50%"/>
 
       Platform support:
 
-      |Platform|State|
+      |Platform|Support|
       |---|---|
       |Window|Supported|
       |Linux|Work in progress|
@@ -124,6 +133,7 @@
       |[ImGUI](https://github.com/ocornut/imgui)|UI|
       |[TomlPlusPlus](https://github.com/marzer/tomlplusplus)|Configuration, saving|
       |[STB](https://github.com/nothings/stb)|Image decoding|
+      |[Tauri](https://tauri.app/)|Launcher|
 
       Tools:
       |Tool|Purpose|
@@ -141,9 +151,27 @@
   </div>
 
   <div class="content">
-  <md-block>
-    Last update: 19 september 2023.
-  </md-block>
+    <md-block>
+      # Rust Crates
+
+      I love the [Rust](https://www.rust-lang.org/) programming language.
+      So I have published few basic crates that I used in my personal projects.
+
+      At now, I don't have made a big project with it, but maybe Pretty Engine will be rewritten in [Rust](https://www.rust-lang.org/) later.
+
+      |Crates|Purpose|
+      |---|---|
+      |[Pretty INI](https://crates.io/crates/pretty_ini/)|Simple INI file reader/writer.|
+      |[ProCSV](https://crates.io/crates/pro_csv)|Simple CSV file reader/writer|
+      |[Full Logger](https://crates.io/crates/full_logger)|A simple logger using [Pretty INI](https://crates.io/crates/pretty_ini/) and [Pro CSV](https://crates.io/crates/pro_csv).|
+
+    </md-block>
+  </div>
+
+  <div class="content">
+    <md-block>
+      Last update: 19 september 2023.
+    </md-block>
   </div>
 
   <br/>
