@@ -1,5 +1,6 @@
 :root {
-    --link_image_size: 24px;
+    --link_image_size: 15%;
+    --main_button_size: 25%;
     --custom-black: rgb(27, 28, 32);
     --custom-red: rgb(83, 25, 43);
     --link-color: rgb(159, 48, 82);
@@ -15,13 +16,13 @@ body {
 
 img.logo {
     border-radius: 10px;
-    width: 50px;
-    height: 50px;
+    width: var(--main_button_size);
+    height: var(--main_button_size);
 }
 
 @media only screen and (max-width: 1000px) {
     .logo {
-        margin-left: 85%;
+        margin-left: 65%;
         margin-bottom: 50%;
         margin-top: 50%;
     }
@@ -105,17 +106,28 @@ div.content {
 button {
     transition-duration: 1s;
     color: white;
-    background-color: seagreen;
+    background-color: var(--custom-red);
     
     border-radius: 5px;
 
     border-width: 1px;
-    border-color: sandybrown;
+    border-color: var(--link-color);
 
-    box-shadow: 2px 2px 1px seagreen;
+    box-shadow: 2px 2px 1px var(--link-color);
 
     width: 150px;
     height: 50px;
+}
+
+button:focus {
+    transition-duration: 0.1s;
+    box-shadow: 2px 2px 1px var(--link-color);
+}
+
+button:hover {
+    transition-duration: 1s;
+    rotate: 1deg;
+    border-color: var(--link-color);
 }
 
 md-block h1 {
@@ -154,17 +166,6 @@ md-block p {
     color: var(--text-color);
 }
 
-button:hover {
-    transition-duration: 1s;
-    rotate: 1deg;
-    border-color: seagreen;
-}
-
-button:focus {
-    transition-duration: 0.1s;
-    box-shadow: 2px 2px 1px seagreen;
-}
-
 a {
     color: var(--link-color);
     text-decoration: none;
@@ -175,4 +176,11 @@ a:hover {
     transition: 1s;
     background-color: var(--link-color);
     color: grey;
+}
+
+img.experimental {
+    width: 5%;
+    height: 5%;
+    margin-top: 1%;
+    margin-left: 95%;
 }
