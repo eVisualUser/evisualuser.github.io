@@ -1,6 +1,6 @@
 :root {
     --link_image_size: 15%;
-    --main_button_size: 25%;
+    --main_button_size: 15%;
     --custom-black: rgb(27, 28, 32);
     --custom-red: rgb(83, 25, 43);
     --link-color: rgb(159, 48, 82);
@@ -14,8 +14,15 @@ body {
     background-position: center top;
 }
 
+p {
+    font-family: 'Courier New', monospace;
+    color: var(--text-color);
+}
+
 img.logo {
     border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 5%;
     width: var(--main_button_size);
     height: var(--main_button_size);
 }
@@ -130,50 +137,58 @@ button:hover {
     border-color: var(--link-color);
 }
 
-md-block h1 {
+h1 {
     color: var(--text-color);
 }
 
-md-block h2 {
+h2 {
     color: var(--text-color);
 }
 
-md-block h3 {
+h3 {
     color: var(--text-color);
 }
 
-md-block ul {
+h4 {
+    color: var(--text-color);
+}
+
+h5 {
+    color: var(--text-color);
+}
+
+h6 {
+    color: var(--text-color);
+}
+
+ul {
     font-family: fantasy;
     color: var(--text-color);
     text-align: left;
 }
 
-md-block li {
+li {
     font-family: fantasy;
     color: var(--text-color);
     margin-left: 35%;
 }
 
-md-block table {
+table {
     font-family: fantasy;
     color: var(--text-color);
     text-align: left;
     margin: 0 auto;
 }
 
-md-block p {
-    font-family: fantasy;
-    color: var(--text-color);
-}
-
 a {
     color: var(--link-color);
     text-decoration: none;
-    transition: 1s;
+    transition-duration: 1s;
+    transform: scale(1.1);
 }
 
 a:hover {
-    transition: 1s;
+    transition-duration: 1s;
     background-color: var(--link-color);
     color: grey;
 }
@@ -183,4 +198,13 @@ img.experimental {
     height: 5%;
     margin-top: 1%;
     margin-left: 95%;
+}
+
+img.context {
+    transition-duration: 1.0s;
+}
+
+img.context:hover {
+    transition-duration: 1.0s;
+    transform: scale(1.1);
 }
