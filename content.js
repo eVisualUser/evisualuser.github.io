@@ -13,7 +13,7 @@ function isValidPath(path) {
 
   path = path.trim();
 
-  let bannedKeys = ["http", "?", "..", "www", "\0", "", "http", "//", "\\"];
+  let bannedKeys = ["http", "?", "..", "www", "\0", "http", "//", "\\"];
 
   for (const banKey of bannedKeys) {
     if (path.includes(banKey)) {
