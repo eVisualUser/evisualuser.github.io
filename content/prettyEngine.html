@@ -10,38 +10,39 @@
 	<br/>
 	<br/>
 	For the creation part, coding must be done in C++ only, but with a simplified pipeline
-	The editor manage all the artist part.
+	The editor supports the integration from artist.
 	<br/>
 	To create a game you need to duplicate the code of the engine and compile it yourself if you add some script,
 	this is to allow you to customize the engine, and also the C++ scripting part need it.
 	This allows the editor to have access to your custom Components and Entities.
 	<br/>
 	<br/>
-	For the organization you can script Entities that will work standalone, and you can use polymorphism on it.
-	You can also create components that is more dynamic but have some performances and memory cost.
+	For the architecture, you can script Entities that will work standalone, and you can use polymorphism on it.
+	You can also create components that are more dynamic but have some performance and memory cost.
 	<br/>
 	<br/>
 	It is written in C++ and using <a href="https://cmake.org/">CMake</a>.
 	I choose C++ because I wanted to create an engine that would train me to improve my skills in this language.
-	By C++ being very important in Game Engine development, I found it necessary to be sure that I learn things
+	By C++ being crucial in Game Engine development, I found it necessary to be sure that I learn things
 	applicable to the industry.
 	<br/>
 	<br/>
 	I use <a href="https://go.dev/">Go lang</a> to write scripts that manage the engine sources and dependencies.
-	It target to improve the ease
-	of use of the engine by installing the dependencies and generating the files, and requiering only to have <a
+	It target to improve the ease of use for the engine by installing the dependencies and generating the files,
+	and requiring only to have <a
 		href="https://go.dev/">Go</a>
 	installed.
 	<br/>
 	<br/>
 	For the launcher I use <a href="https://tauri.app/">Tauri</a>, to have a solution easy to maintain and get great
 	visuals, compared to most of native GUI/UI frameworks.
-	And compared to <a href="https://www.electronjs.org/">Electron</a> I get better performances and it's based on my
+	And compared to <a href="https://www.electronjs.org/">Electron</a> I get better performances, and it's based on my
 	favorite programming
 	language: <a
 		href="https://www.rust-lang.org/">Rust</a>.</p>
 
 <img class="context" alt="Launcher screenshot" src="./assets/launcher.png" width="50%" height="50%"/>
+<img class="context" alt="Launcher screenshot" src="./assets/editor_example.png" width="50%" height="50%"/>
 
 <h3>Platform support:</h3>
 
@@ -148,12 +149,9 @@
 	</tbody>
 </table>
 
-<p>The engine is available under the MIT liscence: <a href="https://github.com/eVisualUser/pretty-engine">Repository</a>.
+<p>The engine is available under the MIT licence: <a href="https://github.com/eVisualUser/pretty-engine">Repository</a>.
 </p>
-<p>For now the engine is a bit messy and I actullay work on improving it's architecture and tools around it. Because I
-	learn rendering and physics simulation using this project I need to improve a lot of things.</p>
+<p>For now, the engine is a bit messy, and I actually work on improving its architecture and tools around it.
+	Because I
+	learn rendering and physics simulation using this project, I need to improve a lot of things.</p>
 <p>There is a long way to go before having a first stable version.</p>
-
-<p>If you have any questions or request please feel free to contact me at <a title="It's an alias to a real email."
-																			 href="mailto:pretty-engine-publis.starlight778@passinbox.com">pretty-engine-publis.starlight778@passinbox.com</a>
-</p>

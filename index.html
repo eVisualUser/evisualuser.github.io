@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <header>
+<html lang="en">
+	<header>
     <title>Sylvain TOSONI</title>
     <link rel="icon" href="./logo.png" type="image/x-icon">
 
-    <meta name="Sylvain TOSONI Website" content="Personal website, Sylvain TOSONI, Game Programmer, Portfolio"/>
+    <meta name="Sylvain TOSONI" content="Personal website, Sylvain TOSONI, Game Programmer, Portfolio"/>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="container.css">
 
     <script src="purify.min.js"></script>
+    <script type="module" src="minimalWidgets.js"></script>
     <script type="module" src="content.js"></script>
+    <script type="module" src="background.js"></script>
   </header>
   <body>
+  <div class="container"></div>
+  <div class="content">
+      <h1>Sylvain Tosoni</h1>
+      <h2>Game Developer</h2>
 
-  <a href="./index.html" class="logo"><img class="logo" alt="logo" src="./logo.png"/></a>
+      <p>Game Programming student at <a href="https://www.bellecour.fr/">Bellecour Ecole</a> in France.
+          I am passionate of game development.
+          <br/>
+          Here you can find all the information about me,
+          from the contacts to my projects.
+      </p>
 
-  <div id="content"></div>
-
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-
-  <div class="links">
-    <!-- LINKEDIN -->
-    <a href="https://www.linkedin.com/in/sylvain-tosoni"><img class="linkedin" src="./assets/linkedin.png" alt="linkedin logo"/></a>
-    <!-- GITHUB -->
-    <a href="https://github.com/eVisualUser"><img class="github" src="./assets/github.png" alt="github logo"/></a>
+      <details class="figmaPreview">
+          <summary>Curriculum Vitae</summary>
+          <iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRwicHVQ9F3kZ3x4HwMnMRI%2FSylvain-Tosoni-CV%3Ftype%3Ddesign%26node-id%3D6-20%26t%3DpvbKzN34fLkYDbHV-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D6%253A20%26mode%3Ddesign" allowfullscreen></iframe>
+      </details>
+      <br/>
+      <a href="projects.html"><button>Projects</button></a>
   </div>
-
   </body>
 </html>

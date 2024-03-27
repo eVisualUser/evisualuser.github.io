@@ -1,14 +1,15 @@
 :root {
 	--link_image_size: 15%;
 	--main_button_size: 15%;
-	--custom-black: rgb(27, 28, 32);
-	--custom-red: rgb(83, 25, 43);
-	--link-color: rgb(159, 48, 82);
-	--text-color: rgb(134, 168, 179);
+	--custom-black: rgb(60, 60, 60, 50%);
+	--background-color: #13081a;
+	--button-background-color: rgb(140, 73, 211);
+	--link-color: rgb(182, 0, 255);
+	--text-color: rgb(230, 230, 230);
 }
 
 body {
-	background-color: var(--custom-black);
+	background-color: var(--background-color);
 	background-size: 140%;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -103,12 +104,23 @@ img.github {
 	}
 }
 
+details.figmaPreview {
+	transition: max-height 1s ease-out;
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--text-color);
+}
+
+details.figmaPreview[open] {
+	max-height: 500px;
+}
+
 div.content {
 	border-radius: 15px;
 
 	background: var(--custom-black);
 
-	border: 5px solid var(--custom-red);
+	padding: 1%;
 
 	margin-right: 15%;
 	margin-left: 15%;
@@ -119,34 +131,30 @@ div.content {
 	text-align: center;
 
 	margin-top: 1%;
-	padding-inline: 1%;
 }
 
 button {
 	transition-duration: 1s;
 	color: white;
-	background-color: var(--custom-red);
+	background-color: var(--button-background-color);
 
 	border-radius: 5px;
 
-	border-width: 1px;
-	border-color: var(--link-color);
-
-	box-shadow: 2px 2px 1px var(--link-color);
+	border-width: 0;
 
 	width: 150px;
 	height: 50px;
 }
 
 button:focus {
-	transition-duration: 0.1s;
+	transition-duration: 0.2s;
 	box-shadow: 2px 2px 1px var(--link-color);
 }
 
 button:hover {
-	transition-duration: 1s;
-	rotate: 1deg;
-	border-color: var(--link-color);
+	transition-duration: 0.5s;
+
+	box-shadow: 4px 4px 1px var(--link-color);
 }
 
 ul {
@@ -176,9 +184,9 @@ a {
 }
 
 a:hover {
+	transition: ease-in-out;
 	transition-duration: 1s;
-	background-color: var(--link-color);
-	color: grey;
+	text-decoration: underline;
 }
 
 img.experimental {

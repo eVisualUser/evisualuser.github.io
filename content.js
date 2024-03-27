@@ -29,19 +29,21 @@ async function loadContentBlocks() {
 	readFile("content/content.csv").then(content => {
 		let fileList = content.split('\n');
 		let contentElement = document.getElementById("content");
-		let purify = DOMPurify();
-		for (const index in fileList) {
-			if (fileList[index].trim() !== "" && isValidPath(fileList[index])) {
-				readFile(fileList[index]).then(pageContent => {
-					let div = document.createElement("div");
-					div.className = "content";
-					div.innerHTML = purify.sanitize(pageContent);
-					if (contentElement.children.length > index) {
-						contentElement.insertBefore(div, contentElement.children[index]);
-					} else {
-						contentElement.appendChild(div);
-					}
-				});
+		if (contentElement != null) {
+			let purify = DOMPurify();
+			for (const index in fileList) {
+				if (fileList[index].trim() !== "" && isValidPath(fileList[index])) {
+					readFile(fileList[index]).then(pageContent => {
+						let div = document.createElement("div");
+						div.className = "content";
+						div.innerHTML = purify.sanitize(pageContent);
+						if (contentElement.children.length > index) {
+							contentElement.insertBefore(div, contentElement.children[index]);
+						} else {
+							contentElement.appendChild(div);
+						}
+					});
+				}
 			}
 		}
 	});

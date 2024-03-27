@@ -1,0 +1,20 @@
+:root {
+    --moveCircleDirectionX: 100%;
+    --moveCircleDirectionY: 100%;
+    --lastMoveCircleDirectionX: 0%;
+    --lastMoveCircleDirectionY: 0%;
+}
+
+.container {
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.circle {
+    position: fixed;
+    border-radius: 50%;
+    background-color: rgb(96, 22, 138);
+    filter: blur(100px);
+}
