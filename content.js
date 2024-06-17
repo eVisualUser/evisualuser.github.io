@@ -1,5 +1,3 @@
-import "./purify.min.js";
-
 // Simple function using FetchAPI to read a file
 async function readFile(fileUrl) {
 	const response = await fetch(fileUrl);
