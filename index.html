@@ -1,38 +1,35 @@
+<!-- Hello, welcome in my WebSite, I am not a web programmer so be gentle :) -->
 <!DOCTYPE html>
 <html lang="en">
-	<header>
-    <title>Sylvain TOSONI</title>
-    <link rel="icon" href="./logo.png" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8"/>
 
-    <meta name="Sylvain TOSONI" content="Personal website, Sylvain TOSONI, Game Programmer, Portfolio"/>
+        <title>Sylvain Tosoni</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="container.css">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
 
-    <script src="purify.min.js"></script>
-    <script type="module" src="minimalWidgets.js"></script>
-    <script type="module" src="content.js"></script>
-    <script type="module" src="background.js"></script>
-  </header>
-  <body>
-  <div class="container"></div>
-  <div class="content">
-      <h1>Sylvain Tosoni</h1>
-      <h2>Game Developer</h2>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="navbar" id="navbar">
+            <h2>General</h2>
+            <button class="content-selector" id="self" url="content/self.html">Self</button>
+            <button class="content-selector" id="programming" url="content/programming.html">Code <\></button>
+            <button class="content-selector" id="rust">Rust</button>
+            <button class="content-selector" id="studies">Studies</button>
+            <button class="content-selector" id="experience">Experience</button>
 
-      <p>Game Programming student at <a href="https://www.bellecour.fr/">Bellecour Ecole</a> in France.
-          I am passionate of game development.
-          <br/>
-          Here you can find all the information about me,
-          from the contacts to my projects.
-      </p>
+            <h2>Projects</h2>
+            <button class="content-selector" id="pretty_engine">Pretty-Engine</button>
+            <button class="content-selector" id="seasonal_hope">Seasonal Hope</button>
+            <button class="content-selector" id="bellum">Bellum</button>
+            <button class="content-selector" id="gamebook">GameBook</button>
+        </div>
 
-      <details class="figmaPreview">
-          <summary>Curriculum Vitae</summary>
-          <iframe loading="lazy" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRwicHVQ9F3kZ3x4HwMnMRI%2FSylvain-Tosoni-CV%3Ftype%3Ddesign%26node-id%3D6-20%26t%3DpvbKzN34fLkYDbHV-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D6%253A20%26mode%3Ddesign" allowfullscreen></iframe>
-      </details>
-      <br/>
-      <a href="projects.html"><button>Projects</button></a>
-  </div>
-  </body>
+        <div class="content" id="content">
+            <iframe class="content-view" id="content-view" src="content/self.html">
+
+            </iframe>
+        </div>
+    </body>
 </html>
