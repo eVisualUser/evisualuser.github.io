@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --font-family-: "Roboto";
+}
+
+body {
+    background-color: dimgray;
+    font-family: var(--font-family-), sans-serif;
+    color: white;
+}
+
+p {
+    font-family: var(--font-family-), sans-serif;
+}
+
+h1 {
+    font-family: var(--font-family-), sans-serif;
+}
+
+h2 {
+    font-family: var(--font-family-), sans-serif;
+}
+
+h3 {
+    font-family: var(--font-family-), sans-serif;
+}
+
+div.navbar {
+    background-color: black;
+
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+
+button.content-selector {
+    font-family: var(--font-family-), sans-serif;
+    color: azure;
+    background-color: darkslategray;
+    border-radius: 5cap;
+    margin-top: 1vh;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+}
+
+button.content-selector:hover {
+    background-color: #4e6e6e;
+}
+
+button.content-selector:active {
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+iframe.content-view {
+    background-color: black;
+
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    flex-direction: column;
+
+    border: none;
+
+    width: 85vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 15vw;
+}
+
+div.content-section {
+    border: black solid 10px;
+    border-radius: 15px;
+    margin-top: 5vh;
+
+    font-family: var(--font-family-), sans-serif;
+
+    background-color: #233232;
+}
