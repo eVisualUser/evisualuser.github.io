@@ -6,11 +6,12 @@
 
 body {
     font-family: var(--font-family-), sans-serif;
-    color: #3e3e3e;
+    color: #000000;
 }
 
 p {
     font-family: var(--font-family-), sans-serif;
+    font-size: 18px;
 }
 
 h1 {
@@ -48,6 +49,7 @@ button.content-selector {
     border-color: #b97df4;
     width: 12vw;
     height: 5vh;
+    font-size: 18px;
 }
 
 button.content-selector:hover {
@@ -93,4 +95,14 @@ canvas.content {
     height: 100%;
 
     background-color: #ffffff;
+}
+
+li.ul {
+    font-family: var(--font-family-), sans-serif;
+    font-size: 18px;
+}
+
+table.tr {
+    font-family: var(--font-family-), sans-serif;
+    font-size: 18px;
 }

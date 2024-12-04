@@ -27,8 +27,6 @@ let circles = [];
 let canvas = null;
 
 function CreateCircles() {
-    canvas = document.getElementById("background-canvas");
-
     if (canvas) {
         let count = parseInt(canvas.getAttribute("count"));
         let maxSize = parseFloat(canvas.getAttribute("max_size"));
@@ -37,8 +35,8 @@ function CreateCircles() {
         for (let i = 0; i < count ;i++) {
 
             let newCircle = new Circle();
-            newCircle.x = Math.random() / i / 2 * canvas.width;
-            newCircle.y = Math.random() / i / 2 * canvas.height;
+            newCircle.x = Math.random() / i / 3 * canvas.width;
+            newCircle.y = Math.random() / i / 3 * canvas.height;
             newCircle.radius = Math.random() * (maxSize - minSize) + minSize;
             circles.push(newCircle);
         }
@@ -71,6 +69,7 @@ function DrawCircles() {
 }
 
 window.addEventListener("load", function(){
+    canvas = document.getElementById("background-canvas");
     let frame = document.getElementById("content-view");
     if (frame) {
         SetupButton("self", frame);
