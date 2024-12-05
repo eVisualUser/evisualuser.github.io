@@ -56,10 +56,10 @@ function DrawCircles() {
 
         ctx.filter = 'blur(4px)';
         ctx.arc(circles[circle].x, circles[circle].y, circles[circle].radius, 0, 2 * Math.PI);
-        ctx.fillStyle = "#6d14a1";
+        ctx.fillStyle = "#7f34ae";
         ctx.fill();
         ctx.lineWidth = 4;
-        ctx.strokeStyle = "#6d14a1";
+        ctx.strokeStyle = "#7f34ae";
         ctx.stroke();
     }
 

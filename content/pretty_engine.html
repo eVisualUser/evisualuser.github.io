@@ -6,22 +6,22 @@
     </head>
     <body>
         <h1>Pretty-Engine</h1>
+        <img class="state" alt="lock" src="../assets/lock.svg"/>
 
         <div class="content-section">
             <h2>Why ?</h2>
             <p>
                 This is the most important question, and here it's performances and architecture.
                 I need an engine to build games with great performances by default.
-                Compared to other engines that by default are already too slow by default.
                 <br/><br/>
                 And in the other hand, I want to learn how to build it, to improve my skills in general programming.
                 As it is also a goal for me to become in the future a Game Engine programmer.
-                This one told me a lot, about how to cheat using memory, to writing flexible and robust code.
+                This one told me a lot, about how to play with memory, to writing flexible and robust code.
                 By exploring features like multi-threading, SIMD, Vulkan and OpenGL, I build a range of references,
                 useful in many context.
                 <br/><br/>
-                I don't have a date for the end of the development, because I have too much to learn.
-                But one day I will done a game with the engine, and this one will close the 1.0 version of the engine.
+                I don't have a date for the end of the development, because I still have too much to learn.
+                But one day I will done a game with the engine, and this one will close the 1.0 version.
             </p>
         </div>
 
@@ -29,8 +29,7 @@
             <h2>Current state of devlopement.</h2>
             <p>
                 Currently, the engine have a good reflection system, with a multithreaded initialization.
-                The asset manager is in the good way, but require improvement by using GUIDs instead of the name or path.
-                The bundle support is not complete (for release only).
+                The asset manager is working well but the bundle support is not complete (for release only).
                 <br/><br/>
                 I rewrited for the third time the renderer after trying with OpenGL and Vulkan.
                 But since using vulkan I was learning at the same time, I have to rewrite it to have something more flexible and robust.
@@ -38,10 +37,13 @@
                 The architecture choosed for the user side, is the combination of three solutions:
             </p>
             <ul>
-                <li>1. DynamicObject equivalent of GameObjects.</li>
-                <li>2. You will have sDynamicObject that are the equivalent of GameObjects.</li>
-                <li>2. Process created at the initialization and destroyed at the end only.</li>
+                <li>DynamicObject equivalent of GameObjects.</li>
+                <li>Entity Component System.</li>
+                <li>Process created at the initialization and destroyed at the end only.</li>
             </ul>
+            <p>
+                You got also reflected configurations inspired by the UDataAssets from Unreal Engine(equivalent of ScriptableObject in Unity).
+            </p>
         </div>
 
         <div class="content-section">
