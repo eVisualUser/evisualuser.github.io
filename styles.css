@@ -84,7 +84,7 @@ div.content-section {
 
     font-family: var(--font-family-), sans-serif;
 
-    background-color: rgba(209, 209, 209, 0.25);
+    background-color: rgba(209, 209, 209, 0.27);
 }
 
 canvas.content {
@@ -108,8 +108,8 @@ table.tr {
 }
 
 img.nav_icon {
-    width: 8vh;
-    height: 8vh;
+    width: 50px;
+    height: 50px;
 }
 
 svg.nav_path {
@@ -120,6 +120,18 @@ svg.nav_path {
 
 a {
     color: black;
+}
+
+a.link {
+    background-color: #ab76e3;
+    opacity: 50%;
+    background-color: rgba(192, 137, 246, 0.35);
+}
+
+a.link:hover {
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(215, 179, 248, 0.35);
 }
 
 button.action {

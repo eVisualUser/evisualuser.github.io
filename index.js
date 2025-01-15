@@ -17,55 +17,28 @@ function SetupButton(buttonID, frame) {
     }
 }
 
-class Circle {
-    x = 0;
-    y = 0;
-    radius = 0;
-}
-
-let circles = [];
 let canvas = null;
 
-function CreateCircles() {
+function MakeBackground() {
     if (canvas) {
         let count = parseInt(canvas.getAttribute("count"));
         let maxSize = parseFloat(canvas.getAttribute("max_size"));
         let minSize = parseFloat(canvas.getAttribute("min_size"));
 
+        var ctx = canvas.getContext("2d");
+
+        ctx.beginPath();
         for (let i = 0; i < count ;i++) {
+            var x = Math.random() * i * canvas.width / 15;
+            var y = Math.random() * i * canvas.height / 15;
+            var scale = Math.random() * (maxSize - minSize) + minSize;
 
-            let newCircle = new Circle();
-            newCircle.x = Math.random() / i / 3 * canvas.width;
-            newCircle.y = Math.random() / i / 3 * canvas.height;
-            newCircle.radius = Math.random() * (maxSize - minSize) + minSize;
-            circles.push(newCircle);
+            ctx.filter = "blur(20px)"
+            ctx.fillStyle = "#cc99ff";
+            ctx.fillRect(x, y, 100, 100);
         }
-
-        requestAnimationFrame(DrawCircles)
+        ctx.closePath();
     }
-}
-
-function DrawCircles() {
-    let ctx = canvas.getContext("2d");
-
-    ctx.beginPath();
-
-    for (let circle in circles) {
-        circles[circle].x += Math.random() * canvas.width;
-        circles[circle].y += Math.random() * canvas.height;
-
-        ctx.filter = 'blur(4px)';
-        ctx.arc(circles[circle].x, circles[circle].y, circles[circle].radius, 0, 2 * Math.PI);
-        ctx.fillStyle = "#7f34ae";
-        ctx.fill();
-        ctx.lineWidth = 4;
-        ctx.strokeStyle = "#7f34ae";
-        ctx.stroke();
-    }
-
-    ctx.closePath()
-
-    requestAnimationFrame(DrawCircles)
 }
 
 window.addEventListener("load", function(){
@@ -81,6 +54,6 @@ window.addEventListener("load", function(){
         SetupButton("seasonal_hope", frame);
         SetupButton("bellum", frame);
         SetupButton("gamebook", frame);
-        CreateCircles();
+        MakeBackground();
     }
 });
