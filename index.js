@@ -13,6 +13,7 @@ function SetupButton(buttonID, frame) {
                 // Get the attribute back in case where its changed
                 frame.src = button.getAttribute("url");
             };
+            
         }
     }
 }
