@@ -1,60 +1,63 @@
+let focused_overview = null;
 
-// Add onclick event function to change iframe based on button 'url' attribute.
-function SetupButton(buttonID, frame) {
-    let button = document.getElementById(buttonID);
-    if (button) {
-        let url = button.getAttribute("url");
+let hide_button;
 
-        if (url == null) {
-            button.style.backgroundColor = "orange";
-            button.textContent = "Work in progress (" + button.textContent + ")";
-        } else {
-            button.onclick = function () {
-                // Get the attribute back in case where its changed
-                frame.src = button.getAttribute("url");
-            };
-            
+window.addEventListener("DOMContentLoaded", async function () {
+    document.body.addEventListener("click", function (event) {
+        if (event.target === document.body) {
+            hideOverview();
         }
+    });
+
+    hide_button = document.getElementById("hide-button")
+
+    if (hide_button) {
+       hide_button.addEventListener("click", hideOverview);
     }
-}
 
-let canvas = null;
+    for (let card of this.document.getElementsByClassName("card")) {
+        card.addEventListener("click", async function () {
+            let overview_id = card.getAttribute("overview");
+            let overview = document.getElementById(overview_id);
+            if (overview) {
+                showOverview(overview);
+                hide_button.style.display = "block";
+            }
+        }); 
+    }
 
-function MakeBackground() {
-    if (canvas) {
-        let count = parseInt(canvas.getAttribute("count"));
-        let maxSize = parseFloat(canvas.getAttribute("max_size"));
-        let minSize = parseFloat(canvas.getAttribute("min_size"));
+    let hash = this.window.location.hash;
+    hash = hash.slice(1);
 
-        var ctx = canvas.getContext("2d");
+    let overview = this.document.getElementById(hash);
 
-        ctx.beginPath();
-        for (let i = 0; i < count ;i++) {
-            var x = Math.random() * i * canvas.width / 15;
-            var y = Math.random() * i * canvas.height / 15;
-            var scale = Math.random() * (maxSize - minSize) + minSize;
-
-            ctx.filter = "blur(20px)"
-            ctx.fillStyle = "#cc99ff";
-            ctx.fillRect(x, y, 100, 100);
+    if (overview) {
+        if (overview.className == "overview") {
+            showOverview(overview);
         }
-        ctx.closePath();
-    }
-}
-
-window.addEventListener("load", function(){
-    canvas = document.getElementById("background-canvas");
-    let frame = document.getElementById("content-view");
-    if (frame) {
-        SetupButton("self", frame);
-        SetupButton("programming", frame);
-        SetupButton("rust", frame);
-        SetupButton("studies", frame);
-        SetupButton("experience", frame);
-        SetupButton("pretty_engine", frame);
-        SetupButton("seasonal_hope", frame);
-        SetupButton("bellum", frame);
-        SetupButton("gamebook", frame);
-        MakeBackground();
     }
 });
+
+function showOverview(overview) {
+    if (focused_overview) {
+        focused_overview.style.display = "none";
+    }
+
+    focused_overview = overview;
+    focused_overview.style.display = "block";
+
+    hide_button.style.display = "block";
+
+    window.location.hash = overview.id;
+}
+
+function hideOverview() {
+    if (focused_overview) {
+        focused_overview.style.animation = 'show-overview';
+        focused_overview.style.display = "none";
+
+        hide_button.style.display = "none";
+
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+}

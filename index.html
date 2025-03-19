@@ -1,4 +1,4 @@
-<!-- Hello, welcome in my WebSite, I am not a web programmer so be gentle :) -->
+<!-- Hello, welcome in my WebSite, I am not a web devloper so be gentle :) -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,47 +10,222 @@
         <link rel="stylesheet" type="text/css" href="styles.css"/>
 
         <script src="index.js"></script>
+
     </head>
+    
     <body>
-        <canvas class="content" id="background-canvas" count="25" min_size="0.2" max_size="0.4"></canvas>
-        
-        <div class="navbar" id="navbar">
-            <h2 class="nav_title">General</h2>
-            <button class="content-selector" id="self" url="content/self.html">
-                <img src="assets/user.svg" alt="Self" class="nav_icon"/>
-            </button>
+      <div class="el"></div>
 
-            <button class="content-selector" id="programming" url="content/programming.html">
-                <img src="assets/code-brackets.svg" alt="Code" class="nav_icon"/>
-            </button>
+      <div class="container">
+        <svg class="svg-ants" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+          <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="50%">Sylvain Tosoni</text>
+            <text text-anchor="middle" x="50%" y="90%">Game Programmer</text>
+          </symbol>
 
-            <h2 class="nav_title">Projects</h2>
+          <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+          </g>
+        </svg>
+      </div>
 
-            <button class="content-selector" id="pretty_engine" url="content/pretty_engine.html">
-                <img src="assets/pretty_engine.png" alt="Pretty-Engine" class="nav_icon"/>
-            </button>
+      <div id="section-list">
+        <div class="section">
+          <h1>Who I am ?</h1>
+          <p>
+            I am Sylvain Tosoni, game programmer to become.
+            <br/>
+            Currently in third year at <a href="https://www.bellecour.fr/">Bellecour</a> Ecole in Lyon, France.
+            <br/>
+            Focused on gameplay programming and still learning engine programming.
+            
+          </p>
+        </div>
+      </div>
 
-            <button class="content-selector" id="seasonal_hope" url="content/seasonal_hope.html">
-                <img src="assets/EchoesOfSeasons.png" alt="Echoes of Seasons" class="nav_icon"/>
-            </button>
+      <!-- Overviews -->
 
-            <button class="content-selector" id="rust" url="content/rust.html">
-                <img src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" alt="Rust" class="nav_icon"/>
-            </button>
+      <button class="hide-overview" id="hide-button"></button>
 
-            <button class="content-selector" id="bellum" url="content/bellum.html">
-                <img src="assets/Char_gros_soldat.png" alt="Bellum" class="nav_icon"/>
-            </button>
+      <div class="overview" id="overview-pretty-engine">
+        <h1>Pretty Engine</h1>
 
-            <button class="content-selector" id="gamebook" url="content/gamebook.html">
-                <img src="assets/IzyIcon.ico" alt="Izydor" class="nav_icon"/>
-            </button>
+        <h2>Engine Concept</h2>
+        <p>
+          This engine is for learning purpose.<br/>
+          Multithreaded and using <a href="https://vulkan.lunarg.com/">Vulkan API</a> for rendering.<br/>
+          The idea is be able to create with it a 3D game, that is easy to extend and maintainable.<br/>
+        </p>
+
+        <h2>State of devlopement</h2>
+        <p>
+          The renderer got removed recently, I search for better solutions and want to improve my autonomy when using Vulkan.<br/>
+          The current main work is to write an Entity Component System, and improve the data/asset management.<br/>
+          The architecture with the multithreading is still a challenge, but its starting to be cleaner.<br/>
+        </p>
+
+        <h2>Insights</h2>
+        <p>
+          The engine is in its third version, and it teach me a lot.<br/>
+          <br/>
+          So the choice to do multithreading and using Vulkan come from the issues I met mostly in the first version.<br/>
+          The first version was using OpenGL, it was in fact more advanced, but less stable, and the performances was just acceptable.<br/>
+          <br/>
+          Multithreading is very important in modern programming, and for example in the current version it allow a very fast intialization, even if some parts like Vulkan intialization can take time.<br/>
+          <br/>
+          From it, I found a passion for engine programming, the level of complexity and the creativity coming with is lovely.<br/>
+        </p>
+      </div>
+
+      <div class="overview" id="overview-echoes-of-seasons">
+        <h1>Echoes of Seasons</h1>
+
+        <h2>Game Concept</h2>
+        <p>
+          You must solve puzzles, using the different gameplay mechnics available.<br/>
+          The goal is to reach the end of each level.<br/>
+        </p>
+
+        <h2>Gameplay</h2>
+        <p>
+          There is two main mechanics:
+          <ul>
+            <li>Movable objects: You can push an ice cube, and a stone. They have both their specifies.</li>
+            <li>Seasons: You can change the season to change the environment.</li>
+          </ul>
+        </p>
+
+        <h2>Development</h2>
+        <p>
+          I worked with six game designers, and one other game programmer, and with eleven artists.<br/>
+          Made using Unreal Engine 5.4, most of the logic is in C++.<br/>
+          <br/>
+          The performance aspect of the switch of season wasnt really a difficulty.<br/>
+          Since Unreal Engine is well optimized when it come to change assets and materials in real-time.<br/>
+          <br/>
+          Even if as the devlopement goes, less asset switch was used, replaced by visual effects.<br/>
+          The game is still in development, it should be released on steam later this year(2025).<br/>
+        </p>
+
+        <h2>Insights</h2>
+        <p>
+          It was a great project to validate my abilities with Unreal Engine in C++.<br/>
+          With the new experience I would have used really different approach for the programming.<br/>
+          <br/>
+          It was good organisation challenge, since we were a lot of people on the project.<br/>
+        </p> 
+      </div>
+
+      <div class="overview" id="overview-bellum">
+        <h1><a href="https://drive.proton.me/urls/J31DMZM53W#FGAR-cvd7viA">Bellum</a></h1>
+
+        <h2>Game Concept</h2>
+        <p>
+          Top down view, with hand weapons.<br/>
+          You must reach the end of the level, with or without killing all the enemies depending of the level.<br/>
+        </p>
+
+        <h2>Gameplay</h2>
+        <p>
+          Top down view.<br/>
+          The player can move and hand combat.<br/>
+          <br/>
+          Enemies comes to the player when seeing him, when one see him, they all get alerted (optional).<br/>
+          There is traps to challenge the player progression.<br/>
+        </p>
+
+        <h2>Development</h2>
+        <p>
+          Made using Unity, programmed in C# only.<br/>
+          The free to play aspect was faked.<br/>
+        </p>
+
+        <h2>Insights</h2>
+        <p>
+          Put my Unity knowledge to a challenge.<br/>
+          <br/>
+          First complete game done, implying polishing at the end.<br/>
+          Put for the first time in a situation where features got cut.<br/>
+          <br/>
+          Discovered the difficulty of working for a mobile platform (Android).<br/>
+        </p>
+      </div>
+
+      <div class="overview" id="overview-rust">
+        <h1>Rust</h1>
+        <p>Compared to others this one is to present my use of Rust.</p>
+
+        <h2>Tooling</h2>
+        <p>
+          Rust is my main language when it come to external tools.<br/>
+          Because of its great performances and the great ammount of libraries available.<br/>
+          <br/>
+          My favorite GUI framework is <a href="https://tauri.app/">Tauri (v2.0)</a>.<br/>
+          It is an alternative to Electron, but with better performances and lighter.<br/>
+          <br/>
+          Most of the libraries are cross-platform, making it easily compatible between Linux and Windows.<br/>
+        </p>
+
+        <h2>What I made with it</h2>
+        <p>
+          Using Rust I made a launcher for Unreal Engine 5.4, to make it easier the compilation for the game designers.<br/>
+          I am working on making a launcher for my engine and my future games.<br/>
+        </p>
+
+        <h2>Insights</h2>
+        <p>
+          This is a powerfull and safe language.<br/>
+          But it come with difficulties when using async code.<br/>
+          <br/>
+          The community is great, and the documentation is complete.<br/>
+        </p>
+      </div>
+
+      <div class="card-container">
+        <div class="card" overview="overview-pretty-engine">
+          <img src="./assets/pretty_engine.png" alt="Source Code Image">
+          <h1>Pretty-Engine</h1>
+          <p>
+            Custom C/C++ Game Engine. This engine is for learning purpose.
+            Multithreaded and using <a href="https://vulkan.lunarg.com/">Vulkan API</a> for rendering.
+          </p>
         </div>
 
-        <div class="content" id="content">
-            <iframe class="content-view" id="content-view" src="content/self.html">
-
-            </iframe>
+        <div class="card" overview="overview-echoes-of-seasons">
+          <img src="./assets/CA_colorspreview_spring_02.jpg" alt="Debug">
+          <h1>Echoes of Seasons</h1>
+          <p>Puzzle game made using Unreal Engine, final project at Bellecour Ecole.</p>
         </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card" overview="overview-bellum">
+          <img src="./assets/Char_gros_soldat.png" alt="Debug">
+          <h1>Bellum</h1>
+          <p>Second year project at Bellecour Ecole, using Unity, Free to Play mobile game (no transaction, only demonstration).</p>
+        </div>
+
+        <div class="card" overview="overview-rust">
+          <img src="./assets/rust_background.png" alt="Debug">
+          <h1>Rust</h1>
+          <p>My main language for tooling, mostly using Tauri 2.0.</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>
+          <a href="https://github.com/eVisualUser">Github</a><br/>
+          <br/>
+          <a href="https://www.linkedin.com/in/sylvain-tosoni">LinkedIn</a><br/>
+          <br/>
+          <a href="mailto:sylvain.tosoni.pro@proton.me">EMail</a><br/>
+          <br/>
+          <a href="https://discovered-bronze-69f.notion.site/153e111e9fc58054a981e6c3bd92f11f?pvs=105">Contact using Notion form</a>
+        </p>
+      </footer>
     </body>
 </html>
