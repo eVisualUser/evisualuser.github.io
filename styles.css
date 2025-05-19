@@ -309,3 +309,13 @@ footer {
 
   margin-top: 10vh;
 }
+
+/* Curriculum Vitae */
+
+details {
+  background-color: #5e1818;
+  background-image: radial-gradient(rgb(133, 23, 23) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  border-radius: 5px;
+}
