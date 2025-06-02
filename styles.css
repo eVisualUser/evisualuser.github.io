@@ -100,7 +100,7 @@ svg {
 }
 
 div.section {
-  background-color: black;
+  background-color: rgb(67, 67, 67);
 
   border: #840037;
   border-width: 1vw;

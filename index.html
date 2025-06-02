@@ -33,23 +33,6 @@
         </svg>
       </div>
 
-      <div id="section-list">
-        <div class="section">
-          <h1>Who am I ?</h1>
-          <p>
-            I am Sylvain Tosoni, game programmer.
-            <br/>
-            Currently in third year at <a href="https://www.bellecour.fr/">Bellecour</a> Ecole in Lyon, France.
-            <br/>
-            Focused on gameplay programming and still learning engine programming.
-          </p>
-          <details>
-            <summary>Curriculum Vitae</summary>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/TpIMjwl9QESkxq2PuzAFO5/Curriculum-Vitae?page-id=0%3A1&node-id=1-2&p=f&viewport=173%2C66%2C0.74&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
-          </details>
-        </div>
-      </div>
-
       <!-- Overviews -->
 
       <button class="hide-overview" id="hide-button"></button>
@@ -65,11 +48,11 @@
         </p>
 
         <h2>State of devlopement</h2>
-        <p>
-          The renderer got removed recently, I search for better solutions and want to improve my autonomy when using Vulkan.<br/>
-          The current main work is to write an Entity Component System, and improve the data/asset management.<br/>
-          The architecture with the multithreading is still a challenge, but its starting to be cleaner.<br/>
-        </p>
+        <ul>
+          <li>The world/level system is work in progress.</li>  
+          <li>The rendering engine wait for the world/level system to be finished to manage ressources properly.</li>  
+          <li>The asset manager is in improvements.</li>
+        </ul>
 
         <h2>Insights</h2>
         <p>
@@ -180,6 +163,46 @@
           <br/>
           The community is great, and the documentation is complete.<br/>
         </p>
+      </div>
+
+      <div class="overview" id="overview-self">
+        <h1>Who am I ?</h1>
+
+        <p>
+          I live in Lyon, France.<br/>
+          I reached the end of my studies, and now searching for a first experience in the video game industry.<br/>
+          <br/>
+          My goal is to become a game engine programmer, but for now I am more productive as a gameplay programmer.<br/>
+          So based on that, I am learning Vulkan and OpenGL. And Rust with Tauri to make tools.<br/> 
+        </p>
+
+        <h2>Outside of programming</h2>
+
+        <ul>
+          <li>🏍️ I enjoy riding with my motorbike.</li>
+          <li>🎮 My favorite game genrers are Survival and 4X.</li>
+        </ul>
+
+        <h2>Curriculum Vitae</h2>
+
+        <details>
+          <summary>Curriculum Vitae</summary>
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/TpIMjwl9QESkxq2PuzAFO5/Curriculum-Vitae?page-id=0%3A1&node-id=1-2&p=f&viewport=173%2C66%2C0.74&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>
+        </details>
+      </div>
+
+      <div class="card-container">
+          <div class="card" overview="overview-self">
+            <img src="./assets/SelfPhotoAnonymous.png" alt="Source Code Image">
+            <h1>Who am I ?</h1>
+            <p>
+              I am Sylvain Tosoni, game programmer.
+              <br/>
+              Currently in third year at <a href="https://www.bellecour.fr/">Bellecour</a> Ecole in Lyon, France.
+              <br/>
+              Focused on gameplay programming and still learning engine programming.
+            </p>
+          </div>
       </div>
 
       <div class="card-container">
