@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", async function () {
                 showOverview(overview);
                 hide_button.style.display = "block";
             }
-        }); 
+        });
     }
 
     let hash = this.window.location.hash;
