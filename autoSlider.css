@@ -15,6 +15,7 @@
     transform: translateX(calc(-250px * 7));
   }
 }
+
 .slider {
   background: rgb(31, 31, 31);
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -22,7 +23,7 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 30%;
+  width: 100%;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
