@@ -1,7 +1,5 @@
 # Echoes of Seasons
 
-<iframe src="https://store.steampowered.com/widget/3914680/" frameborder="0" width="646" height="190"></iframe>
-
 ## Overview
 
 Echoes of Seasons is a final‑year project developed at Bellecour École.

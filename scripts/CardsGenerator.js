@@ -8,6 +8,7 @@ class Card {
   content;
   overview;
   content_type;
+  html_header;
 }
 
 /// Load the card index from the specified file path.
@@ -31,6 +32,12 @@ async function GenerateCards() {
     newCard.overview = card["overview"];
     newCard.content_type = card["content-type"];
 
+    if ("html_header" in card) {
+      newCard.html_header = card["html_header"];
+    } else {
+      newCard.html_header = null;
+    }
+
     cards.push(newCard);
   });
 
@@ -41,6 +48,7 @@ async function GenerateCards() {
     // Card
     let cardHTML = `
       <div class="card" overview="${card.overview}">
+        <br/>
         <img src="${card.image}" alt="${card.title}">
         <h1>${card.title}</h1>
         <p>${card.short_description}</p>
@@ -55,10 +63,19 @@ async function GenerateCards() {
       async (response) => (overviewContent = await response.text()),
     );
 
+    let htmlHeader = "";
+
+    if (card.html_header !== null) {
+      await fetch(card.html_header).then(
+        async (response) => (htmlHeader = await response.text()),
+      );
+    }
+
     // Support Markdown and HTML content types
     if (card.content_type == "markdown") {
       let overviewHTML = `
         <div class="overview" id="${card.overview}">
+          ${htmlHeader}
           <md-block>
             ${overviewContent}
           </md-block>
@@ -68,10 +85,11 @@ async function GenerateCards() {
       document.getElementById("generated-overviews").innerHTML += overviewHTML;
     } else if (card.content_type == "html") {
       let overviewHTML = `
-      <div class="overview" id="${card.overview}">
-        ${overviewContent}
-      </div>
-    `;
+        <div class="overview" id="${card.overview}">
+          ${htmlHeader}
+          ${overviewContent}
+        </div>
+      `;
 
       document.getElementById("generated-overviews").innerHTML += overviewHTML;
     } else {

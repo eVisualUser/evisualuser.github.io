@@ -22,7 +22,8 @@
       "short_description": "A Puzzle game made using Unreal Engine, final project at Bellecour Ecole.",
       "image": "assets/CA_colorspreview_spring_02.jpg",
       "content": "content/markdown/EchoesOfSeasons.md",
-      "content-type": "markdown"
+      "content-type": "markdown",
+      "html_header": "content/html/EchoesOfSeasons.html"
     },
     {
       "title": "Bellum",
