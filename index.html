@@ -1,321 +1,87 @@
-<!-- Hello, welcome in my WebSite, I am not a web devloper so be gentle :) -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8" />
 
         <title>Sylvain Tosoni</title>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
 
-        <link rel="stylesheet" type="text/css" href="styles.css"/>
-        <link rel="stylesheet" type="text/css" href="autoSlider.css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="autoSlider.css" />
 
-        <script src="index.js"></script>
+        <!-- Markdown Block -->
+        <script
+            type="module"
+            src="https://md-block.verou.me/md-block.js"
+        ></script>
 
-        <meta name="google-site-verification" content="MA0dHqOowCjlubsap2-rWSw46dJrIFko9qpCdkBbvnU" />
+        <!-- Custom Scripts -->
+        <script src="./scripts/CardsLogic.js"></script>
+        <script src="./scripts/CardsGenerator.js"></script>
+        <script src="./scripts/Index.js"></script>
 
+        <!-- Google -->
+        <meta
+            name="google-site-verification"
+            content="MA0dHqOowCjlubsap2-rWSw46dJrIFko9qpCdkBbvnU"
+        />
     </head>
 
     <body>
-      <div class="el"></div>
+        <div class="el"></div>
 
-      <div class="container">
-        <svg class="svg-ants" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
-          <symbol id="s-text">
-            <text text-anchor="middle" x="50%" y="50%">Sylvain Tosoni</text>
-            <text text-anchor="middle" x="50%" y="90%">Game Programmer</text>
-          </symbol>
+        <a href="#content-section"><button class="anchor"></button></a>
 
-          <g class = "g-ants">
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-            <use xlink:href="#s-text" class="text-copy"></use>
-          </g>
-        </svg>
-      </div>
+        <div class="container">
+            <svg
+                class="svg-ants"
+                width="100%"
+                height="100%"
+                preserveAspectRatio="xMidYMid meet"
+            >
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="50%">
+                        Sylvain Tosoni
+                    </text>
+                    <text text-anchor="middle" x="50%" y="90%">
+                        Game Programmer
+                    </text>
+                </symbol>
 
-      <!-- Overviews -->
-
-      <button class="hide-overview" id="hide-button"></button>
-
-      <div class="overview" id="overview-pretty-engine">
-        <h1>Pretty Engine</h1>
-
-        <div class="links">
-          <a class="overview-link" href="https://gitlab.com/eVisualUser/pretty-engine">
-              <img class="link" src="./assets/gitlab-solid-white.svg" alt="LinkedIn"/>
-          </a>
+                <g class="g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+            </svg>
         </div>
 
-        <h2>Engine Concept</h2>
-        <p>
-          This engine is for learning purpose.<br/>
-          Multithreaded and using <a href="https://vulkan.lunarg.com/">Vulkan API</a> for rendering.<br/>
-          The idea is be able to create with it a 3D game, that is easy to extend and maintainable.<br/>
-        </p>
+        <div id="content-section">
+            <button class="hide-overview" id="hide-button"></button>
 
-        <h2>State of devolvement</h2>
-        <ul>
-          <li>The world/level system is work in progress.</li>  
-          <li>The rendering engine wait for the world/level system to be finished to manage resources properly.</li> 
-          <li>The asset manager is in improvements.</li>
-        </ul>
+            <!-- Generated Overviews -->
+            <div id="generated-overviews">
+                <!-- Write no html here -->
+            </div>
 
-        <h2>Insights</h2>
-        <p>
-          The engine is in its third version, and it teach me a lot.<br/>
-          <br/>
-          So the choice to do multithreading and using Vulkan come from the issues I met mostly in the first version.<br/>
-          The first version was using OpenGL, it was in fact more advanced, but less stable, and the performances was just acceptable.<br/>
-          <br/>
-          Multithreading is very important in modern programming, and for example in the current version it allow a very fast initialization.<br/>
-          <br/>
-          From it, I found a passion for engine programming, the level of complexity and the creativity coming with it.<br/>
-        </p>
-      </div>
+            <!-- Generated Cards -->
+            <div id="generated-cards" class="card-container">
+                <!-- Write no html here -->
+            </div>
 
-      <div class="overview" id="overview-echoes-of-seasons">
-        <h1>Echoes of Seasons</h1>
-
-        <div class="links">
-          <a class="overview-link" href="https://www.linkedin.com/posts/bellecourecole_bellecour-bellecourecole-jeuvideo-activity-7315052377919684611-F0bC?utm_source=share&utm_medium=member_desktop&rcm=ACoAADSGh-EBpDsIGAj2FcOE-37qNbvfb4ipf2A">
-              <img class="link" src="./assets/linkedin.png" alt="LinkedIn"/>
-          </a>
-          <a class="overview-link" href="https://www.youtube.com/watch?v=xIS8XK5-n4U">
-            <img class="link" src="./assets/youtube_social_squircle_white.png" alt="Youtube Video"/>
-          </a>
-          <a class="overview-link" href="https://store.steampowered.com/app/3914680/?snr=1_5_9__205">
-              <img class="link" src="./assets/steam-logo.png" alt="Steam Logo"/>
-          </a>
+            <div id="loading-icon" class="lds-ripple">
+                <div></div>
+                <div></div>
+            </div>
         </div>
 
-        <br/>
-        <iframe src="https://store.steampowered.com/widget/3914680/" frameborder="0" width="646" height="190"></iframe>
-
-        <h2>Game Concept</h2>
-        <p>
-          You must solve puzzles, using the different gameplay mechanics available.<br/>
-          The goal is to reach the end of each level.<br/>
-        </p>
-
-        <h2>Gameplay</h2>
-        <p>
-          There is two main mechanics:
-          <ul>
-            <li>Movable objects: You can push an ice cube, and a stone. They have both their specifies.</li>
-            <li>Seasons: You can change the season to change the environment.</li>
-          </ul>
-        </p>
-
-        <h2>Development</h2>
-        <p>
-          I worked with six game designers, and one other game programmer, and with eleven artists.<br/>
-          Made using Unreal Engine 5.4, most of the logic is in C++.<br/>
-          <br/>
-          The performance aspect of the switch of season wasn't really a difficulty.<br/>
-          Since Unreal Engine is well optimized when it come to change assets and materials in real-time.<br/>
-          <br/>
-          Even if as the development goes, less asset switch was used, replaced by visual effects.<br/>
-          The game is still in development, it should be released on steam later this year(2025).<br/>
-        </p>
-
-        <h2>Insights</h2>
-        <p>
-          It was a great project to validate my abilities with Unreal Engine in C++.<br/>
-          With the new experience I would have used really different approach for the programming.<br/>
-          <br/>
-          It was good organization challenge, since we were a lot of people on the project.<br/>
-        </p> 
-      </div>
-
-      <div class="overview" id="overview-bellum">
-        <h1>Bellum</h1>
-
-        <div class="links">
-            <a class="overview-link" href="https://drive.proton.me/urls/J31DMZM53W#FGAR-cvd7viA">
-                <img class="link" src="./assets/Char_gros_soldat.png" alt="Resume"/>
-            </a>
-          </div>
-
-        <h2>Game Concept</h2>
-        <p>
-          Top down view, with hand weapons.<br/>
-          You must reach the end of the level, with or without killing all the enemies depending of the level.<br/>
-        </p>
-
-        <h2>Gameplay</h2>
-        <p>
-          Top down view.<br/>
-          The player can move and hand combat.<br/>
-          <br/>
-          Enemies comes to the player when seeing him, when one see him, they all get alerted (optional).<br/>
-          There is traps to challenge the player progression.<br/>
-        </p>
-
-        <h2>Development</h2>
-        <p>
-          Made using Unity, programmed in C# only.<br/>
-          The free to play aspect was faked.<br/>
-        </p>
-
-        <h2>Insights</h2>
-        <p>
-          Put my Unity knowledge to a challenge.<br/>
-          <br/>
-          First complete game done, implying polishing at the end.<br/>
-          Put for the first time in a situation where features got cut.<br/>
-          <br/>
-          Discovered the difficulty of working for a mobile platform (Android).<br/>
-        </p>
-      </div>
-
-      <div class="overview" id="overview-rust">
-        <h1>Rust</h1>
-
-        <div class="links">
-          <a class="overview-link" href="https://crates.io/users/eVisualUser">
-              <img class="link" src="https://crates.io/assets/cargo.png" alt="Crates.io"/>
-          </a>
-        </div>
-
-        <p>Compared to others this one is to present my use of Rust.</p>
-
-        <h2>Tooling</h2>
-        <p>
-          Rust is my main language when it come to external tools.<br/>
-          Because of its great performances and the great amount of libraries available.<br/>
-          <br/>
-          My favorite GUI framework is <a href="https://tauri.app/">Tauri (v2.0)</a>.<br/>
-          It is an alternative to Electron, but with better performances and lighter.<br/>
-          <br/>
-          Most of the libraries are cross-platform, making it easily compatible between Linux and Windows.<br/>
-        </p>
-
-        <h2>Insights</h2>
-        <p>
-          This is a powerful and safe language.<br/>
-          But it come with difficulties when using async code.<br/>
-          <br/>
-          The community is great, and the documentation is complete.<br/>
-        </p>
-      </div>
-
-      <div class="overview" id="overview-self">
-        <h1>Who am I ?</h1>
-
-        <div class="links">
-          <a class="overview-link" href="https://drive.proton.me/urls/KAZTRVV3GG#yPPwJVAGRsFl">
-              <img class="link" src="./assets/resume-icon.png" alt="Resume"/>
-          </a>
-        </div>
-
-        <p>
-          I live in Lyon, France.<br/>
-          I reached the end of my studies, and now searching for a first experience in the video game industry.<br/>
-          <br/>
-          My goal is to become a game engine programmer, but for now I am more productive as a gameplay programmer.<br/>
-          So based on that, I am learning Vulkan and OpenGL. And Rust with Tauri to make tools.<br/> 
-        </p>
-
-        <h2>Outside of programming</h2>
-
-        <ul>
-          <li>🏍️ I enjoy riding with my motorbike.</li>
-          <li>🎮 My favorite game genres are Survival and 4X.</li>
-        </ul>
-
-        <!-- Known tech slider -->
-
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="assets/icons/logo_csharp.png" height="100" width="100" alt="C#" /></a>
-            </div>
-            <div class="slide">
-              <a href="https://isocpp.org/"><img src="assets/icons/ISO_C++_Logo.svg.png" height="100" width="100" alt="C++" /></a>
-            </div>
-            <div class="slide">
-              <a href="https://www.rust-lang.org/"><img src="assets/icons/rust-logo-256x256.png" height="100" width="100" alt="Rust" /></a>
-            </div>
-            <div class="slide">
-              <a href="https://www.python.org/"><img src="assets/icons/python-logo-only.png" height="100" width="100" alt="Python" /></a>
-            </div>
-            <div class="slide">
-              <a href="https://www.lua.org/"><img src="assets/icons/Lua-Logo_128x128.png" height="100" width="100" alt="Lua" /></a>
-            </div>
-            <div class="slide">
-              <a href="https://www.unrealengine.com/fr"><img src="assets/icons/unreal_engine_logo.png" height="100" width="140" alt="UnrealEngine" /></a>
-            </div>
-            <div class="slide">
-              <a href="https://unity.com/fr"><img src="assets/icons/unity_logo.png" height="100" width="100" alt="Unity" /></a>
-            </div>
-            <div class="slide">
-              <a href="https://www.qt.io/"><img src="assets/icons/Qt-logo-neon_900px.webp" height="100" width="120" alt="QT" /></a>
-            </div>
-            <div class="slide">
-              <a href="https://tauri.app/"><img src="assets/icons/tauri_icon.svg" height="100" width="150" alt="Tauri" /></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card-container">
-          <div class="card" overview="overview-self">
-            <img src="./assets/SelfPhotoAnonymous.png" alt="Source Code Image">
-            <h1>Who am I ?</h1>
-            <p>
-              I am Sylvain Tosoni, game programmer.
-              <br/>
-              Currently in third year at <a href="https://www.bellecour.fr/">Bellecour</a> Ecole in Lyon, France.
-              <br/>
-              Focused on gameplay programming and still learning engine programming.
-            </p>
-          </div>
-      </div>
-
-      <div class="card-container">
-        <div class="card" overview="overview-pretty-engine">
-          <img src="./assets/pretty_engine.png" alt="Source Code Image">
-          <h1>Pretty-Engine</h1>
-          <p>
-            Custom C/C++ Game Engine. This engine is for learning purpose.
-            Multithreaded and using <a href="https://vulkan.lunarg.com/">Vulkan API</a> for rendering.
-          </p>
-        </div>
-
-        <div class="card" overview="overview-echoes-of-seasons">
-          <img src="./assets/CA_colorspreview_spring_02.jpg" alt="Debug">
-          <h1>Echoes of Seasons</h1>
-          <p>Puzzle game made using Unreal Engine, final project at Bellecour Ecole.</p>
-        </div>
-      </div>
-
-      <div class="card-container">
-        <div class="card" overview="overview-bellum">
-          <img src="./assets/Char_gros_soldat.png" alt="Debug">
-          <h1>Bellum</h1>
-          <p>Second year project at Bellecour Ecole, using Unity, Free to Play mobile game (no transaction, only demonstration).</p>
-        </div>
-
-        <div class="card" overview="overview-rust">
-          <img src="./assets/rust_background.png" alt="Debug">
-          <h1>Rust</h1>
-          <p>My main language for tooling, mostly using Tauri 2.0.</p>
-        </div>
-      </div>
-
-      <footer class="footer">
-        <p>
-          <a href="https://mastodon.social/invite/5shUQpbC">Mastodon</a><br/>
-          <br/>
-          <a href="https://github.com/eVisualUser">Github</a><br/>
-          <br/>
-          <a href="https://www.linkedin.com/in/sylvain-tosoni">LinkedIn</a><br/>
-          <br/>
-          <a href="mailto:sylvain.tosoni.pro@proton.me">EMail</a><br/>
-        </p>
-      </footer>
+        <footer class="footer">
+            <a href="https://github.com/eVisualUser">Github</a>
+            <a href="https://www.linkedin.com/in/sylvain-tosoni">LinkedIn</a>
+            <a href="mailto:sylvain.tosoni.pro@proton.me">EMail</a>
+            <a href="https://listed.to/@eVisualUser">Blog</a>
+        </footer>
     </body>
 </html>

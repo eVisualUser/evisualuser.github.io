@@ -1,0 +1,44 @@
+{
+  "cards": [
+    {
+      "title": "Who I am",
+      "overview": "overview-self",
+      "short_description": "I am Sylvain Tosoni, game programmer. Freshly graduated from Bellecour Ecole. Focused on gameplay programming and still learning engine programming. ",
+      "image": "assets/SelfPhotoAnonymous.png",
+      "content": "content/markdown/Self.md",
+      "content-type": "markdown"
+    },
+    {
+      "title": "Pretty-Engine",
+      "overview": "overview-pretty-engine",
+      "short_description": "Custom C/C++ Game Engine. This engine is for learning purpose. Multithreaded and using Vulkan API for rendering.",
+      "image": "assets/pretty_engine.png",
+      "content": "content/html/PrettyEngine.html",
+      "content-type": "html"
+    },
+    {
+      "title": "Echoes of Seasons",
+      "overview": "overview-echoes-of-seasons",
+      "short_description": "A Puzzle game made using Unreal Engine, final project at Bellecour Ecole.",
+      "image": "assets/CA_colorspreview_spring_02.jpg",
+      "content": "content/markdown/EchoesOfSeasons.md",
+      "content-type": "markdown"
+    },
+    {
+      "title": "Bellum",
+      "overview": "overview-bellum",
+      "short_description": "Second year project at Bellecour Ecole, using Unity, Free to Play mobile game (no transaction, only demonstration).",
+      "image": "assets/Char_gros_soldat.png",
+      "content": "content/html/Bellum.html",
+      "content-type": "markdown"
+    },
+    {
+      "title": "Rust",
+      "overview": "overview-rust",
+      "short_description": "My main language for tooling, mostly using Tauri 2.0.",
+      "image": "assets/rust_background.png",
+      "content": "content/html/Rust.html",
+      "content-type": "markdown"
+    }
+  ]
+}
