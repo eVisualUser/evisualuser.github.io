@@ -115,6 +115,17 @@ In the other side, you have the Process, that are in the engine.
 And are kind of unsafe, but receive a lot of events, and can do whatever you want with the engine.
 Can be useful to add complex features.
 
+## Why Vulkan and OpenGL
+
+DirectX is a proprietary API, and is not open source.
+Vulkan and OpenGL are open source, and can be more flexible and powerful than DirectX.
+They are also more widely used, and have more documentation and tutorials.
+
+The combo is Vulkan and OpenGL also have an advantage, as you can share data between them.
+So switching to OpenGL to avoid a crash would be faster and more reliable.
+
+And last but not least, Vulkan and OpenGL are both cross-platform.
+
 ## Gitlab
 
 I moved from GitHub to Gitlab.
