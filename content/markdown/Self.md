@@ -10,6 +10,13 @@ I am eager to challenge my skills, exploring new technologies and new ways to cr
 I am searching to join a team to collaborate with passionate professionals such as artists, programmers, designers.
 And take the charge of a project, guiding it through each step.
 
+## Contacts
+
+- [Email](mailto:sylvain.tosoni.pro@proton.me)
+- [LinkedIn](https://www.linkedin.com/in/sylvain-tosoni)
+- [GitHub](https://github.com/eVisualUser)
+- [Listed.to](https://listed.to/@eVisualUser)
+
 ## Skills
 
 - Programming Languages: C++, Rust, Python, JavaScript, C#

@@ -31,8 +31,9 @@
       "overview": "overview-bellum",
       "short_description": "Second year project at Bellecour Ecole, using Unity, Free to Play mobile game (no transaction, only demonstration).",
       "image": "assets/Char_gros_soldat.png",
-      "content": "content/html/Bellum.html",
-      "content-type": "markdown"
+      "content": "content/markdown/Bellum.md",
+      "content-type": "markdown",
+      "html_header": "content/html/Bellum.html"
     },
     {
       "title": "Rust",
