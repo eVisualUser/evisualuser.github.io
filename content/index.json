@@ -13,8 +13,9 @@
       "overview": "overview-pretty-engine",
       "short_description": "Custom C/C++ Game Engine. This engine is for learning purpose. Multithreaded and using Vulkan API for rendering.",
       "image": "assets/pretty_engine.png",
-      "content": "content/html/PrettyEngine.html",
-      "content-type": "html"
+      "content": "content/markdown/PrettyEngine.md",
+      "content-type": "markdown",
+      "html_header": "content/html/PrettyEngine.html"
     },
     {
       "title": "Echoes of Seasons",
