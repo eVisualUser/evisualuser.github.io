@@ -15,17 +15,9 @@ Although UE5 offers impressive visual quality, we were forced to disable Lumen b
 
 Switch The season‑switch mechanic presented two main challenges:
 - Memory usage
-– Virtual textures mitigated the problem but
-
-still required us to keep three textures per object in memory
-(one for each season).
-
+– Virtual textures mitigated the problem but still required us to keep three textures per object in memory (one for each season).
 - Color transitions
-– The natural
-
-interpolation produced undesirable hues. We solved this by
-applying custom color multiplication and subtraction within the
-material.
+– The natural interpolation produced undesirable hues. We solved this by applying custom color multiplication and subtraction within the material.
 
 We implemented the effect entirely with Unreal’s
 visual‑scripting material system, creating a Material Function

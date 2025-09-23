@@ -19,3 +19,24 @@ And take the charge of a project, guiding it through each step.
 - Operating Systems: Windows, Linux
 - Soft: Communication, Teamwork, Problem Solving, Adaptability, Creativity, Stress Management, Time Management
 - GUI: QT, WPF, WinForms, GLFW
+
+## How I got into programming
+
+I started programming to write simple applications in python. For fun mostly.
+
+Then I wanted to make a game with Unity, that required to learn C#.
+And so, with C# I experimented with Unity, WPF and Winform.
+
+After making a little zombie game with Unity.
+I found out that I enjoyed programming and wanted to learn more.
+I later started learning C++ and Rust, and I started working on my own projects.
+
+That led me to Unreal Engine and godot.
+So I got into Bellecour Ecole, and started a Bachelor in game programming.
+
+## Now
+
+I finished my Bachelor in game programming at Bellecour Ecole.
+I am now looking for a job as a junior game programmer.
+
+You can look at the rest of the website to learn more about my projects and my skills.

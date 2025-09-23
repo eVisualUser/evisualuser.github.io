@@ -39,8 +39,9 @@
       "overview": "overview-rust",
       "short_description": "My main language for tooling, mostly using Tauri 2.0.",
       "image": "assets/rust_background.png",
-      "content": "content/html/Rust.html",
-      "content-type": "markdown"
+      "content": "content/markdown/Rust.md",
+      "content-type": "markdown",
+      "html_header": "content/html/Rust.html"
     }
   ]
 }
