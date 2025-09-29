@@ -62,6 +62,8 @@ async function showOverview(overview) {
   hide_button.style.display = "block";
 
   window.location.hash = overview.id;
+
+  window.clarity("event", "show_overview_" + overview.id);
 }
 
 async function hideOverview() {
@@ -78,5 +80,7 @@ async function hideOverview() {
     );
 
     focused_overview = null;
+
+    window.clarity("event", "hide_overview");
   }
 }
