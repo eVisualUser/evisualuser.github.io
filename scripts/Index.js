@@ -11,10 +11,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 document.addEventListener(
   "keydown",
   function (e) {
-    if (
-      (window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) &&
-      e.keyCode == 83
-    ) {
+    if (e.metaKey | e.ctrlKey && e.keyCode == 83) {
       e.preventDefault();
       const fileUrl = "./assets/resume/Sylvain_Tosoni_Resume.pdf";
       const fileName = "Sylvain_Tosoni_Resume.pdf";
