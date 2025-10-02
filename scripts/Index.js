@@ -16,21 +16,14 @@ document.addEventListener(
       e.keyCode == 83
     ) {
       e.preventDefault();
-      let element = document.createElement("a");
-      element.setAttribute(
-        "href",
-        "data:text/plain;charset=utf-8, " +
-          encodeURIComponent("Sylvain_Tosoni_Resume.pdf"),
-      );
-      element.setAttribute(
-        "download",
-        "./content/resume/Sylvain_Tosoni_Resume.pdf",
-      );
-      document.body.appendChild(element);
-      element.click();
-
-      document.body.removeChild(element);
-
+      const fileUrl = "./assets/resume/Sylvain_Tosoni_Resume.pdf";
+      const fileName = "Sylvain_Tosoni_Resume.pdf";
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
       window.clarity("event", "download_resume");
     }
   },
