@@ -1,0 +1,270 @@
+:root {
+    --main-color: #111;
+}
+
+/* Allow headers to be printed selectable using Firefox */
+
+@media print {
+    @page {
+        size: 215mm 300mm;
+    }
+
+    h1,
+    h2,
+    h3 {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+        color: inherit;
+        font-weight: inherit;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.17em;
+    }
+}
+
+body {
+    width: 210mm;
+    height: 297mm;
+}
+
+h1,
+h2,
+h3 {
+    transform: none;
+    filter: none;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+/* PAGE HEADER */
+
+div.page_header {
+    background-color: var(--main-color);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 210mm;
+
+    justify-content: space-evenly;
+
+    position: fixed;
+
+    width: 210mm;
+    height: 50mm;
+
+    top: 0px;
+    left: 0px;
+
+    padding: 3mm;
+}
+
+div.page_header ul {
+    gap: 2mm;
+}
+
+div.title {
+    align-self: left;
+    margin-left: 0mm;
+}
+
+div.page_header.h1,
+div.page_header.h2,
+div.page_header.h3 {
+    text-align: left;
+    padding: 1mm;
+}
+
+div.contact {
+    align-self: center;
+    background-color: inherit;
+
+    height: 40mm;
+
+    padding-top: 5mm;
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 50mm;
+
+    flex-wrap: wrap;
+
+    padding-left: 3mm;
+
+    margin-bottom: 0;
+    padding-bottom: 0mm;
+}
+
+li {
+    text-justify: distribute;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+    margin: 0mm;
+    padding: 0mm;
+}
+
+img.self {
+    border-radius: 5mm;
+    width: 34mm;
+    height: 45mm;
+
+    align-self: center;
+    margin-right: 3mm;
+}
+
+div.aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* SKILLS */
+
+div.skills {
+    position: fixed;
+
+    top: 50mm;
+    left: 0px;
+    height: 217mm; /* Full A4 page height, without the title bar and footer */
+    width: 85mm;
+
+    padding-left: 3mm;
+
+    background-color: var(--main-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.skills h1,
+h2,
+h3,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+div.skills p {
+    font-size: 5mm;
+}
+
+img.icon {
+    width: 8mm;
+    height: auto;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 2mm;
+}
+
+/* FOOTER */
+
+div.footer {
+    position: fixed;
+
+    top: 267mm;
+    left: 0px;
+
+    width: 210mm;
+    height: 30mm;
+
+    background-color: var(--main-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding-left: 3mm;
+    padding-top: 2mm;
+    padding-bottom: 2mm;
+}
+
+div.footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 20mm;
+}
+
+div.footer p {
+    font-size: 4mm;
+}
+
+/* EXPERIENCE */
+
+div.experience {
+    position: fixed;
+
+    left: 85mm;
+    top: 50mm;
+
+    width: 125mm;
+    height: 217mm;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section {
+    background-color: var(--main-color);
+
+    padding: 1mm;
+
+    width: 100%;
+
+    border-width: 0.1mm;
+    border-style: solid;
+}
+
+section p {
+    font-size: 4mm;
+}
+
+section h3 {
+    font-size: 8mm;
+}
+
+section.education {
+    border-color: #339966;
+}
+
+section.project {
+    border-color: #008080;
+}
+
+section.internship {
+    border-color: #003366;
+}

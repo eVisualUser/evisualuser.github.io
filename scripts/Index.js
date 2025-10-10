@@ -13,8 +13,8 @@ document.addEventListener(
   function (e) {
     if (e.metaKey | e.ctrlKey && e.keyCode == 83) {
       e.preventDefault();
-      const fileUrl = "./assets/resume/Sylvain_Tosoni_Resume.pdf";
-      const fileName = "Sylvain_Tosoni_Resume.pdf";
+      const fileUrl = "./assets/resume/Resume_Sylvain_Tosoni_Programmer.pdf";
+      const fileName = "Resume_Sylvain_Tosoni_Programmer.pdf";
       const link = document.createElement("a");
       link.href = fileUrl;
       link.download = fileName;

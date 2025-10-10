@@ -1,7 +1,7 @@
 # Who I am
 
-Junior game programmer. Experienced with Unreal Engine and Unity, and proficient in
-Rust.
+Junior game programmer. Experienced with Unreal Engine and Unity,
+and proficient in Rust.
 
 I explored many game engines guiding me through the development of my own.
 I mastered C/C++ and many others.
@@ -14,8 +14,12 @@ And take the charge of a project, guiding it through each step.
 
 - [Email](mailto:sylvain.tosoni.pro@proton.me)
 - [LinkedIn](https://www.linkedin.com/in/sylvain-tosoni)
+
+## More
+
 - [GitHub](https://github.com/eVisualUser)
 - [Listed.to](https://listed.to/@eVisualUser)
+- [Resume](./resume/resume.html)
 
 ## Skills
 
