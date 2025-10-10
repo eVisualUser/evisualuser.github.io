@@ -6,7 +6,7 @@
 
 @media print {
     @page {
-        size: 215mm 300mm;
+        size: 210mm 297mm;
     }
 
     h1,
@@ -155,7 +155,7 @@ div.skills {
 
     top: 50mm;
     left: 0px;
-    height: 217mm; /* Full A4 page height, without the title bar and footer */
+    height: 247mm; /* Full A4 page height, without the title bar */
     width: 85mm;
 
     padding-left: 3mm;
@@ -176,50 +176,16 @@ ul {
 }
 
 div.skills p {
-    font-size: 5mm;
+    font-size: 12pt;
 }
 
 img.icon {
-    width: 8mm;
+    width: 6mm;
     height: auto;
     align-self: center;
     margin: 0;
     padding: 0;
     margin-right: 2mm;
-}
-
-/* FOOTER */
-
-div.footer {
-    position: fixed;
-
-    top: 267mm;
-    left: 0px;
-
-    width: 210mm;
-    height: 30mm;
-
-    background-color: var(--main-color);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    padding-left: 3mm;
-    padding-top: 2mm;
-    padding-bottom: 2mm;
-}
-
-div.footer ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    gap: 20mm;
-}
-
-div.footer p {
-    font-size: 4mm;
 }
 
 /* EXPERIENCE */
@@ -228,12 +194,13 @@ div.experience {
     position: fixed;
 
     left: 85mm;
-    top: 50mm;
+    top: 110mm;
 
     width: 125mm;
-    height: 217mm;
+    height: 187mm;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -241,7 +208,8 @@ div.experience {
 section {
     background-color: var(--main-color);
 
-    padding: 1mm;
+    padding: 0;
+    margin: 0;
 
     width: 100%;
 
@@ -250,11 +218,17 @@ section {
 }
 
 section p {
-    font-size: 4mm;
+    font-size: 12pt;
+
+    margin: 0;
+    padding: 1mm;
 }
 
-section h3 {
-    font-size: 8mm;
+section h2 {
+    font-size: 14pt;
+
+    margin: 0;
+    padding: 1mm;
 }
 
 section.education {
@@ -267,4 +241,26 @@ section.project {
 
 section.internship {
     border-color: #003366;
+}
+
+/* SUMMARY */
+
+div.summary {
+    position: fixed;
+
+    top: 50mm;
+    height: 60mm;
+    left: 85mm;
+    width: 125mm;
+
+    background-color: var(--main-color);
+
+    font-size: 12pt;
+}
+
+div.summary p {
+    font-size: 11pt;
+
+    margin-top: 0;
+    margin-left: 0;
 }
