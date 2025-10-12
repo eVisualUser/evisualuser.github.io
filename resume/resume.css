@@ -34,6 +34,7 @@
 }
 
 body {
+    position: fixed;
     width: 210mm;
     height: 297mm;
 }
@@ -164,7 +165,9 @@ div.skills {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    text-align: left;
 }
 
 div.skills h1,
@@ -203,6 +206,8 @@ div.experience {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
+
+    padding-right: 1mm;
 }
 
 section {
@@ -256,6 +261,8 @@ div.summary {
     background-color: var(--main-color);
 
     font-size: 12pt;
+
+    padding-right: 1mm;
 }
 
 div.summary p {
