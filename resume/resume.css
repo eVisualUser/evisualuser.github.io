@@ -1,5 +1,5 @@
 :root {
-    --main-color: #111;
+    --main-color: #2b2b2b;
 }
 
 /* Allow headers to be printed selectable using Firefox */
@@ -33,10 +33,23 @@
     }
 }
 
+h1,
+h2,
+h3 {
+    margin: 0; /* removes the default top/bottom margin */
+    padding: 0; /* just in case something else adds padding */
+}
+
 body {
     position: fixed;
     width: 210mm;
     height: 297mm;
+
+    background-color: var(--main-color);
+}
+
+div.page_header {
+    background: #000;
 }
 
 h1,
@@ -58,10 +71,16 @@ h3 {
     font-size: 1.17em;
 }
 
+a.default {
+    border-bottom: none;
+    margin: none;
+    padding: none;
+}
+
 /* PAGE HEADER */
 
 div.page_header {
-    background-color: var(--main-color);
+    background-image: linear-gradient(to bottom, black, 80%, var(--main-color));
 
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +97,9 @@ div.page_header {
     top: 0px;
     left: 0px;
 
-    padding: 3mm;
+    padding-left: 3mm;
+    padding-right: 3mm;
+    padding-top: 0;
 }
 
 div.page_header ul {
@@ -90,16 +111,9 @@ div.title {
     margin-left: 0mm;
 }
 
-div.page_header.h1,
-div.page_header.h2,
-div.page_header.h3 {
-    text-align: left;
-    padding: 1mm;
-}
-
 div.contact {
     align-self: center;
-    background-color: inherit;
+    background-color: none;
 
     height: 40mm;
 
@@ -111,8 +125,6 @@ ul {
 
     display: flex;
     flex-direction: column;
-
-    height: 50mm;
 
     flex-wrap: wrap;
 
@@ -135,12 +147,14 @@ li {
 }
 
 img.self {
+    top: 3mm;
+
     border-radius: 5mm;
     width: 34mm;
-    height: 45mm;
+    height: auto;
 
-    align-self: center;
     margin-right: 3mm;
+    display: inline-block;
 }
 
 div.aside {
@@ -156,18 +170,19 @@ div.skills {
 
     top: 50mm;
     left: 0px;
-    height: 247mm; /* Full A4 page height, without the title bar */
-    width: 85mm;
+    height: 240mm; /* Full A4 page height, without the title bar */
+    width: 65mm;
 
     padding-left: 3mm;
 
     background-color: var(--main-color);
 
+    text-align: left;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 
-    text-align: left;
+    justify-content: space-evenly;
 }
 
 div.skills h1,
@@ -178,17 +193,32 @@ ul {
     margin: 0;
 }
 
+div.skill {
+    margin: 0;
+    padding: 0;
+
+    width: 70mm;
+    height: auto;
+}
+
+div.skills li {
+    margin-top: 1mm;
+}
+
 div.skills p {
-    font-size: 12pt;
+    font-size: 14pt;
+    padding: 0;
+    margin: 0;
 }
 
 img.icon {
     width: 6mm;
     height: auto;
-    align-self: center;
     margin: 0;
     padding: 0;
     margin-right: 2mm;
+    margin-top: 1mm;
+    display: inline-block;
 }
 
 /* EXPERIENCE */
@@ -196,11 +226,11 @@ img.icon {
 div.experience {
     position: fixed;
 
-    left: 85mm;
-    top: 110mm;
+    left: 70mm;
+    top: 75mm;
 
-    width: 125mm;
-    height: 187mm;
+    width: 140mm;
+    height: 225mm;
 
     display: flex;
     flex-wrap: wrap;
@@ -218,7 +248,7 @@ section {
 
     width: 100%;
 
-    border-width: 0.1mm;
+    border-width: 0.5mm;
     border-style: solid;
 }
 
@@ -254,20 +284,38 @@ div.summary {
     position: fixed;
 
     top: 50mm;
-    height: 60mm;
-    left: 85mm;
-    width: 125mm;
+    height: 15mm;
+    left: 65mm;
+    width: 145mm;
 
     background-color: var(--main-color);
 
     font-size: 12pt;
 
-    padding-right: 1mm;
+    padding: 3mm;
+    padding-left: 5mm;
 }
 
 div.summary p {
-    font-size: 11pt;
+    font-size: 12pt;
 
     margin-top: 0;
     margin-left: 0;
+}
+
+/* MISC */
+
+span.important {
+    color: #fc5f62;
+    font-size: 13pt;
+}
+
+span.line {
+    display: block;
+    width: 90%;
+    height: 2px;
+    background: #555;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
 }
