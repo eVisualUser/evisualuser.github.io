@@ -1,0 +1,94 @@
+﻿{
+  "doc_title": {
+    "fr": "Curriculum Vitae",
+    "en": "Resume"
+  },
+  "age" : {
+    "fr": "ans",
+    "en": "years old"
+  },
+  "job": {
+    "fr": "Programmeur de jeux vidéo",
+    "en": "Game Programmer"
+  },
+  "country": {
+    "fr": "France",
+    "en": "France"
+  },
+  "french_lang": {
+    "fr": "Français (Courant)",
+    "en": "French (Native)"
+  },
+  "english_lang": {
+    "fr": "Anglais (TOEIC B2)",
+    "en": "English (TOEIC B2)"
+  },
+  "car_license": {
+    "fr": "Permis B (Voiture)",
+    "en": "Car license"
+  },
+  "moto_license": {
+    "fr": "Permis A (Moto)",
+    "en": "Motorcycle license"
+  },
+  "summary": {
+    "fr": "Basé en <span class=\"important\">France</span>, je recherche un poste <span class=\"important\">débutant</span> où je pourrai contribuer à des systèmes de jeu innovants, collaborer avec des équipes multidisciplinaires et continuer à développer mon expertise.",
+    "en": "Based in <span class=\"important\">France</span>, I’m looking for an <span class=\"important\">entry‑level</span> position where I can contribute to innovative gameplay systems, collaborate with multidisciplinary teams, and continue growing my expertise."
+  },
+  "others_title": {
+    "fr": "Autres",
+    "en": "Others"
+  },
+  "game_engines_title": {
+    "fr": "Moteurs de jeux",
+    "en": "Game Engines"
+  },
+  "tools_title": {
+    "fr": "Outils",
+    "en": "Tools"
+  },
+  "programming_languages_title": {
+    "fr": "Langages de programmation",
+    "en": "Programming Languages"
+  },
+  "skills_title": {
+    "fr": "Compétences",
+    "en": "Skills"
+  },
+  "project_title": {
+    "fr": "Projet",
+    "en": "Project"
+  },
+  "internship_title": {
+    "fr": "Stage",
+    "en": "Internship"
+  },
+  "bellecour_ecole_desc": {
+    "fr": "Récemment diplômé d’un <span class=\"important\">bachelor</span>.\nAu cours de quatre années marquantes, j’ai acquis une expertise sur <span class=\"important\">Unreal Engine</span>, <span class=\"important\">Unity</span> et <span class=\"important\">Godot</span>,\nainsi que des compétences en gestion de projet et en programmation avec <span class=\"important\">C#</span>, <span class=\"important\">C/C++</span>, <span class=\"important\">Python</span>, <span class=\"important\">Qt</span> et <span class=\"important\">WPF</span>.",
+    "en": "Recently completed my <span class=\"important\">bachelor's degree</span>.\nOver four impactful years, I gained expertise in <span class=\"important\">Unreal Engine</span>, <span class=\"important\">Unity</span>, and <span class=\"important\">Godot</span>,\nalong with project management and programming skills in <span class=\"important\">C#</span>, <span class=\"important\">C/C++</span>, <span class=\"important\">Python</span>, <span class=\"important\">Qt</span>, and <span class=\"important\">WPF</span>."
+  },
+  "highschool_desc": {
+    "fr": "Baccalauréat professionnel <span class=\"important\">en économie de la construction</span> sur trois ans,\nincluant un enseignement intensif et trois stages pratiques en estimation de coûts,\nbudgétisation et gestion de chantier.",
+    "en": "Three‑year Professional <span class=\"important\">Baccalaureate</span> in Construction Economics,\nfeaturing intensive coursework and three hands‑on internships in cost estimation,\nbudgeting, and site management."
+  },
+  "echoes_of_seasons_desc": {
+    "fr": "Dans le cadre d’un <span class=\"important\">projet de fin d’études</span>, j’ai travaillé sur un jeu de puzzle 3D avec un contrôleur à la troisième personne.<br/>\nJ’ai implémenté le gameplay principal en <span class=\"important\">C++</span> et exposé les éléments <span class=\"important\">paramétrables par le designer</span> via les Blueprints.<br/>\nJ’ai également créé un système de <span class=\"important\">changement de saison</span> qui met à jour tous les visuels grâce aux <span class=\"important\">effets de matériaux</span>, simplifié à l’aide d’un <span class=\"important\">UDataAsset</span>.\nDisponible gratuitement sur <span class=\"important\">Steam</span>.",
+    "en": "As a <span class=\"important\">Final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>\nI implemented core gameplay in <span class=\"important\">C++</span> and exposed <span class=\"important\">designer‑tunable</span> elements via the Blueprints.<br/>\nI also built a <span class=\"important\">season‑switch</span> system that updates all visuals using <span class=\"important\">material effects</span>, streamlined through a <span class=\"important\">UDataAsset</span>.\nAvailable on <span class=\"important\">Steam</span> for free."
+  },
+  "bellum_desc": {
+    "fr": "Développement du <span class=\"important\">gameplay</span> et de l’<span class=\"important\">IA</span> en <span class=\"important\">C#</span> pour un jeu <span class=\"important\">2D top‑down Android</span>.\nMise en place d’un système <span class=\"important\">free‑to‑play local</span> avec plusieurs monnaies en jeu.",
+    "en": "Developed <span class=\"important\">gameplay</span> and <span class=\"important\">AI</span> in <span class=\"important\">C#</span> for a <span class=\"important\">2D top‑down Android</span> game.\nImplemented a <span class=\"important\">local free‑to‑play</span> system with multiple in‑game currencies."
+  },
+  "bal_desc": {
+    "fr": "Économiste de la construction: j’estimais les coûts, calculais les soutiens structuraux, principalement sous Archicad.",
+    "en": "Construction Economist, there I estimated costs, calculated structural\nsupport, using mostly Archicad."
+  },
+  "atelier_vieux_bourg_desc": {
+    "fr": "Architecte, ou j'ai participé a la conception de plans en 2D et 3D sous Archicad.\nParticipation à de nombreuses visites de chantier.",
+    "en": "Architect, where I drafted plans in 2D and 3D using Archicad.\nAlso participated in many site visits."
+  },
+  "domo_desc": {
+    "fr": "Gestion de projets de construction, rédaction de plans, modélisation 3D de rénovations sous SketchUp.",
+    "en": "onstruction project management, plan drafting, 3D renovation\nmodeling using SketchUp."
+  }
+}

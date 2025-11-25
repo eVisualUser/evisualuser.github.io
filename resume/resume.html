@@ -18,11 +18,11 @@
             <div class="aside">
                 <a class="default" href="https://evisualuser.github.io/"><img src="../assets/SelfPhotoAnonymous.png" alt="Self Image" class="self"></img></a>
                 <div class="title">
-                    <h1>Resume</h1>
+                    <h1><local name="doc_title"></local></h1>
                     <h2>Sylvain Tosoni</h2>
-                    <h3>22 years old</h3>
-                    <h3>Game Programmer</h3>
-                    <h3>France</h3>
+                    <h3>22 <local name="age"></local></h3>
+                    <h3><local name="job"></local></h3>
+                    <h3><local name="country"></local></h3>
                 </div>
             </div>
             <div class="contact">
@@ -47,10 +47,10 @@
 
         <!-- Contain skills and relevant icons -->
         <div class="skills">
-            <h2>Skills</h2>
+            <h2><local name="skills_title"></local></h2>
             <div class="skill">
                 <span class="line"></span>
-                <h3>Programming Languages</h3>
+                <h3><local name="programming_languages_title"></local></h3>
                 <ul>
                     <li><img class="icon" src="..\assets/icons/ISO_C++_Logo.svg.png"/> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">C/C++</a></p></li>
                     <li><img class="icon" src="..\assets\icons\rust-logo-256x256.png"/> <p><a href="https://evisualuser.github.io/#overview-rust">Rust</a></p></li>
@@ -62,7 +62,7 @@
             </div>
             <div class="skill">
                 <span class="line"></span>
-                <h3>Tools</h3>
+                <h3><local name="tools_title"></local></h3>
                 <ul>
                     <li><img class="icon" src="..\assets\icons\Git-Icon-White.png"/> <p>Git</p></li>
                     <li><img class="icon" src="..\assets\icons\jetbrains.png"/> <p>JetBrains Suite</p></li>
@@ -74,7 +74,7 @@
             </div>
             <div class="skill">
                 <span class="line"></span>
-                <h3>Game Engines</h3>
+                <h3><local name="game_engines_title"></local></h3>
                 <ul>
                     <li><img class="icon" src="..\assets\icons\unreal_engine_logo.png"/> <p><a href="https://evisualuser.github.io/#overview-echoes-of-seasons">Unreal Engine</a></p></li>
                     <li><img class="icon" src="..\assets\icons\unity_logo.png"/> <p><a href="https://evisualuser.github.io/#overview-bellum">Unity</a></p></li>
@@ -83,67 +83,54 @@
             </div>
             <div class="skill">
                 <span class="line"></span>
-                <h3>Others</h3>
+                <h3><local name="others_title"></local></h3>
                 <ul>
-                    <li><img class="icon" src="..\assets\icons\france.png"/> <p>French (Native)</p></li>
-                    <li><img class="icon" src="..\assets\icons\english.png"/> <p>English (TOEIC B2)</p></li>
-                    <li><img class="icon" src="..\assets\icons\car.png"/> <p>Car license B</p></li>
-                    <li><img class="icon" src="..\assets\icons\moto.png"/> <p>Motorcycle license A</p></li>
+                    <li><img class="icon" src="..\assets\icons\france.png"/> <p><local name="french_lang"></local></p></li>
+                    <li><img class="icon" src="..\assets\icons\english.png"/> <p><local name="english_lang"></local></p></li>
+                    <li><img class="icon" src="..\assets\icons\car.png"/> <p><local name="car_license"></local></p></li>
+                    <li><img class="icon" src="..\assets\icons\moto.png"/> <p><local name="moto_license"></local></p></li>
                 </ul>
             </div>
         </div>
 
         <div class="summary">
-            <p>
-                Based in <span class="important">France</span>, I’m looking for an <span class="important">entry‑level</span> position where I can contribute to innovative gameplay systems, collaborate with multidisciplinary teams, and continue growing my expertise.
-            </p>
+            <p><local name="summary"></local></p>
         </div>
 
         <!-- Contains school and professional experiences -->
         <div class="experience">
             <section class="education">
                 <h2><img class="icon" src="../assets/icons/school.png"/>Bellecour Ecole 2021-2025</h2>
-                <p>Recently completed my <span class="important">bachelor's degree</span>.
-                Over four impactful years, I gained expertise in <span class="important">Unreal Engine</span>, <span class="important">Unity</span>, and <span class="important">Godot</span>,
-                along with project management and programming skills in <span class="important">C#</span>, <span class="important">C/C++</span>, <span class="important">Python</span>, <span class="important">Qt</span>, and <span class="important">WPF</span>.</p>
+                <p><local name="bellecour_ecole_desc"></local></p>
             </section>
             <section class="project">
-                <a href="https://evisualuser.github.io/#overview-echoes-of-seasons"><h2><img class="icon" src="../assets/icons/gamepad.png"/>Project: Echoes of Seasons 2024-2025</h2></a>
-                <p>
-                    As a <span class="important">Final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>
-                    I implemented core gameplay in <span class="important">C++</span> and exposed <span class="important">designer‑tunable</span> elements via the Blueprints.<br/>
-                    I also built a <span class="important">season‑switch</span> system that updates all visuals using <span class="important">material effects</span>, streamlined through a <span class="important">UDataAsset</span>.
-                    Available on <span class="important">Steam</span> for free.
-                </p>
+                <a href="https://evisualuser.github.io/#overview-echoes-of-seasons"><h2><img class="icon" src="../assets/icons/gamepad.png"/><local name="project_title"></local>: Echoes of Seasons 2024-2025</h2></a>
+                <p><local name="echoes_of_seasons_desc"></local></p>
             </section>
             <section class="project">
-                <a href="https://evisualuser.github.io/#overview-bellum"><h2><img class="icon" src="../assets/icons/gamepad.png"/>Project: Bellum 2024</h2></a>
-                <p>
-                    Developed <span class="important">gameplay</span> and <span class="important">AI</span> in <span class="important">C#</span> for a <span class="important">2D top‑down Android</span> game.
-                    Implemented a <span class="important">local free‑to‑play</span> system with multiple in‑game currencies.
-                </p>
+                <a href="https://evisualuser.github.io/#overview-bellum"><h2><img class="icon" src="../assets/icons/gamepad.png"/><local name="project_title"></local>: Bellum 2024</h2></a>
+                <p><local name="bellum_desc"></local></p>
             </section>
             <section class="education">
                 <h2><img class="icon" src="../assets/icons/school.png"/>Lycée du Nivolet 2017-2024</h2>
-                <p>Three‑year Professional <span class="important">Baccalaureate</span> in Construction Economics,
-                    featuring intensive coursework and three hands‑on internships in cost estimation,
-                    budgeting, and site management.</p>
+                <p><local name="highschool_desc"></local></p>
             </section>
             <section class="internship">
-                <h2><img class="icon" src="../assets/icons/internship.png"/>Internship: BAL Economist</h2>
-                <p>Construction Economist, there I estimated costs, calculated structural
-                support, using mostly Archicad.</p>
+                <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: BAL Economist</h2>
+                <p><local name="bal_desc"></local></p>
             </section>
             <section class="internship">
-                <h2><img class="icon" src="../assets/icons/internship.png"/>Internship: Atelier du Vieux Bourg</h2>
-                <p>Architect, where I drafted plans in 2D and 3D using Archicad.
-                Also participated in many site visits.</p>
+                <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: Atelier du Vieux Bourg</h2>
+                <p><local name="atelier_vieux_bourg_desc"></local></p>
             </section>
             <section class="internship">
-                <h2><img class="icon" src="../assets/icons/internship.png"/>Internship: DoMo</h2>
-                <p>Construction project management, plan drafting, 3D renovation
-                modeling using SketchUp.</p>
+                <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: DoMo</h2>
+                <p><local name="domo_desc"></local></p>
             </section>
+        </div>
+        <div class="language_selection">
+            <button setlang="en">English</button>
+            <button setlang="fr">French</button>
         </div>
     </body>
 </html>

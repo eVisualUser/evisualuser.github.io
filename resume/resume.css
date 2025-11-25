@@ -31,6 +31,10 @@
     h3 {
         font-size: 1.17em;
     }
+
+    button {
+        display: none;
+    }
 }
 
 h1,
@@ -318,4 +322,12 @@ span.line {
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 0px;
+}
+
+div.language_selection {
+    position: fixed;
+
+    left: 80%;
+    width: 20%;
+    height: 10%;
 }
