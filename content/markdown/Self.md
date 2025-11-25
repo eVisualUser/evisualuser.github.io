@@ -25,24 +25,24 @@ And take the charge of a project, guiding it through each step.
 
 - Programming Languages: C++, Rust, Python, JavaScript, C#
 - Game Engines: Unreal Engine, Unity, Godot
-- Tools: Git, GitHub, GitLab, Visual Studio, Jetbrains toolsuite (Rider, CLion), Zed, Sublime Text
+- Tools: Git, GitHub, GitLab, Visual Studio, JetBrains tool suite (Rider, CLion), Zed, Sublime Text
 - IDE: Visual Studio Code, Android Studio, Visual Studio
 - Operating Systems: Windows, Linux
 - Soft: Communication, Teamwork, Problem Solving, Adaptability, Creativity, Stress Management, Time Management
-- GUI: QT, WPF, WinForms, GLFW
+- GUI: Qt, WPF, WinForms, GLFW
 
 ## How I got into programming
 
-I started programming to write simple applications in python. For fun mostly.
+I started programming to write simple applications in Python. For fun mostly.
 
 Then I wanted to make a game with Unity, that required to learn C#.
-And so, with C# I experimented with Unity, WPF and Winform.
+And so, with C# I experimented with Unity, WPF and WinForms.
 
 After making a little zombie game with Unity.
 I found out that I enjoyed programming and wanted to learn more.
 I later started learning C++ and Rust, and I started working on my own projects.
 
-That led me to Unreal Engine and godot.
+That led me to Unreal Engine and Godot.
 So I got into Bellecour Ecole, and started a Bachelor in game programming.
 
 ## Now

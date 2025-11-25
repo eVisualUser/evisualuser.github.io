@@ -8,7 +8,7 @@ Thanks to its safety features, it's a great choice for tooling and game developm
 [Download](https://github.com/eVisualUser/flappy-editor/releases/tag/1.0.0)
 
 A little fun project, that allow to play a flappy bird game in a code editor.
-The recomended editor is Visual Studio Code, as it must refresh the rendering of the game at each frame.
+The recommended editor is Visual Studio Code, as it must refresh the rendering of the game at each frame.
 
 A little tips: launch visual studio code with the command 'code --disable-extensions'.
 
