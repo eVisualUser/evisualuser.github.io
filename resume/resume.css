@@ -374,7 +374,7 @@ button:hover:after {
 }
 
 div.transition {
-    width: 100%;
+    width: 0%;
     height: 100%;
 
     position: fixed;
@@ -382,17 +382,22 @@ div.transition {
     left: 0;
 
     background: black;
+
+    z-index: 1000;
 }
 
-div.transition:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
+div.transition {
+    will-change: transform, opacity;
+
+    animation: growFade 0.5s ease-out forwards;
+}
+
+@keyframes growFade {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
 }

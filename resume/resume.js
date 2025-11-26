@@ -1,4 +1,4 @@
-let current_localization = "en";
+let current_localization ;
 
 let localization_path = "./localization.json"
 
@@ -55,14 +55,25 @@ document.addEventListener("DOMContentLoaded", async () => {
         node = walker.nextNode();
     }
 
-    await apply_localization(current_localization);
+    await apply_localization("en");
 
     let buttons = document.querySelectorAll("button");
     buttons.forEach((button) => {
         if (button.hasAttribute("setlang")) {
             localization_button.push(button);
             button.addEventListener("click", async () => {
+                let transition = document.createElement("div");
+                transition.classList.add("transition");
+
+                document.body.appendChild(transition);
+
+                await new Promise(resolve => setTimeout(resolve, 500));
+
                 await apply_localization(button.getAttribute("setlang"));
+
+                await new Promise(resolve => setTimeout(resolve, 500));
+
+                transition.remove();
             });
         }
     });
@@ -86,6 +97,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 async function apply_localization(newLocalization) {
+    if (newLocalization === current_localization) { return; }
+
     console.log("Set localization to: " + newLocalization);
 
     current_localization = newLocalization;
