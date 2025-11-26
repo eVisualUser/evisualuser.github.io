@@ -13,124 +13,133 @@
         <script src="./resume.js"></script>
     </head>
     <body>
-        <!-- Contain identity and contact information -->
-        <div class="page_header">
-            <div class="aside">
-                <a class="default" href="https://evisualuser.github.io/"><img src="../assets/SelfPhotoAnonymous.png" alt="Self Image" class="self"></img></a>
-                <div class="title">
-                    <h1><local name="doc_title"></local></h1>
-                    <h2>Sylvain Tosoni</h2>
-                    <h3>22 <local name="age"></local></h3>
-                    <h3><local name="job"></local></h3>
-                    <h3><local name="country"></local></h3>
+        <div id="resume">
+            <div id="loading-icon" class="lds-ripple">
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Contain identity and contact information -->
+            <div class="page_header">
+                <div class="aside">
+                    <a class="default" href="https://evisualuser.github.io/"><img src="../assets/SelfPhotoAnonymous.png" alt="Self Image" class="self"></img></a>
+                    <div class="title">
+                        <h1><local name="doc_title"></local></h1>
+                        <h2>Sylvain Tosoni</h2>
+                        <h3>22 <local name="age"></local></h3>
+                        <h3><local name="job"></local></h3>
+                        <h3><local name="country"></local></h3>
+                    </div>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <a href="mailto:sylvain.tosoni.pro@proton.me">Email: sylvain.tosoni.pro@proton.me</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sylvain-tosoni"
+                                >LinkedIn: Sylvain Tosoni</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://github.com/eVisualUser">GitHub: @eVisualUser</a>
+                        </li>
+                        <li>
+                            <a href="https://gitlab.com/eVisualUser">GitLab: @eVisualUser</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="contact">
-                <ul>
-                    <li>
-                        <a href="mailto:sylvain.tosoni.pro@proton.me">Email: sylvain.tosoni.pro@proton.me</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/sylvain-tosoni"
-                            >LinkedIn: Sylvain Tosoni</a
-                        >
-                    </li>
-                    <li>
-                        <a href="https://github.com/eVisualUser">GitHub: @eVisualUser</a>
-                    </li>
-                    <li>
-                        <a href="https://gitlab.com/eVisualUser">GitLab: @eVisualUser</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- Contain skills and relevant icons -->
-        <div class="skills">
-            <h2><local name="skills_title"></local></h2>
-            <div class="skill">
-                <span class="line"></span>
-                <h3><local name="programming_languages_title"></local></h3>
-                <ul>
-                    <li><img class="icon" src="..\assets/icons/ISO_C++_Logo.svg.png"/> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">C/C++</a></p></li>
-                    <li><img class="icon" src="..\assets\icons\rust-logo-256x256.png"/> <p><a href="https://evisualuser.github.io/#overview-rust">Rust</a></p></li>
-                    <li><img class="icon" src="..\assets\icons\logo_csharp.png"/> <p>C#</p></li>
-                    <li><img class="icon" src="..\assets\icons\64px-JavaScript-logo.png"/> <p><a href="https://github.com/eVisualUser/evisualuser.github.io">JavaScript</a></p></li>
-                    <li><img class="icon" src="..\assets\icons\python-logo-only.png"/> <p>Python</p></li>
-                    <li><img class="icon" src="..\assets\icons\Lua-Logo_128x128.png"/> <p>Lua</p></li>
-                </ul>
+            <!-- Contain skills and relevant icons -->
+            <div class="skills">
+                <h2><local name="skills_title"></local></h2>
+                <div class="skill">
+                    <span class="line"></span>
+                    <h3><local name="programming_languages_title"></local></h3>
+                    <ul>
+                        <li><img class="icon" src="..\assets/icons/ISO_C++_Logo.svg.png"/> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">C/C++</a></p></li>
+                        <li><img class="icon" src="..\assets\icons\rust-logo-256x256.png"/> <p><a href="https://evisualuser.github.io/#overview-rust">Rust</a></p></li>
+                        <li><img class="icon" src="..\assets\icons\logo_csharp.png"/> <p>C#</p></li>
+                        <li><img class="icon" src="..\assets\icons\64px-JavaScript-logo.png"/> <p><a href="https://github.com/eVisualUser/evisualuser.github.io">JavaScript</a></p></li>
+                        <li><img class="icon" src="..\assets\icons\python-logo-only.png"/> <p>Python</p></li>
+                        <li><img class="icon" src="..\assets\icons\Lua-Logo_128x128.png"/> <p>Lua</p></li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <span class="line"></span>
+                    <h3><local name="tools_title"></local></h3>
+                    <ul>
+                        <li><img class="icon" src="..\assets\icons\Git-Icon-White.png"/> <p>Git</p></li>
+                        <li><img class="icon" src="..\assets\icons\jetbrains.png"/> <p>JetBrains Suite</p></li>
+                        <li><img class="icon" src="..\assets\icons\visual-studio.png"/> <p>Visual Studio</p></li>
+                        <li><img class="icon" src="..\assets\icons\render-doc.png"/> <p>RenderDoc</p></li>
+                        <li><img class="icon" src="..\assets\icons\notion-logo-no-background.png"/> <p>Notion</p></li>
+                        <li><img class="icon" src="..\assets\icons\Jira_attribution_light.png"/> <p>Jira</p></li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <span class="line"></span>
+                    <h3><local name="game_engines_title"></local></h3>
+                    <ul>
+                        <li><img class="icon" src="..\assets\icons\unreal_engine_logo.png"/> <p><a href="https://evisualuser.github.io/#overview-echoes-of-seasons">Unreal Engine</a></p></li>
+                        <li><img class="icon" src="..\assets\icons\unity_logo.png"/> <p><a href="https://evisualuser.github.io/#overview-bellum">Unity</a></p></li>
+                        <li><img class="icon" src="..\assets\icons\godot.png"/> <p>Godot</p></li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <span class="line"></span>
+                    <h3><local name="others_title"></local></h3>
+                    <ul>
+                        <li><img class="icon" src="..\assets\icons\france.png"/> <p><local name="french_lang"></local></p></li>
+                        <li><img class="icon" src="..\assets\icons\english.png"/> <p><local name="english_lang"></local></p></li>
+                        <li><img class="icon" src="..\assets\icons\car.png"/> <p><local name="car_license"></local></p></li>
+                        <li><img class="icon" src="..\assets\icons\moto.png"/> <p><local name="moto_license"></local></p></li>
+                    </ul>
+                </div>
             </div>
-            <div class="skill">
-                <span class="line"></span>
-                <h3><local name="tools_title"></local></h3>
-                <ul>
-                    <li><img class="icon" src="..\assets\icons\Git-Icon-White.png"/> <p>Git</p></li>
-                    <li><img class="icon" src="..\assets\icons\jetbrains.png"/> <p>JetBrains Suite</p></li>
-                    <li><img class="icon" src="..\assets\icons\visual-studio.png"/> <p>Visual Studio</p></li>
-                    <li><img class="icon" src="..\assets\icons\render-doc.png"/> <p>RenderDoc</p></li>
-                    <li><img class="icon" src="..\assets\icons\notion-logo-no-background.png"/> <p>Notion</p></li>
-                    <li><img class="icon" src="..\assets\icons\Jira_attribution_light.png"/> <p>Jira</p></li>
-                </ul>
-            </div>
-            <div class="skill">
-                <span class="line"></span>
-                <h3><local name="game_engines_title"></local></h3>
-                <ul>
-                    <li><img class="icon" src="..\assets\icons\unreal_engine_logo.png"/> <p><a href="https://evisualuser.github.io/#overview-echoes-of-seasons">Unreal Engine</a></p></li>
-                    <li><img class="icon" src="..\assets\icons\unity_logo.png"/> <p><a href="https://evisualuser.github.io/#overview-bellum">Unity</a></p></li>
-                    <li><img class="icon" src="..\assets\icons\godot.png"/> <p>Godot</p></li>
-                </ul>
-            </div>
-            <div class="skill">
-                <span class="line"></span>
-                <h3><local name="others_title"></local></h3>
-                <ul>
-                    <li><img class="icon" src="..\assets\icons\france.png"/> <p><local name="french_lang"></local></p></li>
-                    <li><img class="icon" src="..\assets\icons\english.png"/> <p><local name="english_lang"></local></p></li>
-                    <li><img class="icon" src="..\assets\icons\car.png"/> <p><local name="car_license"></local></p></li>
-                    <li><img class="icon" src="..\assets\icons\moto.png"/> <p><local name="moto_license"></local></p></li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="summary">
-            <p><local name="summary"></local></p>
-        </div>
+            <div class="summary">
+                <p><local name="summary"></local></p>
+            </div>
 
-        <!-- Contains school and professional experiences -->
-        <div class="experience">
-            <section class="education">
-                <h2><img class="icon" src="../assets/icons/school.png"/>Bellecour Ecole 2021-2025</h2>
-                <p><local name="bellecour_ecole_desc"></local></p>
-            </section>
-            <section class="project">
-                <a href="https://evisualuser.github.io/#overview-echoes-of-seasons"><h2><img class="icon" src="../assets/icons/gamepad.png"/><local name="project_title"></local>: Echoes of Seasons 2024-2025</h2></a>
-                <p><local name="echoes_of_seasons_desc"></local></p>
-            </section>
-            <section class="project">
-                <a href="https://evisualuser.github.io/#overview-bellum"><h2><img class="icon" src="../assets/icons/gamepad.png"/><local name="project_title"></local>: Bellum 2024</h2></a>
-                <p><local name="bellum_desc"></local></p>
-            </section>
-            <section class="education">
-                <h2><img class="icon" src="../assets/icons/school.png"/>Lycée du Nivolet 2017-2024</h2>
-                <p><local name="highschool_desc"></local></p>
-            </section>
-            <section class="internship">
-                <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: BAL Economist</h2>
-                <p><local name="bal_desc"></local></p>
-            </section>
-            <section class="internship">
-                <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: Atelier du Vieux Bourg</h2>
-                <p><local name="atelier_vieux_bourg_desc"></local></p>
-            </section>
-            <section class="internship">
-                <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: DoMo</h2>
-                <p><local name="domo_desc"></local></p>
-            </section>
-        </div>
-        <div class="language_selection">
-            <button setlang="en">English</button>
-            <button setlang="fr">French</button>
+            <!-- Contains school and professional experiences -->
+            <div class="experience">
+                <section class="education">
+                    <h2><img class="icon" src="../assets/icons/school.png"/>Bellecour Ecole 2021-2025</h2>
+                    <p><local name="bellecour_ecole_desc"></local></p>
+                </section>
+                <section class="project">
+                    <a href="https://evisualuser.github.io/#overview-echoes-of-seasons"><h2><img class="icon" src="../assets/icons/gamepad.png"/><local name="project_title"></local>: Echoes of Seasons 2024-2025</h2></a>
+                    <p><local name="echoes_of_seasons_desc"></local></p>
+                </section>
+                <section class="project">
+                    <a href="https://evisualuser.github.io/#overview-bellum"><h2><img class="icon" src="../assets/icons/gamepad.png"/><local name="project_title"></local>: Bellum 2024</h2></a>
+                    <p><local name="bellum_desc"></local></p>
+                </section>
+                <section class="education">
+                    <h2><img class="icon" src="../assets/icons/school.png"/>Lycée du Nivolet 2017-2024</h2>
+                    <p><local name="highschool_desc"></local></p>
+                </section>
+                <section class="internship">
+                    <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: BAL Economist</h2>
+                    <p><local name="bal_desc"></local></p>
+                </section>
+                <section class="internship">
+                    <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: Atelier du Vieux Bourg</h2>
+                    <p><local name="atelier_vieux_bourg_desc"></local></p>
+                </section>
+                <section class="internship">
+                    <h2><img class="icon" src="../assets/icons/internship.png"/><local name="internship_title"></local>: DoMo</h2>
+                    <p><local name="domo_desc"></local></p>
+                </section>
+            </div>
+
+            <div class="language_selection">
+                <button setlang="en">English</button>
+                <button setlang="fr">Français</button>
+                <button id="print"><local name="print_btn"></local></button>
+            </div>
         </div>
     </body>
 </html>

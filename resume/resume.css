@@ -77,19 +77,14 @@ h3 {
 
 a.default {
     border-bottom: none;
-    margin: none;
-    padding: none;
 }
 
 /* PAGE HEADER */
 
 div.page_header {
-    background-image: linear-gradient(to bottom, black, 80%, var(--main-color));
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    flex-grow: 210mm;
 
     justify-content: space-evenly;
 
@@ -111,13 +106,11 @@ div.page_header ul {
 }
 
 div.title {
-    align-self: left;
     margin-left: 0mm;
 }
 
 div.contact {
     align-self: center;
-    background-color: none;
 
     height: 40mm;
 
@@ -254,6 +247,7 @@ section {
 
     border-width: 0.5mm;
     border-style: solid;
+    border-radius: 5px;
 }
 
 section p {
@@ -321,13 +315,60 @@ span.line {
     background: #555;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding: 0px;
+    padding: 0;
 }
 
 div.language_selection {
     position: fixed;
 
-    left: 80%;
-    width: 20%;
-    height: 10%;
+    display: flex;
+    flex-direction: column;
+
+    left: 50%;
+}
+
+div.language_selection button {
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+/* BUTTONS */
+
+button {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }

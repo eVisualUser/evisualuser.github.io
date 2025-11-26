@@ -370,16 +370,21 @@ a.overview-link {
 .lds-ripple {
     /* change color here */
     color: #fc0505;
+    z-index: 10;
 }
 .lds-ripple,
 .lds-ripple div {
     box-sizing: border-box;
+
+    position: fixed;
+
+    top: 5%;
+    left: 5%;
 }
 .lds-ripple {
     display: inline-block;
-    position: relative;
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
 }
 .lds-ripple div {
     position: absolute;

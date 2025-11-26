@@ -72,11 +72,11 @@
     "en": "Three‑year Professional <span class=\"important\">Baccalaureate</span> in Construction Economics,\nfeaturing intensive coursework and three hands‑on internships in cost estimation,\nbudgeting, and site management."
   },
   "echoes_of_seasons_desc": {
-    "fr": "Dans le cadre d’un <span class=\"important\">projet de fin d’études</span>, j’ai travaillé sur un jeu de puzzle 3D avec un contrôleur à la troisième personne.<br/>\nJ’ai implémenté le gameplay principal en <span class=\"important\">C++</span> et exposé les éléments <span class=\"important\">paramétrables par le designer</span> via les Blueprints.<br/>\nJ’ai également créé un système de <span class=\"important\">changement de saison</span> qui met à jour tous les visuels grâce aux <span class=\"important\">effets de matériaux</span>, simplifié à l’aide d’un <span class=\"important\">UDataAsset</span>.\nDisponible gratuitement sur <span class=\"important\">Steam</span>.",
-    "en": "As a <span class=\"important\">final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>\nI implemented core gameplay in <span class=\"important\">C++</span> and exposed <span class=\"important\">designer‑tunable</span> elements via Blueprints.<br/>\nI also built a <span class=\"important\">season‑change</span> system that updates all visuals using <span class=\"important\">material effects</span>, streamlined through a <span class=\"important\">UDataAsset</span>.\nAvailable on <span class=\"important\">Steam</span> for free."
+    "fr": "Dans le cadre d’un <span class=\"important\">projet de fin d’études</span>, j’ai travaillé sur un jeu de puzzle 3D à la troisième personne.<br/>\nJ’ai implémenté le gameplay principal en <span class=\"important\">C++</span> et exposé des éléments manipulable par les game designers via les <span class=\"important\">Blueprints</span>.<br/>\nJ’ai également créé un système de <span class=\"important\">changement de saison</span> qui met à jour tous les visuels grâce aux <span class=\"important\">effets de matériaux</span>, simplifié à l’aide d’un <span class=\"important\">UDataAsset</span>.\nDisponible gratuitement sur <span class=\"important\">Steam</span>.",
+    "en": "As a <span class=\"important\">final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>\nI implemented core gameplay in <span class=\"important\">C++</span> and exposed designer‑tunable elements via <span class=\"important\">Blueprints</span>.<br/>\nI also built a <span class=\"important\">season‑change</span> system that updates all visuals using <span class=\"important\">material effects</span>, streamlined through a <span class=\"important\">UDataAsset</span>.\nAvailable on <span class=\"important\">Steam</span> for free."
   },
   "bellum_desc": {
-    "fr": "Développement du <span class=\"important\">gameplay</span> et de l’<span class=\"important\">IA</span> en <span class=\"important\">C#</span> pour un jeu <span class=\"important\">2D top‑down Android</span>.\nMise en place d’un système <span class=\"important\">free‑to‑play local</span> avec plusieurs monnaies en jeu.",
+    "fr": "Développement du <span class=\"important\">gameplay</span> et de l’<span class=\"important\">IA</span> en <span class=\"important\">C#</span> pour un jeu <span class=\"important\">2D top‑down</span>, pour Android.\nMise en place d’un système <span class=\"important\">free‑to‑play local</span> avec plusieurs monnaies.",
     "en": "Developed <span class=\"important\">gameplay</span> and <span class=\"important\">AI</span> in <span class=\"important\">C#</span> for a <span class=\"important\">2D top‑down Android</span> game.\nImplemented a <span class=\"important\">local free‑to‑play</span> system with multiple in‑game currencies."
   },
   "bal_desc": {
@@ -90,5 +90,9 @@
   "domo_desc": {
     "fr": "Gestion de projets de construction, rédaction de plans, modélisation 3D de rénovations sous SketchUp.",
     "en": "Construction project management, plan drafting, and 3D renovation\nmodeling using SketchUp."
+  },
+  "print_btn": {
+    "fr": "Imprimer",
+    "en": "Print"
   }
 }
