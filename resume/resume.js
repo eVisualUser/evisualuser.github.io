@@ -29,22 +29,9 @@ async function readJson(path) {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-
-    let loadingIcon = document.getElementById("loading-icon");
-    document.body.appendChild(loadingIcon);
-
     let walker = document.createTreeWalker(
         document.getElementById("resume"),
-        NodeFilter.SHOW_ELEMENT,
-        {
-            acceptNode(node) {
-                if (node === loadingIcon) {
-                    return NodeFilter.FILTER_REJECT;
-                }
-
-                return NodeFilter.FILTER_ACCEPT;
-            }
-        }
+        NodeFilter.SHOW_ELEMENT
     );
 
     let node = walker.currentNode;
@@ -62,18 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         if (button.hasAttribute("setlang")) {
             localization_button.push(button);
             button.addEventListener("click", async () => {
-                let transition = document.createElement("div");
-                transition.classList.add("transition");
-
-                document.body.appendChild(transition);
-
-                await new Promise(resolve => setTimeout(resolve, 500));
-
                 await apply_localization(button.getAttribute("setlang"));
-
-                await new Promise(resolve => setTimeout(resolve, 500));
-
-                transition.remove();
             });
         }
     });
@@ -92,12 +68,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         node = walker.previousNode();
     }
-
-    loadingIcon.remove();
 });
 
 async function apply_localization(newLocalization) {
     if (newLocalization === current_localization) { return; }
+
+    let transition = document.createElement("div");
+    transition.classList.add("transition");
+
+    document.body.appendChild(transition);
+
+    await new Promise(resolve => setTimeout(resolve, 500));
 
     console.log("Set localization to: " + newLocalization);
 
@@ -123,4 +104,8 @@ async function apply_localization(newLocalization) {
             }
         }
     });
+
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    transition.remove();
 }
