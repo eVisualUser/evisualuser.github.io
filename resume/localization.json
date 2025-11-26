@@ -37,7 +37,7 @@
   },
   "others_title": {
     "fr": "Autres",
-    "en": "Others"
+    "en": "Additional"
   },
   "game_engines_title": {
     "fr": "Moteurs de jeux",
@@ -73,22 +73,22 @@
   },
   "echoes_of_seasons_desc": {
     "fr": "Dans le cadre d’un <span class=\"important\">projet de fin d’études</span>, j’ai travaillé sur un jeu de puzzle 3D avec un contrôleur à la troisième personne.<br/>\nJ’ai implémenté le gameplay principal en <span class=\"important\">C++</span> et exposé les éléments <span class=\"important\">paramétrables par le designer</span> via les Blueprints.<br/>\nJ’ai également créé un système de <span class=\"important\">changement de saison</span> qui met à jour tous les visuels grâce aux <span class=\"important\">effets de matériaux</span>, simplifié à l’aide d’un <span class=\"important\">UDataAsset</span>.\nDisponible gratuitement sur <span class=\"important\">Steam</span>.",
-    "en": "As a <span class=\"important\">Final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>\nI implemented core gameplay in <span class=\"important\">C++</span> and exposed <span class=\"important\">designer‑tunable</span> elements via the Blueprints.<br/>\nI also built a <span class=\"important\">season‑switch</span> system that updates all visuals using <span class=\"important\">material effects</span>, streamlined through a <span class=\"important\">UDataAsset</span>.\nAvailable on <span class=\"important\">Steam</span> for free."
+    "en": "As a <span class=\"important\">final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>\nI implemented core gameplay in <span class=\"important\">C++</span> and exposed <span class=\"important\">designer‑tunable</span> elements via Blueprints.<br/>\nI also built a <span class=\"important\">season‑change</span> system that updates all visuals using <span class=\"important\">material effects</span>, streamlined through a <span class=\"important\">UDataAsset</span>.\nAvailable on <span class=\"important\">Steam</span> for free."
   },
   "bellum_desc": {
     "fr": "Développement du <span class=\"important\">gameplay</span> et de l’<span class=\"important\">IA</span> en <span class=\"important\">C#</span> pour un jeu <span class=\"important\">2D top‑down Android</span>.\nMise en place d’un système <span class=\"important\">free‑to‑play local</span> avec plusieurs monnaies en jeu.",
     "en": "Developed <span class=\"important\">gameplay</span> and <span class=\"important\">AI</span> in <span class=\"important\">C#</span> for a <span class=\"important\">2D top‑down Android</span> game.\nImplemented a <span class=\"important\">local free‑to‑play</span> system with multiple in‑game currencies."
   },
   "bal_desc": {
-    "fr": "Économiste de la construction: j’estimais les coûts, calculais les soutiens structuraux, principalement sous Archicad.",
-    "en": "Construction Economist, there I estimated costs, calculated structural\nsupport, using mostly Archicad."
+    "fr": "Économiste de la construction : j’estimais les coûts, calculais les soutiens structurels, principalement sous Archicad.",
+    "en": "Construction Economist: estimated costs and calculated structural supports,\nprimarily using Archicad."
   },
   "atelier_vieux_bourg_desc": {
-    "fr": "Architecte, ou j'ai participé a la conception de plans en 2D et 3D sous Archicad.\nParticipation à de nombreuses visites de chantier.",
+    "fr": "Architecte, où j'ai participé à la conception de plans en 2D et 3D sous Archicad.\nParticipation à de nombreuses visites de chantier.",
     "en": "Architect, where I drafted plans in 2D and 3D using Archicad.\nAlso participated in many site visits."
   },
   "domo_desc": {
     "fr": "Gestion de projets de construction, rédaction de plans, modélisation 3D de rénovations sous SketchUp.",
-    "en": "onstruction project management, plan drafting, 3D renovation\nmodeling using SketchUp."
+    "en": "Construction project management, plan drafting, and 3D renovation\nmodeling using SketchUp."
   }
 }

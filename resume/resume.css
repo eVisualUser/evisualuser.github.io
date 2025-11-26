@@ -96,7 +96,7 @@ div.page_header {
     position: fixed;
 
     width: 210mm;
-    height: 50mm;
+    height: 45mm;
 
     top: 0px;
     left: 0px;
@@ -231,7 +231,7 @@ div.experience {
     position: fixed;
 
     left: 70mm;
-    top: 75mm;
+    top: 70mm;
 
     width: 140mm;
     height: 225mm;
@@ -287,7 +287,7 @@ section.internship {
 div.summary {
     position: fixed;
 
-    top: 50mm;
+    top: 45mm;
     height: 15mm;
     left: 65mm;
     width: 145mm;
@@ -301,7 +301,7 @@ div.summary {
 }
 
 div.summary p {
-    font-size: 13.9pt;
+    font-size: 13pt;
 
     margin-top: 0;
     margin-left: 0;

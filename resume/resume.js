@@ -1,8 +1,12 @@
+let current_localization = "en";
+
+let localization_path = "./localization.json"
+
 // Trigger printing instead of saving the web page
 document.addEventListener(
   "keydown",
-  function (e) {
-    if (e.metaKey | e.ctrlKey && e.keyCode == 83) {
+  async function (e) {
+    if (e.metaKey | e.ctrlKey && e.key === "s") {
       e.preventDefault();
 
       window.print();
@@ -19,10 +23,6 @@ async function readJson(path) {
     }
     return await response.json();
 }
-
-let current_localization = "en";
-
-let localization_path = "./localization.json"
 
 document.addEventListener("DOMContentLoaded", async () => {
     await apply_localization(current_localization);
