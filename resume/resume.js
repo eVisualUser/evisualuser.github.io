@@ -55,8 +55,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         node = walker.nextNode();
     }
 
-    await new Promise(resolve => setTimeout(resolve, 5000));
-
     await apply_localization(current_localization);
 
     let buttons = document.querySelectorAll("button");

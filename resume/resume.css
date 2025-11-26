@@ -372,3 +372,27 @@ button:hover:after {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+div.transition {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: black;
+}
+
+div.transition:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
