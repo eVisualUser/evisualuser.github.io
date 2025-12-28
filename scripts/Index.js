@@ -11,17 +11,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 document.addEventListener(
   "keydown",
   function (e) {
-    if (e.metaKey | e.ctrlKey && e.keyCode == 83) {
+    if (e.metaKey | e.ctrlKey && e.keyCode === 83) {
       e.preventDefault();
-      const fileUrl = "./assets/resume/Resume_Sylvain_Tosoni_Programmer.pdf";
-      const fileName = "Resume_Sylvain_Tosoni_Programmer.pdf";
-      const link = document.createElement("a");
-      link.href = fileUrl;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.clarity("event", "download_resume");
+
+      open(window.location.href +  "resume/resume.html", "_self");
     }
   },
   false,

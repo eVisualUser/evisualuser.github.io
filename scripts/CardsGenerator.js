@@ -71,8 +71,8 @@ async function GenerateCards() {
       );
     }
 
-    // Support Markdown and HTML content types
-    if (card.content_type == "markdown") {
+    // Support for Markdown and HTML content types
+    if (card.content_type === "markdown") {
       let overviewHTML = `
         <div class="overview" id="${card.overview}">
           ${htmlHeader}
@@ -83,7 +83,7 @@ async function GenerateCards() {
       `;
 
       document.getElementById("generated-overviews").innerHTML += overviewHTML;
-    } else if (card.content_type == "html") {
+    } else if (card.content_type === "html") {
       let overviewHTML = `
         <div class="overview" id="${card.overview}">
           ${htmlHeader}

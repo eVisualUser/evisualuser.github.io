@@ -47,7 +47,7 @@ window.addEventListener("hashchange", async () => {
     focused_overview == null &&
     document.getElementById(location.hash.slice(1)).className === "overview"
   ) {
-    showOverview(document.getElementById(location.hash.slice(1)));
+    await showOverview(document.getElementById(location.hash.slice(1)));
   }
 });
 
@@ -81,6 +81,6 @@ async function hideOverview() {
 
     focused_overview = null;
 
-    window.clarity("event", "hide_overview");
+    await window.clarity("event", "hide_overview");
   }
 }

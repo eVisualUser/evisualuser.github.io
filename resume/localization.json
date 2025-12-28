@@ -1,15 +1,11 @@
 ﻿{
   "doc_title": {
-    "fr": "Curriculum Vitae",
-    "en": "Resume"
+    "fr": "Game Programmer",
+    "en": "Game Programmer"
   },
   "age": {
     "fr": "ans",
     "en": "years old"
-  },
-  "job": {
-    "fr": "Programmeur de jeux vidéo",
-    "en": "Game Programmer"
   },
   "country": {
     "fr": "France",
@@ -32,8 +28,8 @@
     "en": "Motorcycle license"
   },
   "summary": {
-    "fr": "Basé en <span class=\"important\">France</span>, je recherche un poste <span class=\"important\">débutant</span> où je pourrai contribuer à des systèmes de jeu innovants, collaborer avec des équipes multidisciplinaires et continuer à développer mon expertise.",
-    "en": "Based in <span class=\"important\">France</span>, I’m looking for an <span class=\"important\">entry‑level</span> position where I can contribute to innovative gameplay systems, collaborate with multidisciplinary teams, and continue growing my expertise."
+    "fr": "Basé en <span class=\"important\">France</span>, je recherche un poste où je pourrai contribuer à des systèmes de jeu innovants, <span class=\"important\">collaborer</span> avec des <span class=\"important\">équipes multidisciplinaires</span> et continuer à <span class=\"important\">développer mon expertise</span>.\nJ’apprécie particulièrement les jeux <span class=\"important\">4X</span> ainsi que les <span class=\"important\">jeux d’aventure et narratifs</span>, qui mettent à l’épreuve la collaboration de <span class=\"important\">systèmes complexes</span> et servent une <span class=\"important\">riche narration</span>.",
+    "en": "Game Programmer, I am looking for a position where I can contribute to innovative game systems, <span class=\"important\">collaborate</span> with <span class=\"important\">multidisciplinary teams</span> and continue to <span class=\"important\">develop my expertise</span>.\nI particularly enjoy <span class=\"important\">4X</span> games as well as <span class=\"important\">adventure and narrative games</span>, which put the collaboration of <span class=\"important\">complex systems</span> to the test and deliver a <span class=\"important\">rich narrative</span>. I am open to relocation or remote work."
   },
   "others_title": {
     "fr": "Autres",
@@ -64,8 +60,8 @@
     "en": "Internship"
   },
   "bellecour_ecole_desc": {
-    "fr": "Récemment diplômé d’un <span class=\"important\">bachelor</span>.\nAu cours de quatre années marquantes, j’ai acquis une expertise sur <span class=\"important\">Unreal Engine</span>, <span class=\"important\">Unity</span> et <span class=\"important\">Godot</span>,\nainsi que des compétences en gestion de projet et en programmation avec <span class=\"important\">C#</span>, <span class=\"important\">C/C++</span>, <span class=\"important\">Python</span>, <span class=\"important\">Qt</span> et <span class=\"important\">WPF</span>.",
-    "en": "Recently completed my <span class=\"important\">bachelor's degree</span>.\nOver four impactful years, I gained expertise in <span class=\"important\">Unreal Engine</span>, <span class=\"important\">Unity</span>, and <span class=\"important\">Godot</span>,\nalong with project management and programming skills in <span class=\"important\">C#</span>, <span class=\"important\">C/C++</span>, <span class=\"important\">Python</span>, <span class=\"important\">Qt</span>, and <span class=\"important\">WPF</span>."
+    "fr": "Récemment diplômé d’un <span class=\"important\">bachelor</span>.\nAu cours de quatre années marquantes, j’ai acquis une expertise sur <span class=\"important\">Unreal Engine</span>, <span class=\"important\">Unity</span> et <span class=\"important\">Godot</span>,\nainsi que des compétences en gestion de projet et en programmation avec <span class=\"important\">C#</span>, <span class=\"important\">C/C++</span>, <span class=\"important\">Python</span>, <span class=\"important\">Qt</span> et <span class=\"important\">WPF</span>.<br/>Une grande importance a été portée sur la <span class=\"important\">collaboration</span> et la <span class=\"important\">communication</span>, ainsi que sur <span class=\"important\">l'expression des besoins</span> et la <span class=\"important\">prise de décision</span> pour mener à bien un projet.",
+    "en": "Recently completed my <span class=\"important\">bachelor's degree</span>.\nOver four impactful years, I gained expertise in <span class=\"important\">Unreal Engine</span>, <span class=\"important\">Unity</span>, and <span class=\"important\">Godot</span>,\nalong with project management and programming skills in <span class=\"important\">C#</span>, <span class=\"important\">C/C++</span>, <span class=\"important\">Python</span>, <span class=\"important\">Qt</span>, and <span class=\"important\">WPF</span>.<br/>Great emphasis was placed on <span class=\"important\">collaboration</span> and <span class=\"important\">communication</span>, as well as <span class=\"important\">defining requirements</span> and <span class=\"important\">decision-making</span> to ensure project success."
   },
   "highschool_desc": {
     "fr": "Baccalauréat professionnel <span class=\"important\">en économie de la construction</span> sur trois ans,\nincluant un enseignement intensif et trois stages pratiques en estimation de coûts,\nbudgétisation et gestion de chantier.",
@@ -76,20 +72,8 @@
     "en": "As a <span class=\"important\">final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>\nI implemented core gameplay in <span class=\"important\">C++</span> and exposed designer‑tunable elements via <span class=\"important\">Blueprints</span>.<br/>\nI also built a <span class=\"important\">season‑change</span> system that updates all visuals using <span class=\"important\">material effects</span>, streamlined through a <span class=\"important\">UDataAsset</span>.\nAvailable on <span class=\"important\">Steam</span> for free."
   },
   "bellum_desc": {
-    "fr": "Développement du <span class=\"important\">gameplay</span> et de l’<span class=\"important\">IA</span> en <span class=\"important\">C#</span> pour un jeu <span class=\"important\">2D top‑down</span> destiné à Android.\nMise en place d’un système <span class=\"important\">free‑to‑play local</span> avec plusieurs monnaies.",
-    "en": "Developed <span class=\"important\">gameplay</span> and <span class=\"important\">AI</span> in <span class=\"important\">C#</span> for a <span class=\"important\">2D top‑down Android</span> game.\nImplemented a <span class=\"important\">local free‑to‑play</span> system with multiple in‑game currencies."
-  },
-  "bal_desc": {
-    "fr": "Économiste de la construction, où j’ai réalisé des estimations de coûts, calculé des capacités structurelles, en utilisant principalement Archicad.",
-    "en": "Construction Economist: estimated costs and calculated structural supports,\nprimarily using Archicad."
-  },
-  "atelier_vieux_bourg_desc": {
-    "fr": "Architecte, où j’ai participé à la conception de plans en 2D et 3D sous Archicad.\nJ’ai également pris part à de nombreuses visites de chantier.",
-    "en": "Architect, where I drafted plans in 2D and 3D using Archicad.\nAlso participated in many site visits."
-  },
-  "domo_desc": {
-    "fr": "Maîtrise d’œuvre, incluant la création de plans précis sur AutoCAD et la modélisation 3D de rénovations sous SketchUp.",
-    "en": "Construction project management, plan drafting, and 3D renovation\nmodeling using SketchUp."
+    "fr": "Architecturé le <span class=\"important\">core gameplay</span> et le <span class=\"important\">système UI</span>. En parallèle, une <span class=\"important\">boutique</span> qui permet de payer avec des <span class=\"important\">monnaies différentes</span>. Conçu une <span class=\"important\">finite‑state machine</span> pour gérer l’<span class=\"important\">IA</span>. Tout le code a été écrit en <span class=\"important\">C#</span>, en tirant parti de <span class=\"important\">UnityEvent</span> pour offrir aux <span class=\"important\">game designers une flexibilité</span> afin d’interconnecter les fonctionnalités. Utilisé les <span class=\"important\">ScriptableObjects</span> pour stocker et partager des données au sein du jeu sans liaison directe.",
+    "en": "Architected the <span class=\"important\">core gameplay</span> and <span class=\"important\">UI system</span>. Alongside a <span class=\"important\">shop</span> that allows buying with <span class=\"important\">different currencies</span>. Engineered a <span class=\"important\">finite‑state machine</span> to handle the <span class=\"important\">AI</span>.<br/>All the code was written in <span class=\"important\">C#</span>, leveraging <span class=\"important\">UnityEvent</span> to give <span class=\"important\">game designers flexibility</span> to interconnect features. Used <span class=\"important\">ScriptableObjects</span> to store and share data within the game without hard linking.<br/>Made for <span class=\"important\">Android</span> devices, you can download it through my website."
   },
   "print_btn": {
     "fr": "Imprimer",

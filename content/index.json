@@ -9,15 +9,6 @@
       "content-type": "markdown"
     },
     {
-      "title": "Pretty-Engine",
-      "overview": "overview-pretty-engine",
-      "short_description": "Custom C/C++ Game Engine. This engine is for learning purpose. Multithreaded and using Vulkan API for rendering.",
-      "image": "assets/pretty_engine.png",
-      "content": "content/markdown/PrettyEngine.md",
-      "content-type": "markdown",
-      "html_header": "content/html/PrettyEngine.html"
-    },
-    {
       "title": "Echoes of Seasons",
       "overview": "overview-echoes-of-seasons",
       "short_description": "A Puzzle game made using Unreal Engine, final project at Bellecour Ecole.",
@@ -43,6 +34,33 @@
       "content": "content/markdown/Rust.md",
       "content-type": "markdown",
       "html_header": "content/html/Rust.html"
+    },
+    {
+      "title": "🚧 Pretty-Engine 🚧",
+      "overview": "overview-pretty-engine",
+      "short_description": "Custom C/C++ Game Engine. This engine is for learning purpose. Multithreaded and using Vulkan API for rendering.",
+      "image": "assets/pretty_engine.png",
+      "content": "content/markdown/PrettyEngine.md",
+      "content-type": "markdown",
+      "html_header": "content/html/PrettyEngine.html"
+    },
+    {
+      "title": "🚧 Project-Survival 🚧",
+      "overview": "project-survival",
+      "short_description": "Work in progress, Unity game.",
+      "image": "assets/project_survival_screen.png",
+      "content": "content/markdown/ProjectSurvival.md",
+      "content-type": "markdown",
+      "html_header": "content/html/ProjectSurvival.html"
+    },
+    {
+      "title": "🚧 Pretty-Launcher 🚧",
+      "overview": "pretty-launcher",
+      "short_description": "Application made with Tauri 2.0.<br/>Provide an uniform platform to making tools for non programmers.",
+      "image": "assets/pretty_launcher_screen.png",
+      "content": "content/markdown/PrettyLauncher.md",
+      "content-type": "markdown",
+      "html_header": "content/html/PrettyLauncher.html"
     }
   ]
 }

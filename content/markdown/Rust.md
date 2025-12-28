@@ -55,7 +55,7 @@ Features:
 ### [Full-Logger](https://crates.io/crates/full_logger)
 
 A simple logger for Rust.
-It allows to log messages to a file and to the console.
+It allows you to log messages to a file and to the console.
 
 Features:
 - Support few file formats.
@@ -73,7 +73,7 @@ It's simple but was required.
 Made using [Tauri](https://tauri.app/).
 
 Warning: It is not maintained anymore, it will probably not even launch if you download the current version.
-I will replace it by [Pretty-Launcher](https://gitlab.com/eVisualUser/pretty-launcher) (still work in progress).
+I will replace it by [Pretty-Launcher](index.html#pretty-launcher) (still work in progress).
 It was a temporary solution.
 
 <img src="assets/game_dev_launcher.png" alt="Unreal Engine launcher" width="600" height="500">

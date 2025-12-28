@@ -52,13 +52,13 @@ svg {
     stroke: white;
     stroke-dasharray: 10% 29%;
     stroke-width: 0.3vw;
-    stroke-dashoffset: 0%;
+    stroke-dashoffset: 0;
     animation: stroke-offset 5.5s infinite linear;
 }
 
 .text-copy:nth-child(1) {
     stroke: #4d163d;
-    animation-delay: -1;
+    animation-delay: -1s;
 }
 
 .text-copy:nth-child(2) {
@@ -99,16 +99,16 @@ svg {
     width: 100%;
     align-items: center;
     padding-bottom: 75vh;
+}
 
-    margin: 0 auto;
-    margin-top: 7vh;
+.title-separator {
+    padding-bottom: 25vh;
 }
 
 div.section {
     background-color: rgb(67, 67, 67);
 
-    border: #840037;
-    border-width: 1vw;
+    border: 1vw #840037;
 
     border-radius: 5px;
 

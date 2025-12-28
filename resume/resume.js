@@ -28,6 +28,14 @@ async function readJson(path) {
     return await response.json();
 }
 
+window.addEventListener("hashchange", async () => {
+    if (window.location.hash !== null && window.location.hash !== undefined && window.location.hash !== "") {
+        await apply_localization(window.location.hash.substring(1));
+    } else {
+        await apply_localization("en");
+    }
+});
+
 document.addEventListener("DOMContentLoaded", async () => {
     let walker = document.createTreeWalker(
         document.getElementById("resume"),
@@ -42,7 +50,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         node = walker.nextNode();
     }
 
-    await apply_localization("en");
+    if (window.location.hash !== null && window.location.hash !== undefined && window.location.hash !== "") {
+        await apply_localization(window.location.hash.substring(1));
+    } else {
+        await apply_localization("en");
+    }
 
     let buttons = document.querySelectorAll("button");
     buttons.forEach((button) => {
@@ -72,6 +84,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 async function apply_localization(newLocalization) {
     if (newLocalization === current_localization) { return; }
+
+    window.location.hash = newLocalization;
 
     let transition = document.createElement("div");
     transition.classList.add("transition");
