@@ -23,27 +23,31 @@ And to add projects to my portfolio, sadly requiring to let the engine developme
 
 But it is in progress on improving the multithreading support, and improving the docs and unit tests.
 A lot of the background work is already done, such as:
-- General engine architecture
-- Logic structure
-- Data management and optimizations
-- Base of the rendering engine
+- Single threaded ECS
+- Asset load/unload
+- Rendering of a 3D object
+- Processes
+- ImGUI Integrations
+
+![EngineScreenShot.png](../../assets/EngineScreenShot.png)
 
 ## Technologies
 
-|Technology|Usage|
-|----------|-----|
-|[Vulkan](https://www.vulkan.org/)| Main graphic API|
-|[OpenGL](https://www.opengl.org/)|Fallback graphic API|
-|[SLang](https://shader-slang.org/)|Shader language|
-|[LZ4](https://github.com/lz4/lz4)|Compression library|
-|[GLM](https://github.com/g-truc/glm)|Algebra library|
-|[GLFW](https://www.glfw.org/)|Cross-platform window management|
-|[PugiXML](https://pugixml.org/)|XML Parser|
-|[VMA](https://gpuopen.com/vulkan-memory-allocator/)|Helper library for Vulkan|
-|[Corrosion](https://gpuopen.com/vulkan-memory-allocator/)|Library to allow using Rust code (not used yet, but will be used later for scripting)|
-|[Tracy](https://github.com/wolfpld/tracy)|Profiler complete, open-source and easy to use|
-|[Stringzilla](https://github.com/ashvardanian/Stringzilla)|Future-proof choice, to avoid strings becoming a bottleneck|
-|[Doctest](https://github.com/doctest/doctest)|Unit testing framework|
+| Technology                                                 | Usage                                                                                 |
+|------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| [Vulkan](https://www.vulkan.org/)                          | Main graphic API                                                                      |
+| [OpenGL](https://www.opengl.org/)                          | Fallback graphic API                                                                  |
+| [SLang](https://shader-slang.org/)                         | Shader language                                                                       |
+| [LZ4](https://github.com/lz4/lz4)                          | Compression library                                                                   |
+| [GLM](https://github.com/g-truc/glm)                       | Algebra library                                                                       |
+| [GLFW](https://www.glfw.org/)                              | Cross-platform window management                                                      |
+| [PugiXML](https://pugixml.org/)                            | XML Parser                                                                            |
+| [VMA](https://gpuopen.com/vulkan-memory-allocator/)        | Helper library for Vulkan                                                             |
+| [Corrosion](https://gpuopen.com/vulkan-memory-allocator/)  | Library to allow using Rust code (not used yet, but will be used later for scripting) |
+| [Tracy](https://github.com/wolfpld/tracy)                  | Profiler complete, open-source and easy to use                                        |
+| [Stringzilla](https://github.com/ashvardanian/Stringzilla) | Future-proof choice, to avoid strings becoming a bottleneck                           |
+| [Doctest](https://github.com/doctest/doctest)              | Unit testing framework                                                                |
+| [RmlUI](https://github.com/mikke89/RmlUi)                | In game user interface                                                                |
 
 ## Inspirations
 
@@ -57,7 +61,7 @@ Also help to understand how to manage assets and resources properly.
 
 For editing, and scripting.
 
-## Bevy
+### Bevy
 
 For the ECS architecture and the flexibility.
 
@@ -115,16 +119,30 @@ In the other side, you have the Process, that are in the engine.
 And are kind of unsafe, but receive a lot of events, and can do whatever you want with the engine.
 Can be useful to add complex features.
 
-## Why Vulkan and OpenGL
+### Space and Zone system
 
-DirectX is a proprietary API, and is not open source.
-Vulkan and OpenGL are open source, and can be more flexible and powerful than DirectX.
-They are also more widely used, and have more documentation and tutorials.
+#### Space
 
-The combo is Vulkan and OpenGL also have an advantage, as you can share data between them.
-So switching to OpenGL to avoid a crash would be faster and more reliable.
+It's the logic container of the engine, all it does is about allowing the player to run logic.
+Handling the ECS, and events.
+The engine use it as an interface over the user space.
+It is also a lot connected to the Processes concept.
+A process is an object that has access to everything in the engine.
+And so can be used for a wide amount of purpose.
+A special example of the usage of a Process object, is to load the first level in your game,
+and initialize the required systems.
 
-And last but not least, Vulkan and OpenGL are both cross-platform.
+#### Zone
+
+A zone is a container of an ECS group, that contains entities, systems and components.
+Each zone can be loaded, or unloaded at any moment, they are pieces of the game puzzle.
+
+In the future they will be loaded and unloaded automatically.
+Each zone are identified, and so objects dont override another zone.
+A zone can be constant, and so then once loaded, can't be unloaded.
+
+And so, a pack of zone compose a level, but a level can be a single zone.
+They are not scenes, as they are part of the main scene that is the Space.s
 
 ## GitLab
 
