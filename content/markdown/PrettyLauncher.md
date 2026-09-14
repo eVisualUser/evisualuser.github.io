@@ -1,41 +1,21 @@
-﻿
-Pretty-Launcher is a single Tauri 2.0 application.
-It provides an uniform platform to making tools for non programmers.
-Including a store to download plugins easily.
+﻿It is a system, loading plugins to perform various tasks, while trying to keep a safe and secure environment for the user.
+The main goal is to provide a way to make tools easy to deploy and use.
 
-After having to make multiple desktop app as tools for non programmers,
-I decided to make a single application to hold them all.
-And include features to help making them faster.
+It is composed of a backend, that is pl-common, and clients, such as the [CLI](https://gitlab.com/eVisualUser/pretty-launcher/-/tree/6dd24623b26d8f413698bd212336a3525ca506e4/clients/pretty-launcher-cli).
 
-At the same time, the store allows sharing plugins easily.
-It also provides a way to easily update plugins and keep them up to date.
+The main scripting language is Lua, with a focus on simplicity and ease of use.
+A custom API is provided to interact with the system, allowing for easy plugin development and management.
+And generated EmmyLua type definitions for better code completion and documentation can be generated.
 
-In result, the target audience, wont have to look at the documentation to find plugins.
-They will have them correctly listed at a single place.
-The cross-platform nature of Tauri allows for easy deployment on multiple operating systems.
-And you won't have to worry about the platform you are using.
+## Goals:
 
-The application is still in development.
-A lot of features are missing.
-But you can already build it yourself, to try it out.
-Its not recommended to use it yet.
+- [ ] Cross-platform compatibility
+- [ ] Fast plugin development
+- [ ] Secure environment for the user and plugins
 
-You can find the source code on [GitLab](https://gitlab.com/eVisualUser/pretty-launcher).
-I recommend looking at the [documentation](https://gitlab.com/eVisualUser/pretty-launcher/-/blob/cd02a8a735721fecf83cc9e97485e5c31e4cda33/README.md) first.
+## State of development
 
-## Platform support 
+It's only the start, for now the cli client is the only available client.
+And through it, you have a helper to generate plugins and more.
 
-| Operating System | Status          |
-|------------------|-----------------|
-| Windows          | Supported       |
-| Android          | Devlopement     |
-| Linux            | Devlopement     |
-
-## CLI Support
-
-A work-in-progress important feature is the CLI.
-
-The CLI allows managing plugins and debugging the application.
-Without any complex graphics, it allows to be run light.
-It's less of a priority than the application itself.
-But it is worked in on in parralel.
+A lot of remains to be done.

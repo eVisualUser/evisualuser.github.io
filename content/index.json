@@ -18,6 +18,15 @@
       "html_header": "content/html/EchoesOfSeasons.html"
     },
     {
+      "title": "Internship - Gluk Media",
+      "overview": "internship-gluk-media",
+      "short_description": "Internship at Gluk Media, working on a museum kiosk apps and fullstack project.",
+      "image": "assets/gluk_media_logo.png",
+      "content": "content/markdown/GlukMedia.md",
+      "content-type": "markdown",
+      "html_header": "content/html/GlukMedia.html"
+    },
+    {
       "title": "Bellum",
       "overview": "overview-bellum",
       "short_description": "Second year project at Bellecour Ecole, using Unity, Free to Play mobile game (no transaction, only demonstration).",
@@ -56,7 +65,7 @@
     {
       "title": "🚧 Pretty-Launcher 🚧",
       "overview": "pretty-launcher",
-      "short_description": "Application made with Tauri 2.0.<br/>Provide an uniform platform to making tools for non programmers.",
+      "short_description": "Cross-platform backend made to run plugins, can be embedded in any Rust projects.",
       "image": "assets/pretty_launcher_screen.png",
       "content": "content/markdown/PrettyLauncher.md",
       "content-type": "markdown",

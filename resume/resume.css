@@ -224,35 +224,42 @@ div.experience {
     position: fixed;
 
     left: 70mm;
-    top: 80mm;
+    top: 85mm;
 
     width: 140mm;
-    height: 219mm;
+    height: 210mm;
 
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 2mm;
 
     padding-right: 1mm;
+    box-sizing: border-box;
 }
 
 section {
     background-color: var(--main-color);
 
-    padding: 0;
+    padding: 1mm;
     margin: 0;
 
     width: 100%;
-    height: 55mm;
+    flex: 1 1 0;
 
-    border-width: 0.5mm;
-    border-style: solid;
+    min-height: 0;
+
+    border: 0.5mm solid;
     border-radius: 5px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
 }
 
 section p {
     font-size: 12pt;
+    line-height: 1.15;
 
     margin: 0;
     padding: 1mm;
@@ -260,6 +267,7 @@ section p {
 
 section h2 {
     font-size: 14pt;
+    line-height: 1.1;
 
     margin: 0;
     padding: 1mm;
