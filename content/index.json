@@ -21,7 +21,7 @@
       "title": "Internship - Gluk Media",
       "overview": "internship-gluk-media",
       "short_description": "Internship at Gluk Media, working on a museum kiosk apps and fullstack project.",
-      "image": "assets/gluk_media_logo.png",
+      "image": "assets/gluk-logo-light.webp",
       "content": "content/markdown/GlukMedia.md",
       "content-type": "markdown",
       "html_header": "content/html/GlukMedia.html"

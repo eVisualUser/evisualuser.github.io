@@ -94,3 +94,5 @@ But in conclusion, the result was great, performance as required.
 - Make loading of the page in less than 3 seconds even in 3G.
 - Prevent loading when displaying 3D models, same for the image gallery.
 - Make a backend ready to handle hours of runtime.
+
+
