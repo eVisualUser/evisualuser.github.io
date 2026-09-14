@@ -82,5 +82,13 @@
   "gluk_media_desc": {
     "fr": "<span class=\"important\">Stage</span> chez <span class=\"important\">Gluk Media</span> en <span class=\"important\">Lituanie</span>, où j’ai travaillé sur des <span class=\"important\">applications pour des bornes interactives de musée</span> ainsi que sur un projet <span class=\"important\">full-stack</span>. Les fichiers de conception m’ont été fournis, et j’ai dû définir et mettre en place le processus de développement et de déploiement. J’ai travaillé sur des projets concrets destinés à être <span class=\"important\">livrés aux clients</span>. La principale plateforme de déploiement était <span class=\"important\">Android</span>.",
     "en": "<span class=\"important\">Internship</span> at <span class=\"important\">Gluk Media</span> in <span class=\"important\">Lithuania</span>, working on a <span class=\"important\">museum kiosk apps and fullstack project</span>.I was handed design files, and has to figure the development and deployment process. I worked on <span class=\"important\">real world projects that got handed to the clients</span>. Main release platform was <span class=\"important\">android</span>."
+  },
+  "gluk_media_name": {
+    "fr": "Gluk Media 12/04/2026 - 10/10/2026 (6 mois)",
+    "en": "Gluk Media 12/04/2026 - 10/10/2026 (6 months)"
+  },
+  "work_fields": {
+    "en": "Area of expertise",
+    "fr": "Domaine d'expertise"
   }
 }
