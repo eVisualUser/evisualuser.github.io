@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <g transform="translate(10, 10) scale(0.8)">
+    <!-- Rocket flame/thrust -->
+    <path fill="#f87171" d="M20 70 C10 80, 5 95, 5 95 C5 95, 20 90, 30 80 Z" opacity="0.8"/>
+    <path fill="#fbbf24" d="M18 72 C12 80, 10 90, 10 90 C10 90, 20 88, 28 82 Z"/>
+    <!-- Left Fin -->
+    <path fill="#b91c1c" d="M28 52 L12 62 C10 64, 12 70, 16 70 L34 64 Z"/>
+    <!-- Right Fin -->
+    <path fill="#b91c1c" d="M48 32 L58 48 C60 52, 54 54, 54 50 L44 32 Z"/>
+    <!-- Rocket Body -->
+    <path fill="#ef4444" d="M30 64 C25 45, 40 20, 75 10 C65 45, 40 60, 21 65 L30 64 Z"/>
+    <!-- Rocket Nose / Main Highlights -->
+    <path fill="#fca5a5" d="M75 10 C60 18, 48 32, 42 48 C52 42, 66 30, 75 10 Z" opacity="0.6"/>
+    <!-- Porthole Outer -->
+    <circle cx="52" cy="33" r="8" fill="#1e293b" stroke="#ffffff" stroke-width="2"/>
+    <!-- Porthole Glass -->
+    <circle cx="52" cy="33" r="5" fill="#38bdf8"/>
+    <!-- Porthole Glare -->
+    <circle cx="54" cy="31" r="1.8" fill="#ffffff" opacity="0.8"/>
+  </g>
+</svg>

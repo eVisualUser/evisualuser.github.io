@@ -27,7 +27,7 @@ And take the charge of a project, guiding it through each step.
 - Game Engines: Unreal Engine, Unity, Godot
 - Tools: Git, GitHub, GitLab, Visual Studio, JetBrains tool suite (Rider, CLion), Zed, Sublime Text
 - IDE: Visual Studio Code, Android Studio, Visual Studio
-- Operating Systems: Windows, Linux
+- Operating Systems: Linux (Fedora - Main OS), Windows
 - Soft: Communication, Teamwork, Problem Solving, Adaptability, Creativity, Stress Management, Time Management
 - GUI: Qt, WPF, WinForms, GLFW
 

@@ -944,12 +944,43 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 
     border-top: 1px solid var(--border-color);
 
-    padding: 1.5rem 1vw;
+    padding: 1.25rem 2vw;
 
     margin-top: auto;
+}
+
+.footer-git-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.4rem 0.85rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(252, 95, 98, 0.4);
+    border-radius: 4px;
+}
+
+.footer-git-label {
+    font-family: "Roboto", system-ui, sans-serif;
+    font-size: 0.82rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+.footer-git-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.footer-git-sep {
+    color: var(--border-color);
+    font-size: 0.75rem;
 }
 
 /* Curriculum Vitae */

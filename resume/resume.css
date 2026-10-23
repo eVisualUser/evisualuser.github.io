@@ -1,402 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap");
+
 :root {
-    --main-color: #2b2b2b;
+    --resume-font: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    --main-bg: #222225;
+    --header-bg: #141416;
+    --sidebar-bg: #1a1a1d;
+    --card-bg: #27272a;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --accent-red: #fc5f62;
+    --accent-blue: #3b82f6;
+    --accent-green: #10b981;
+    --accent-teal: #06b6d4;
+    --border-subtle: rgba(255, 255, 255, 0.12);
 }
 
-/* Allow headers to be printed selectable using Firefox */
-
-@media print {
-    @page {
-        size: 210mm 297mm;
-    }
-
-    h1,
-    h2,
-    h3 {
-        -webkit-user-select: text;
-        -moz-user-select: text;
-        -ms-user-select: text;
-        user-select: text;
-        color: inherit;
-        font-weight: inherit;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    h3 {
-        font-size: 1.17em;
-    }
-
-    button {
-        display: none;
-    }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
-    margin: 0; /* removes the default top/bottom margin */
-    padding: 0; /* just in case something else adds padding */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--resume-font);
+    background-color: #121214;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 0;
+}
+
+/* A4 Sheet Container */
+#resume {
     width: 210mm;
     height: 297mm;
-
-    background-color: var(--main-color);
+    max-height: 297mm;
+    background-color: var(--main-bg);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    font-family: var(--resume-font);
 }
 
-div.page_header {
-    background: #000;
-}
-
-h1,
-h2,
-h3 {
+/* Typography Overrides for Resume */
+#resume h1,
+#resume h2,
+#resume h3,
+#resume p,
+#resume a,
+#resume span,
+#resume li {
+    font-family: var(--resume-font);
+    text-transform: none;
+    letter-spacing: normal;
     transform: none;
     filter: none;
 }
 
-h1 {
-    font-size: 2em;
-}
-
-h2 {
-    font-size: 1.5em;
-}
-
-h3 {
-    font-size: 1.17em;
-}
-
-a.default {
-    border-bottom: none;
-}
-
 /* PAGE HEADER */
-
-div.page_header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    justify-content: space-evenly;
-
-    position: fixed;
-
+header.page_header {
     width: 210mm;
-    height: 45mm;
-
-    top: 0px;
-    left: 0px;
-
-    padding-left: 3mm;
-    padding-right: 3mm;
-    padding-top: 0;
-}
-
-div.page_header ul {
-    gap: 2mm;
-}
-
-div.title {
-    margin-left: 0mm;
-}
-
-div.contact {
-    align-self: center;
-
-    height: 40mm;
-
-    padding-top: 5mm;
-}
-
-ul {
-    list-style-type: none;
-
-    display: flex;
-    flex-direction: column;
-
-    flex-wrap: wrap;
-
-    padding-left: 3mm;
-
-    margin-bottom: 0;
-    padding-bottom: 0mm;
-}
-
-li {
-    text-justify: distribute;
-
+    height: 38mm;
+    background: var(--header-bg);
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: center;
-
-    margin: 0mm;
-    padding: 0mm;
-}
-
-img.self {
-    top: 3mm;
-
-    border-radius: 5mm;
-    width: 34mm;
-    height: auto;
-
-    margin-right: 3mm;
-    display: inline-block;
+    justify-content: space-between;
+    padding: 3mm 6mm;
+    border-bottom: 1.5px solid var(--border-subtle);
+    flex-shrink: 0;
 }
 
 div.aside {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    gap: 3.5mm;
 }
 
-/* SKILLS */
+img.self {
+    width: 29mm;
+    height: 29mm;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 1.5px solid rgba(252, 95, 98, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    display: block;
+}
 
-div.skills {
-    position: fixed;
-
-    top: 50mm;
-    left: 0px;
-    height: 240mm; /* Full A4 page height, without the title bar */
-    width: 65mm;
-
-    padding-left: 3mm;
-
-    background-color: var(--main-color);
-
-    text-align: left;
-
+div.title {
     display: flex;
     flex-direction: column;
-
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-div.skills h1,
-h2,
-h3,
-ul {
+div.title h1 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: var(--accent-red);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0 0 0.5mm 0;
     padding: 0;
-    margin: 0;
+    line-height: 1.1;
 }
 
-div.skill {
+div.title h2 {
+    font-size: 19pt;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 1mm 0;
+    padding: 0;
+    line-height: 1.1;
+    letter-spacing: -0.2px;
+}
+
+div.title .meta {
+    display: flex;
+    align-items: center;
+    gap: 2mm;
+    font-size: 8.8pt;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.meta_separator {
+    color: var(--accent-red);
+    font-size: 7pt;
+}
+
+/* CONTACT INFO */
+div.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2mm;
+}
+
+div.contact ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-
-    width: 70mm;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1mm;
 }
 
-div.skills li {
-    margin-top: 1mm;
-}
-
-div.skills p {
-    font-size: 14pt;
-    padding: 0;
-    margin: 0;
-}
-
-img.icon {
-    width: 6mm;
-    height: auto;
+div.contact li {
     margin: 0;
     padding: 0;
-    margin-right: 2mm;
-    margin-top: 1mm;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
-/* EXPERIENCE */
+div.contact a {
+    font-size: 8.2pt;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+    border-bottom: none;
+}
 
-div.experience {
-    position: fixed;
+div.contact a:hover {
+    color: var(--accent-red);
+}
 
-    left: 70mm;
-    top: 85mm;
+.git-box {
+    padding: 1.2mm 2.2mm;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px dashed rgba(252, 95, 98, 0.38);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6mm;
+}
 
-    width: 140mm;
-    height: 210mm;
+.git-box-tag {
+    font-size: 6.8pt;
+    font-weight: 500;
+    color: var(--accent-red);
+    letter-spacing: 0.2px;
+    line-height: 1.1;
+}
 
+.git-box-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2mm;
+}
+
+.git-box-links a {
+    font-size: 7.8pt;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.git-box-links a:hover {
+    color: var(--accent-red);
+}
+
+.git-box-sep {
+    color: var(--text-muted);
+    font-size: 6.8pt;
+}
+
+/* RESUME BODY (2-Column Grid) */
+div.resume_body {
+    width: 210mm;
+    height: 259mm;
+    display: grid;
+    grid-template-columns: 63mm 147mm;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+/* SKILLS (Sidebar) */
+aside.skills {
+    width: 63mm;
+    height: 100%;
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--border-subtle);
+    padding: 3mm 4.2mm 3.2mm 4.8mm;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2mm;
-
-    padding-right: 1mm;
-    box-sizing: border-box;
 }
 
-section {
-    background-color: var(--main-color);
+aside.skills > h2 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0 0 1mm 0;
+    padding-bottom: 1mm;
+    border-bottom: 1.5px solid var(--accent-red);
+    display: flex;
+    align-items: center;
+}
 
-    padding: 1mm;
+div.skill {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-
-    width: 100%;
-    flex: 1 1 0;
-
-    min-height: 0;
-
-    border: 0.5mm solid;
-    border-radius: 5px;
-
-    box-sizing: border-box;
-
-    overflow: hidden;
-}
-
-section p {
-    font-size: 12pt;
-    line-height: 1.15;
-
-    margin: 0;
-    padding: 1mm;
-}
-
-section h2 {
-    font-size: 14pt;
-    line-height: 1.1;
-
-    margin: 0;
-    padding: 1mm;
-}
-
-section.education {
-    border-color: #339966;
-}
-
-section.project {
-    border-color: #008080;
-}
-
-section.internship {
-    border-color: #003366;
-}
-
-/* SUMMARY */
-
-div.summary {
-    position: fixed;
-
-    top: 45mm;
-    height: 22mm;
-    left: 65mm;
-    width: 145mm;
-
-    background-color: var(--main-color);
-
-    font-size: 12pt;
-
-    padding: 3mm 3mm 3mm 5mm;
-}
-
-div.summary p {
-    font-size: 13pt;
-
-    margin-top: 0;
-    margin-left: 0;
-}
-
-/* MISC */
-
-span.important {
-    color: #fc5f62;
-    font-size: 13pt;
-}
-
-span.line {
-    display: block;
-    width: 90%;
-    height: 2px;
-    background: #555;
-    margin-top: 5px;
-    margin-bottom: 5px;
     padding: 0;
 }
 
-div.language_selection {
-    position: fixed;
+div.skill-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6mm;
+    margin: 0 0 1.1mm 0;
+    padding-bottom: 0.5mm;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
 
+span.skill-indicator {
+    display: inline-block;
+    width: 2.2mm;
+    height: 2.2mm;
+    background-color: var(--accent-red);
+    border-radius: 1px;
+    flex-shrink: 0;
+}
+
+div.skill-header h3 {
+    font-size: 8.2pt;
+    font-weight: 700;
+    color: #f1f5f9;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+ul.skill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    gap: 1.05mm;
+}
 
-    left: 50%;
+ul.skill-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2mm;
+    margin: 0;
+    padding: 0;
+    font-size: 8.2pt;
+    color: var(--text-secondary);
+    line-height: 1.2;
+}
+
+ul.skill-list li p {
+    font-size: 8.2pt;
+    margin: 0;
+    padding: 0;
+    color: var(--text-secondary);
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ul.skill-list li a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-bottom: none;
+    transition: color 0.15s ease;
+}
+
+ul.skill-list li a:hover {
+    color: var(--accent-red);
+}
+
+span.icon-slot {
+    width: 4.2mm;
+    min-width: 4.2mm;
+    height: 4.2mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+span.icon-slot img.icon {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+span.bullet-dot {
+    width: 4.2mm;
+    min-width: 4.2mm;
+    height: 4.2mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+span.bullet-dot::after {
+    content: "";
+    display: block;
+    width: 3.5px;
+    height: 3.5px;
+    background-color: var(--accent-red);
+    border-radius: 50%;
+    opacity: 0.85;
+}
+
+img.icon {
+    width: 4.2mm;
+    height: 4.2mm;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* MAIN CONTENT */
+main.main_content {
+    width: 147mm;
+    height: 100%;
+    padding: 3.2mm 5mm 3.5mm 4mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.5mm;
+}
+
+/* SUMMARY */
+div.summary {
+    background-color: var(--card-bg);
+    border-left: 2.5px solid var(--accent-red);
+    border-radius: 3px;
+    padding: 2.2mm 3.2mm;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+}
+
+div.summary p {
+    font-size: 8.5pt;
+    line-height: 1.34;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* EXPERIENCE & PROJECTS */
+div.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.2mm;
+    flex: 1 1 auto;
+}
+
+section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    padding: 2.2mm 3mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 1 0;
+    min-height: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 9.3pt;
+    font-weight: 700;
+    margin: 0 0 1mm 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 2mm;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+section a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: none;
+}
+
+section a:hover h2 {
+    color: var(--accent-red);
+}
+
+section p {
+    font-size: 8.1pt;
+    line-height: 1.32;
+    color: var(--text-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+section.internship {
+    border-left: 2.5px solid var(--accent-blue);
+}
+
+section.education {
+    border-left: 2.5px solid var(--accent-green);
+}
+
+section.project {
+    border-left: 2.5px solid var(--accent-teal);
+}
+
+/* HIGHLIGHTS */
+span.important {
+    color: #ff6b6e;
+    font-weight: 600;
+    font-size: inherit;
+}
+
+/* FLOATING CONTROLS (Screen only) */
+div.language_selection {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    background: rgba(18, 18, 20, 0.85);
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 div.language_selection button {
-    box-shadow: none;
-    border-radius: 5px;
-}
-
-/* BUTTONS */
-
-button {
-    width: 6.5em;
-    height: 2.3em;
-    margin: 0.5em;
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 0.625em;
-    font-size: 20px;
-    font-weight: bold;
+    padding: 6px 14px;
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-family: var(--resume-font);
+    font-size: 13px;
+    font-weight: 600;
+    color: #f1f5f9;
+    background: #27272a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
     cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+    transition: all 0.2s ease;
 }
 
-button:hover {
-    color: black;
+div.language_selection button:hover {
+    background: #3f3f46;
+    border-color: var(--accent-red);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(252, 95, 98, 0.3);
 }
 
-button:after {
-    content: "";
-    background: white;
-    position: absolute;
-    z-index: -1;
-    left: -20%;
-    right: -20%;
-    top: 0;
-    bottom: 0;
-    transform: skewX(-45deg) scale(0, 1);
-    transition: all 0.5s;
+div.language_selection button.active {
+    background: var(--accent-red);
+    border-color: #ff8082;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(252, 95, 98, 0.45);
 }
 
-button:hover:after {
-    transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
+div.language_selection button#print {
+    background: #1e293b;
+    border-color: rgba(59, 130, 246, 0.4);
 }
 
+div.language_selection button#print:hover {
+    background: #2563eb;
+    border-color: #60a5fa;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+}
+
+/* Page Transition animation */
 div.transition {
     width: 0%;
     height: 100%;
-
     position: fixed;
     top: 0;
     left: 0;
-
     background: black;
-
-    z-index: 1000;
-}
-
-div.transition {
+    z-index: 2000;
     will-change: transform, opacity;
-
     animation: growWidth 0.5s ease-out forwards;
 }
 
@@ -404,8 +559,65 @@ div.transition {
     0% {
         width: 0;
     }
-
     100% {
         width: 100%;
+    }
+}
+
+/* PRINT MEDIA QUERY FOR ACCURATE A4 OUTPUT */
+@media print {
+    @page {
+        size: 210mm 297mm;
+        margin: 0;
+    }
+
+    html,
+    body {
+        width: 210mm !important;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #111113 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+    }
+
+    body {
+        display: block !important;
+    }
+
+    #resume {
+        width: 210mm !important;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        overflow: hidden !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    .language_selection,
+    button {
+        display: none !important;
+    }
+
+    /* Selectable text in print */
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    span,
+    li {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
     }
 }

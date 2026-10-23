@@ -32,16 +32,20 @@
     "en": "Game Programmer, I am looking for a position where I can contribute to innovative game systems, <span class=\"important\">collaborate</span> with <span class=\"important\">multidisciplinary teams</span> and continue to <span class=\"important\">develop my expertise</span>.\nI particularly enjoy <span class=\"important\">4X</span> games as well as <span class=\"important\">adventure and narrative games</span>, which put the collaboration of <span class=\"important\">complex systems</span> to the test and deliver a <span class=\"important\">rich narrative</span>. I am open to relocation or remote work."
   },
   "others_title": {
-    "fr": "Autres",
-    "en": "Additional"
+    "fr": "Langues & Permis",
+    "en": "Languages & Info"
   },
   "game_engines_title": {
-    "fr": "Moteurs de jeux",
+    "fr": "Moteurs de jeu",
     "en": "Game Engines"
   },
+  "frameworks_apis_title": {
+    "fr": "Frameworks & APIs",
+    "en": "Frameworks & APIs"
+  },
   "tools_title": {
-    "fr": "Outils",
-    "en": "Tools"
+    "fr": "Outils & Environnement",
+    "en": "Tools & Environment"
   },
   "programming_languages_title": {
     "fr": "Langages de programmation",
@@ -88,7 +92,27 @@
     "en": "Gluk Media 12/04/2026 - 10/10/2026 (6 months)"
   },
   "work_fields": {
-    "en": "Area of expertise",
-    "fr": "Domaine d'expertise"
+    "en": "Technical Domains",
+    "fr": "Domaines d'application"
+  },
+  "field_game_dev": {
+    "fr": "Dév. Moteur & Gameplay",
+    "en": "Game & Engine Dev"
+  },
+  "field_tools_dev": {
+    "fr": "Outils & Logiciels",
+    "en": "Tools & Software Dev"
+  },
+  "field_systems": {
+    "fr": "Architecture & Systèmes",
+    "en": "Systems & Prototyping"
+  },
+  "field_web_dev": {
+    "fr": "Web & Backend",
+    "en": "Web & Backend Dev"
+  },
+  "git_host_tag": {
+    "fr": "Principalement auto-hébergé (quelques projets actifs)",
+    "en": "Mainly self-hosted (few active projects)"
   }
 }

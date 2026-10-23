@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect x="8" y="12" width="84" height="76" rx="8" fill="#1e1e2e" stroke="#2563eb" stroke-width="3"/>
+  <path d="M8 20 Q8 12 16 12 L84 12 Q92 12 92 20 L92 34 L8 34 Z" fill="#2563eb"/>
+  <circle cx="22" cy="23" r="3.5" fill="#f87171"/>
+  <circle cx="32" cy="23" r="3.5" fill="#fbbf24"/>
+  <circle cx="42" cy="23" r="3.5" fill="#34d399"/>
+  <text x="50" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" fill="#60a5fa" text-anchor="middle" letter-spacing="1">ImGui</text>
+  <rect x="18" y="72" width="28" height="6" rx="2" fill="#3b82f6" opacity="0.8"/>
+  <rect x="52" y="72" width="30" height="6" rx="2" fill="#475569"/>
+</svg>

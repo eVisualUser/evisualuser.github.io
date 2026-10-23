@@ -16,7 +16,8 @@
 - **Languages:** C++, Rust, C#, Python, JavaScript
 - **Game Engines:** Unreal Engine 5, Unity, Godot
 - **Graphics & Systems:** Vulkan API, Jolt Physics, OpenAL, Multithreading, Dynamic Object System (DOS), Custom Reflection
-- **Tools & Frameworks:** Git, CMake, Tauri, Rocket, Qt, GLFW, Visual Studio, JetBrains Rider/CLion
+- **Operating Systems:** Linux (Fedora - Main OS), Windows
+- **Tools & Frameworks:** Git, CMake, Tauri, Rocket, ImGui, RmlUi, Qt, GLFW, Visual Studio, JetBrains Rider/CLion
 
 ## Playable Demos & Direct Links
 - **Echoes of Seasons (Steam):** https://store.steampowered.com/app/3914680/

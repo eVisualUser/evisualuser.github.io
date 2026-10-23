@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="fedora-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3c6eb4"/>
+      <stop offset="100%" stop-color="#0b57a4"/>
+    </linearGradient>
+    <linearGradient id="fedora-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#51a2da"/>
+      <stop offset="100%" stop-color="#294172"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circular badge -->
+  <circle cx="50" cy="50" r="46" fill="url(#fedora-bg)" stroke="#2492ff" stroke-width="2"/>
+  
+  <!-- Fedora infinity / f stylized shape -->
+  <g transform="translate(10, 10) scale(0.8)">
+    <!-- Right loop/cross -->
+    <path d="M 68 28 C 61 21, 48 22, 43 28 L 30 42 C 25 47, 24 55, 29 61 C 34 67, 44 67, 50 61 L 63 47 C 69 41, 69 32, 63 26" fill="none" stroke="#ffffff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Crossbar -->
+    <path d="M 32 38 L 56 38" stroke="#ffffff" stroke-width="10" stroke-linecap="round"/>
+    
+    <!-- Left accent loop (cyan overlay) -->
+    <path d="M 43 28 C 37 34, 30 42, 30 42 C 25 47, 24 55, 29 61 C 34 67, 44 67, 50 61 L 56 54" fill="none" stroke="#2492ff" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Center node -->
+    <circle cx="50" cy="38" r="4.5" fill="#ffffff"/>
+  </g>
+</svg>
