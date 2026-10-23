@@ -15,7 +15,16 @@
       "image": "assets/CA_colorspreview_spring_02.jpg",
       "content": "content/markdown/EchoesOfSeasons.md",
       "content-type": "markdown",
-      "html_header": "content/html/EchoesOfSeasons.html"
+      "html_header": "content/html/EchoesOfSeasons.html",
+      "status": "done",
+      "try": {
+        "title": "Echoes of Seasons",
+        "tag": "Steam",
+        "type": "steam",
+        "url": "https://store.steampowered.com/app/3914680/",
+        "button_text": "Steam Page",
+        "description": "Unreal Engine 5 puzzle adventure game with dynamic season transitions. Available to wishlist on Steam."
+      }
     },
     {
       "title": "Internship - Gluk Media",
@@ -24,7 +33,8 @@
       "image": "assets/gluk-logo-light.webp",
       "content": "content/markdown/GlukMedia.md",
       "content-type": "markdown",
-      "html_header": "content/html/GlukMedia.html"
+      "html_header": "content/html/GlukMedia.html",
+      "status": "done"
     },
     {
       "title": "Bellum",
@@ -33,7 +43,16 @@
       "image": "assets/Char_gros_soldat.png",
       "content": "content/markdown/Bellum.md",
       "content-type": "markdown",
-      "html_header": "content/html/Bellum.html"
+      "html_header": "content/html/Bellum.html",
+      "status": "done",
+      "try": {
+        "title": "Bellum",
+        "tag": "Android APK",
+        "type": "playable",
+        "url": "https://drive.proton.me/urls/J31DMZM53W#FGAR-cvd7viA",
+        "button_text": "Download APK",
+        "description": "Top-down 2D pixel-art action game for Android. Download the playable demo APK."
+      }
     },
     {
       "title": "Rust",
@@ -42,34 +61,66 @@
       "image": "assets/rust_background.png",
       "content": "content/markdown/Rust.md",
       "content-type": "markdown",
-      "html_header": "content/html/Rust.html"
+      "html_header": "content/html/Rust.html",
+      "try": {
+        "title": "Flappy Editor",
+        "tag": "VS Code Game",
+        "type": "playable",
+        "url": "https://github.com/eVisualUser/flappy-editor/releases/tag/1.0.0",
+        "button_text": "Download & Play",
+        "description": "Playable Flappy Bird mini-game running inside Visual Studio Code built with Rust."
+      },
+      "related": [
+        {
+          "title": "Pretty-Launcher",
+          "overview": "pretty-launcher",
+          "relation": "Related: Pretty-Launcher"
+        }
+      ]
     },
     {
-      "title": "🚧 Pretty-Engine 🚧",
+      "title": "Pretty-Engine",
       "overview": "overview-pretty-engine",
       "short_description": "Custom C/C++ Game Engine. This engine is for learning purpose. Multithreaded and using Vulkan API for rendering.",
       "image": "assets/pretty_engine.png",
       "content": "content/markdown/PrettyEngine.md",
       "content-type": "markdown",
-      "html_header": "content/html/PrettyEngine.html"
+      "html_header": "content/html/PrettyEngine.html",
+      "status": "wip",
+      "related": [
+        {
+          "title": "Pretty-Launcher",
+          "overview": "pretty-launcher",
+          "relation": "Co-developed with Pretty-Launcher"
+        }
+      ]
     },
     {
-      "title": "🚧 Project-Survival 🚧",
+      "title": "Project-Survival",
       "overview": "project-survival",
       "short_description": "Work in progress, Unity game.",
       "image": "assets/project_survival_screen.png",
       "content": "content/markdown/ProjectSurvival.md",
       "content-type": "markdown",
-      "html_header": "content/html/ProjectSurvival.html"
+      "html_header": "content/html/ProjectSurvival.html",
+      "status": "wip"
     },
     {
-      "title": "🚧 Pretty-Launcher 🚧",
+      "title": "Pretty-Launcher",
       "overview": "pretty-launcher",
       "short_description": "Cross-platform backend made to run plugins, can be embedded in any Rust projects.",
       "image": "assets/pretty_launcher_screen.png",
       "content": "content/markdown/PrettyLauncher.md",
       "content-type": "markdown",
-      "html_header": "content/html/PrettyLauncher.html"
+      "html_header": "content/html/PrettyLauncher.html",
+      "status": "wip",
+      "related": [
+        {
+          "title": "Pretty-Engine",
+          "overview": "overview-pretty-engine",
+          "relation": "Co-developed with Pretty-Engine"
+        }
+      ]
     }
   ]
 }

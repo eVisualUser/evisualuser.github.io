@@ -1,0 +1,68 @@
+# Sylvain Tosoni - Portfolio & Projects Index
+
+> Sylvain Tosoni is a Junior Game Programmer and Game Engine Developer graduated from Bellecour École, specializing in gameplay programming, custom engine architecture, C++, Rust, Unreal Engine 5, and Unity.
+
+## Personal Information & Links
+- **Name:** Sylvain Tosoni
+- **Role:** Junior Game & Engine Programmer
+- **Education:** Bachelor in Game Programming, Bellecour École
+- **Email:** sylvain.tosoni.pro@proton.me
+- **GitHub:** https://github.com/eVisualUser
+- **LinkedIn:** https://www.linkedin.com/in/sylvain-tosoni
+- **Listed:** https://listed.to/@eVisualUser
+- **Resume:** /resume/resume.html
+
+## Technical Skills
+- **Languages:** C++, Rust, C#, Python, JavaScript
+- **Game Engines:** Unreal Engine 5, Unity, Godot
+- **Graphics & Systems:** Vulkan API, Jolt Physics, OpenAL, Multithreading, Dynamic Object System (DOS), Custom Reflection
+- **Tools & Frameworks:** Git, CMake, Tauri, Rocket, Qt, GLFW, Visual Studio, JetBrains Rider/CLion
+
+## Playable Demos & Direct Links
+- **Echoes of Seasons (Steam):** https://store.steampowered.com/app/3914680/
+- **Bellum (Android APK):** https://drive.proton.me/urls/J31DMZM53W#FGAR-cvd7viA
+- **Flappy Editor (VS Code Game):** https://github.com/eVisualUser/flappy-editor/releases/tag/1.0.0
+
+## Projects Catalog
+
+### Echoes of Seasons
+- **Status:** Done
+- **Type:** Final-Year Game Project (Bellecour École)
+- **Engine/Tech:** Unreal Engine 5, C++, Blueprints
+- **Summary:** Puzzle adventure game where advancing through levels requires dynamically transitioning between seasons. Developed custom material functions and color math for seasonal transitions, engineered multithreaded C++ logic for high performance, and exposed gameplay parameters to designers via Blueprints.
+
+### Pretty-Engine
+- **Status:** Work in Progress
+- **Type:** Custom Game Engine
+- **Engine/Tech:** C/C++20, Vulkan API, Jolt Physics, OpenAL, CMake
+- **Summary:** An open-source, multithreaded game engine for Linux and Windows. Features a Vulkan 3D rendering pipeline, Jolt Physics backend, OpenAL audio, custom reflection macros with leaf-header dependency management, and a thread-safe Dynamic Object System (DOS) for parallel system execution.
+
+### Gluk Media Internship
+- **Status:** Done
+- **Type:** Professional Internship (Vilnius, Lithuania)
+- **Engine/Tech:** Unity (UI Toolkit & UGUI), Rust (Rocket), Three.js, Hammer.js, Android
+- **Summary:** Developed Android kiosk applications for museums and engineered a high-performance fullstack QR-code web experience utilizing Rust (Rocket) and Three.js 3D model rendering, optimized for sub-3-second load times over 3G networks.
+
+### Bellum
+- **Status:** Done
+- **Type:** Mobile Game Project
+- **Engine/Tech:** Unity, C#, Android
+- **Summary:** Top-down 2D pixel-art action game for Android featuring close-combat mechanics and a virtual token-based inventory/shop system.
+
+### Rust Tooling Ecosystem
+- **Status:** Done & Active
+- **Type:** Open-Source Tools & Libraries
+- **Engine/Tech:** Rust, Tauri, Rocket
+- **Summary:** Suite of tools including Flappy Editor (playable game inside VS Code), Fast-Assets (asset manager crate), Pretty-Ini (ini parser), Pro-CSV (CSV parser), Full-Logger (logging library & GUI server), and Tauri game dev launcher.
+
+### Project-Survival
+- **Status:** Work in Progress
+- **Type:** Survival Strategy Game
+- **Engine/Tech:** Unity 6, C#
+- **Summary:** Top-down post-apocalyptic survival management game where zombie density escalates exponentially the longer players remain in an area, featuring branching narrative story cards and progressive resource scarcity.
+
+### Pretty-Launcher
+- **Status:** Work in Progress
+- **Type:** Tooling & Plugin Backend
+- **Engine/Tech:** Rust (pl-common), Lua, CLI
+- **Summary:** Cross-platform extensible plugin backend and CLI client with Lua scripting for rapid and secure tool deployment.

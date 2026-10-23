@@ -42,4 +42,4 @@ No release date yet.
 
 - Made using Unity 6
 - Code written in C#
-- GitHub used for version control
+- Self-hosted using Gitlab

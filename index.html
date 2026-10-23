@@ -2,8 +2,192 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Sylvain Tosoni</title>
+        <title>Sylvain Tosoni - Game & Engine Programmer Portfolio</title>
+        <meta
+            name="description"
+            content="Portfolio of Sylvain Tosoni, Junior Game & Engine Programmer specializing in C++, Rust, Unreal Engine 5, Unity, Vulkan, and custom game engine architecture (Pretty-Engine)."
+        />
+        <meta
+            name="keywords"
+            content="Sylvain Tosoni, Game Programmer, Engine Programmer, C++, Rust, Unreal Engine 5, Unity, Vulkan, Jolt Physics, Pretty-Engine, Dynamic Object System, Game Development"
+        />
+        <meta name="author" content="Sylvain Tosoni" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="Sylvain Tosoni - Game & Engine Programmer" />
+        <meta
+            property="og:description"
+            content="Junior game programmer with expertise in C++, Rust, Unreal Engine 5, Unity, and custom engine development (Pretty-Engine, Vulkan)."
+        />
+        <meta property="og:image" content="assets/SelfPhotoAnonymous.png" />
+        <meta property="og:site_name" content="Sylvain Tosoni Portfolio" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sylvain Tosoni - Game & Engine Programmer" />
+        <meta
+            name="twitter:description"
+            content="Explore game programming and engine development projects by Sylvain Tosoni, including Pretty-Engine, Echoes of Seasons, and Rust tools."
+        />
+        <meta name="twitter:image" content="assets/SelfPhotoAnonymous.png" />
+
+        <!-- Structured Data (JSON-LD) for AI & Search Engines -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Person",
+                    "@id": "https://evisualuser.github.io/#person",
+                    "name": "Sylvain Tosoni",
+                    "jobTitle": "Game Programmer & Engine Developer",
+                    "description": "Junior game programmer freshly graduated from Bellecour École, focused on gameplay and engine programming in C++, Rust, UE5, and Unity.",
+                    "alumniOf": {
+                        "@type": "EducationalOrganization",
+                        "name": "Bellecour École"
+                    },
+                    "sameAs": [
+                        "https://github.com/eVisualUser",
+                        "https://www.linkedin.com/in/sylvain-tosoni",
+                        "https://listed.to/@eVisualUser"
+                    ],
+                    "knowsAbout": [
+                        "C++",
+                        "Rust",
+                        "Unreal Engine 5",
+                        "Unity",
+                        "Vulkan API",
+                        "Game Engine Architecture",
+                        "Multithreading",
+                        "Jolt Physics",
+                        "C#",
+                        "Python",
+                        "JavaScript",
+                        "Tauri",
+                        "Rocket"
+                    ]
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://evisualuser.github.io/#website",
+                    "url": "https://evisualuser.github.io/",
+                    "name": "Sylvain Tosoni Portfolio",
+                    "description": "Comprehensive portfolio showcasing game programming, custom engine architecture, tools, and museum kiosk projects.",
+                    "author": {
+                        "@id": "https://evisualuser.github.io/#person"
+                    }
+                },
+                {
+                    "@type": "ItemList",
+                    "@id": "https://evisualuser.github.io/#projects",
+                    "name": "Projects and Technical Works",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "SoftwareApplication",
+                                "name": "Echoes of Seasons",
+                                "applicationCategory": "Game",
+                                "operatingSystem": "Windows",
+                                "url": "https://store.steampowered.com/app/3914680/",
+                                "description": "Unreal Engine 5 final-year puzzle game featuring real-time seasonal environment and material transitions, multithreaded C++ architecture, and Blueprint gameplay exposure. Available on Steam.",
+                                "keywords": "Unreal Engine 5, C++, Blueprints, Puzzle Game, Virtual Texturing, Material Functions, Steam",
+                                "author": { "@id": "https://evisualuser.github.io/#person" },
+                                "creativeWorkStatus": "Done"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "SoftwareSourceCode",
+                                "name": "Pretty-Engine",
+                                "programmingLanguage": "C++",
+                                "runtimePlatform": "Windows, Linux",
+                                "description": "Custom multithreaded C/C++ game engine with Vulkan 3D rendering, Jolt Physics, OpenAL audio, reflection engine, and Dynamic Object System (DOS) architecture.",
+                                "keywords": "C++, Vulkan, Game Engine, Jolt Physics, OpenAL, Multithreading, ECS, DOS, Reflection",
+                                "author": { "@id": "https://evisualuser.github.io/#person" },
+                                "creativeWorkStatus": "Work In Progress"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "SoftwareApplication",
+                                "name": "Internship - Gluk Media",
+                                "applicationCategory": "Interactive Kiosk & Web App",
+                                "operatingSystem": "Android, Web",
+                                "description": "Interactive museum kiosk applications with Unity UI Toolkit/UGUI and high-performance fullstack QR-code web experience powered by Rust (Rocket) and Three.js 3D rendering.",
+                                "keywords": "Unity, UI Toolkit, Rust, Rocket, Three.js, Android, Museum Kiosks",
+                                "author": { "@id": "https://evisualuser.github.io/#person" },
+                                "creativeWorkStatus": "Done"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "item": {
+                                "@type": "SoftwareApplication",
+                                "name": "Bellum",
+                                "applicationCategory": "Game",
+                                "operatingSystem": "Android",
+                                "url": "https://drive.proton.me/urls/J31DMZM53W#FGAR-cvd7viA",
+                                "description": "Top-down 2D pixel-art action game for Android developed with Unity, featuring close-combat mechanics and a modular virtual shop token system. Playable APK available.",
+                                "keywords": "Unity, C#, Android, 2D Game, Pixel Art, Action, Playable APK",
+                                "author": { "@id": "https://evisualuser.github.io/#person" },
+                                "creativeWorkStatus": "Done"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 5,
+                            "item": {
+                                "@type": "SoftwareSourceCode",
+                                "name": "Rust Tooling Suite",
+                                "programmingLanguage": "Rust",
+                                "description": "Collection of Rust tools and crates: Flappy Editor (VS Code game), Fast-Assets (asset manager), Pretty-Ini, Pro-CSV, Full-Logger, and Tauri game launcher.",
+                                "keywords": "Rust, Tauri, Crates, Tooling, Asset Management, Log Server, VS Code",
+                                "author": { "@id": "https://evisualuser.github.io/#person" }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 6,
+                            "item": {
+                                "@type": "SoftwareApplication",
+                                "name": "Project-Survival",
+                                "applicationCategory": "Game",
+                                "operatingSystem": "PC",
+                                "description": "Top-down post-apocalyptic zombie survival and management strategy game developed in Unity 6 and C# with ticking-clock mechanics and dynamic resource scarcity.",
+                                "keywords": "Unity 6, C#, Survival Game, Strategy, Management, Top-Down",
+                                "author": { "@id": "https://evisualuser.github.io/#person" },
+                                "creativeWorkStatus": "Work In Progress"
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 7,
+                            "item": {
+                                "@type": "SoftwareSourceCode",
+                                "name": "Pretty-Launcher",
+                                "programmingLanguage": "Rust",
+                                "description": "Secure, cross-platform extensible plugin backend (pl-common) with CLI client and Lua scripting support for rapid tooling workflows.",
+                                "keywords": "Rust, Lua, CLI, Plugin Architecture, Tooling",
+                                "author": { "@id": "https://evisualuser.github.io/#person" },
+                                "creativeWorkStatus": "Work In Progress"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+        </script>
         <link rel="icon" type="image/x-icon" href="favicon.png" />
 
         <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -37,6 +221,12 @@
             })(window, document, "clarity", "script", "tfwis38289");
         </script>
 
+        <!-- Prism Syntax Highlighting -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
         <!-- Markdown Block -->
         <script
             type="module"
@@ -55,35 +245,50 @@
         />
     </head>
     <body>
-        <div class="el"></div>
-
-        <a href="#content-section"><button class="anchor"></button></a>
-
-        <div class="container">
-            <svg
-                class="svg-ants"
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid meet"
-            >
-                <symbol id="s-text">
-                    <text text-anchor="middle" x="50%" y="50%">
-                        Sylvain Tosoni
-                    </text>
-                    <text text-anchor="middle" x="50%" y="90%">
-                        Game Programmer
-                    </text>
-                </symbol>
-
-                <g class="g-ants">
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-            </svg>
+        <div id="bg-container" class="bg-container" aria-hidden="true">
+            <div class="bg-layer bg-layer-1"></div>
+            <div class="bg-layer bg-layer-2"></div>
+            <div class="bg-overlay"></div>
         </div>
+
+        <!-- Try / Playable Side Panel Toggle & Drawer -->
+        <button
+            id="try-panel-toggle"
+            class="try-panel-toggle"
+            aria-label="Open Try & Play projects panel"
+            title="Try Playable Games & Demos"
+        >
+            <span class="try-toggle-icon">🎮</span>
+            <span class="try-toggle-text">TRY</span>
+            <span class="try-toggle-badge" id="try-badge-count">3</span>
+        </button>
+
+        <div id="try-panel-backdrop" class="try-panel-backdrop" aria-hidden="true"></div>
+
+        <aside id="try-side-panel" class="try-side-panel" aria-label="Playable Demos and Steam Games">
+            <div class="try-panel-header">
+                <div class="try-panel-header-title">
+                    <span class="try-panel-header-icon">🎮</span>
+                    <div>
+                        <h2>Try & Play</h2>
+                        <span class="try-panel-subtitle">Playable demos, games & Steam pages</span>
+                    </div>
+                </div>
+                <button
+                    id="try-panel-close"
+                    class="try-panel-close"
+                    aria-label="Close Try Panel"
+                >&times;</button>
+            </div>
+
+            <div class="try-panel-body" id="try-panel-list">
+                <!-- Dynamically generated by CardsGenerator.js -->
+            </div>
+
+            <div class="try-panel-footer">
+                <p>⚡ More playable games and prototypes in active development.</p>
+            </div>
+        </aside>
 
         <span class="title-separator"></span>
 
@@ -105,6 +310,121 @@
                 <div></div>
             </div>
         </div>
+
+        <!-- Semantic Portfolio Summary for Fast AI Indexing & Non-JS Clients -->
+        <noscript>
+            <section id="noscript-summary">
+                <h1>Sylvain Tosoni - Game & Engine Programmer</h1>
+                <p>Junior game programmer freshly graduated from Bellecour École, specializing in gameplay programming, custom game engine architecture, C++, Rust, Unreal Engine 5, and Unity.</p>
+                
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>Email: <a href="mailto:sylvain.tosoni.pro@proton.me">sylvain.tosoni.pro@proton.me</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/sylvain-tosoni">sylvain-tosoni</a></li>
+                    <li>GitHub: <a href="https://github.com/eVisualUser">eVisualUser</a></li>
+                    <li>Resume: <a href="./resume/resume.html">View Resume</a></li>
+                </ul>
+
+                <h2>Core Skills</h2>
+                <ul>
+                    <li><strong>Languages:</strong> C++, Rust, C#, Python, JavaScript</li>
+                    <li><strong>Game Engines:</strong> Unreal Engine 5, Unity, Godot</li>
+                    <li><strong>Graphics & Systems:</strong> Vulkan API, Jolt Physics, OpenAL, Multithreading, Dynamic Object System (DOS)</li>
+                    <li><strong>Tools & Frameworks:</strong> Git, CMake, Tauri, Rocket, Qt, GLFW, Visual Studio, JetBrains Rider/CLion</li>
+                </ul>
+
+                <h2>Project Catalog</h2>
+                <article>
+                    <h3>Echoes of Seasons (Status: Done)</h3>
+                    <p>Final-year puzzle game developed at Bellecour École using Unreal Engine 5. Featured a dynamic season-switching mechanic using custom Material Functions and color math, C++ gameplay architecture for multithreading and performance, and Blueprints for designer tuning.</p>
+                </article>
+
+                <article>
+                    <h3>Pretty-Engine (Status: Work in Progress)</h3>
+                    <p>Custom open-source C/C++ game engine for Windows and Linux. Built with a high-performance Vulkan rendering pipeline, Jolt Physics backend, OpenAL audio, custom reflection engine, and Dynamic Object System (DOS) for thread-safe concurrent gameplay execution.</p>
+                </article>
+
+                <article>
+                    <h3>Internship - Gluk Media (Status: Done)</h3>
+                    <p>Six-month internship in Vilnius, Lithuania. Built Android museum kiosk applications using Unity (UI Toolkit & UGUI) and developed a high-efficiency fullstack QR-code web experience utilizing Rust (Rocket framework) and Three.js 3D rendering under 3-second 3G load constraints.</p>
+                </article>
+
+                <article>
+                    <h3>Bellum (Status: Done)</h3>
+                    <p>Second-year mobile top-down 2D pixel-art action game for Android developed in Unity, featuring real-time close combat and a local token-based virtual shop system.</p>
+                </article>
+
+                <article>
+                    <h3>Rust Tooling Ecosystem</h3>
+                    <p>Suite of open-source Rust crates and tools including Flappy Editor (playable game in VS Code), Fast-Assets (asset manager), Pretty-Ini, Pro-CSV, Full-Logger with Log-Server GUI, and Tauri game launcher.</p>
+                </article>
+
+                <article>
+                    <h3>Project-Survival (Status: Work in Progress)</h3>
+                    <p>Top-down post-apocalyptic zombie survival and management strategy game developed in Unity 6 and C#, featuring ticking-clock zombie density mechanics and progressive resource scarcity.</p>
+                </article>
+
+                <article>
+                    <h3>Pretty-Launcher (Status: Work in Progress)</h3>
+                    <p>Cross-platform extensible plugin backend (pl-common) with a CLI client and Lua scripting support for secure, fast tooling workflows.</p>
+                </article>
+            </section>
+        </noscript>
+
+        <section id="ai-summary" class="sr-only" aria-label="Portfolio Summary and Fast AI Index">
+            <h1>Sylvain Tosoni - Game & Engine Programmer</h1>
+            <p>Junior game programmer freshly graduated from Bellecour École, focused on gameplay programming and custom engine architecture in C++, Rust, Unreal Engine 5, and Unity.</p>
+
+            <h2>Contact & Profiles</h2>
+            <ul>
+                <li>Email: <a href="mailto:sylvain.tosoni.pro@proton.me">sylvain.tosoni.pro@proton.me</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/sylvain-tosoni">sylvain-tosoni</a></li>
+                <li>GitHub: <a href="https://github.com/eVisualUser">eVisualUser</a></li>
+                <li>Resume: <a href="./resume/resume.html">Resume</a></li>
+            </ul>
+
+            <h2>Technical Skills</h2>
+            <p><strong>Programming Languages:</strong> C++, Rust, C#, Python, JavaScript</p>
+            <p><strong>Game Engines & APIs:</strong> Unreal Engine 5, Unity, Godot, Vulkan API, Jolt Physics, OpenAL</p>
+            <p><strong>Architecture & Patterns:</strong> Multithreading, Dynamic Object System (DOS), Custom Reflection Engine, ECS</p>
+            <p><strong>Tools:</strong> Git, CMake, Tauri, Rocket, Qt, Visual Studio, JetBrains CLion/Rider</p>
+
+            <h2>Projects Overview</h2>
+            <article>
+                <h3>Echoes of Seasons (Status: Done)</h3>
+                <p>Final-year puzzle game developed at Bellecour École using Unreal Engine 5. Engineered season-switching mechanics with custom Material Functions, optimized C++ backend logic for multithreading, and exposed configurable parameters to designers via Blueprints.</p>
+            </article>
+
+            <article>
+                <h3>Pretty-Engine (Status: Work in Progress)</h3>
+                <p>Custom C/C++ game engine for Windows and Linux. Highlights: Vulkan 3D rendering pipeline, Jolt Physics integration, OpenAL audio, custom reflection macros with leaf-header dependency structure, and Dynamic Object System (DOS) supporting concurrent systems.</p>
+            </article>
+
+            <article>
+                <h3>Gluk Media Internship (Status: Done)</h3>
+                <p>Produced museum kiosk applications in Unity (UI Toolkit and UGUI) and engineered a fast, lightweight fullstack web application using Rust (Rocket framework) and Three.js 3D rendering for QR-code-guided museum visitors.</p>
+            </article>
+
+            <article>
+                <h3>Bellum (Status: Done)</h3>
+                <p>2D pixel-art top-down action game for Android developed with Unity, featuring close-combat gameplay and a local storage token-based shop system.</p>
+            </article>
+
+            <article>
+                <h3>Rust Tooling Suite</h3>
+                <p>Open-source tools including Flappy Editor (VS Code game), Fast-Assets (asset manager crate), Pretty-Ini (ini parser), Pro-CSV (CSV parser), Full-Logger (logging library & server), and Tauri game launcher.</p>
+            </article>
+
+            <article>
+                <h3>Project-Survival (Status: Work in Progress)</h3>
+                <p>Top-down survival strategy and resource management game built with Unity 6 and C#, featuring exponential zombie escalation and branching narrative story cards.</p>
+            </article>
+
+            <article>
+                <h3>Pretty-Launcher (Status: Work in Progress)</h3>
+                <p>Cross-platform plugin architecture with pl-common backend, CLI manager, and Lua scripting engine for rapid tool distribution.</p>
+            </article>
+        </section>
 
         <footer class="footer">
             <a href="https://github.com/eVisualUser">GitHub</a>
