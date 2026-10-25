@@ -429,7 +429,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    flex: 1 1 0;
+    flex: 1 1 auto;
     min-height: 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
