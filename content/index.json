@@ -34,7 +34,14 @@
       "content": "content/markdown/GlukMedia.md",
       "content-type": "markdown",
       "html_header": "content/html/GlukMedia.html",
-      "status": "done"
+      "status": "done",
+      "try": {
+        "title": "Museum Website",
+        "tag": "Mobile Website",
+        "type": "website",
+        "url": "https://paluse.duckdns.org/get/page_12",
+        "button_text": "Visit Website"
+      }
     },
     {
       "title": "Bellum",
