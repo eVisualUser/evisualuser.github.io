@@ -236,12 +236,15 @@ div.resume_body {
 aside.skills {
     width: 63mm;
     height: 100%;
+    box-sizing: border-box;
     background-color: var(--sidebar-bg);
     border-right: 1px solid var(--border-subtle);
     padding: 3mm 4.2mm 3.2mm 4.8mm;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 4mm;
 }
 
 aside.skills > h2 {
@@ -262,6 +265,15 @@ div.skill {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    flex-shrink: 0;
+}
+
+div.skill:has(ul.skill-list li:not([hidden])) {
+    display: flex;
+}
+
+div.skill:not(:has(ul.skill-list li:not([hidden]))) {
+    display: none;
 }
 
 div.skill-header {

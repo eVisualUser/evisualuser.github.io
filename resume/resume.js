@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   function set_all_optional(name, enabled, mod) {
     document.querySelectorAll(`[opt="${name}"]`).forEach(element => {
-      element.style.display = enabled ? (element.getAttribute("opt-mod") === undefined || element.getAttribute("opt-mod") === null ? "block" : element.getAttribute("opt-mod")) : "none";
+      element.style.display = enabled ? (element.getAttribute("opt-mod") === undefined || element.getAttribute("opt-mod") === null ? "flex" : element.getAttribute("opt-mod")) : "none";
     });
   }
 
