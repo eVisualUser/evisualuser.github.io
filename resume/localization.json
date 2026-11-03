@@ -1,7 +1,39 @@
 ﻿{
   "doc_title": {
-    "fr": "Game Programmer",
+    "fr": "Développeur logiciel",
+    "en": "Software Developer"
+  },
+  "title_game": {
+    "fr": "Programmeur de jeux vidéo",
     "en": "Game Programmer"
+  },
+  "title_web": {
+    "fr": "Développeur logiciel",
+    "en": "Software Developer"
+  },
+  "title_engine": {
+    "fr": "Programmeur moteur",
+    "en": "Engine Programmer"
+  },
+  "title_game_web": {
+    "fr": "Développeur jeux vidéo & logiciel",
+    "en": "Game & Software Developer"
+  },
+  "title_game_engine": {
+    "fr": "Programmeur jeux vidéo & moteur",
+    "en": "Game & Engine Programmer"
+  },
+  "title_web_engine": {
+    "fr": "Développeur logiciel & systèmes",
+    "en": "Software & Systems Developer"
+  },
+  "title_game_web_engine": {
+    "fr": "Développeur logiciel & jeux vidéo",
+    "en": "Software & Game Developer"
+  },
+  "title_web_engine_game": {
+    "fr": "Développeur logiciel, moteur & jeux vidéo",
+    "en": "Software, Engine & Game Developer"
   },
   "age": {
     "fr": "ans",
@@ -31,9 +63,21 @@
     "fr": "Ingénieur en systèmes et technologue narratif basé en <span class=\"important\">France</span>, je conçois et développe des systèmes interactifs qui allient profondeur technique et récits captivants. Mon travail se concentre sur l'intersection entre <span class=\"important\">l'ingénierie des systèmes</span> et <span class=\"important\">la narration</span>, où je crée des environnements où les systèmes complexes et les récits évoluent ensemble.\n\nJ'apprécie particulièrement les jeux <span class=\"important\">4X</span> et les jeux d'aventure et narratifs, qui exigent une collaboration entre systèmes et une narration riche. Je recherche des opportunités pour <span class=\"important\">collaborer en équipe pluridisciplinaire</span> et contribuer à des projets innovants. Je suis ouvert(e) aux opportunités de travail à distance ou en déplacement.",
     "en": "Systems Engineer & Narrative Technologist based in <span class=\"important\">France</span>, I design and implement interactive systems that merge technical depth with compelling narratives. My work focuses on the intersection of <span class=\"important\">systems engineering</span> and <span class=\"important\">storytelling</span>, creating environments where complex systems and narratives evolve together.\n\nI particularly enjoy <span class=\"important\">4X</span> games and narrative-driven adventures, which challenge the collaboration of systems and deliver rich narratives. I am looking for opportunities to <span class=\"important\">collaborate with multidisciplinary teams</span> and contribute to innovative projects. I am open to remote or relocation opportunities."
   },
+  "summary_web": {
+    "fr": "Développeur logiciel basé en <span class=\"important\">France</span>, je conçois et développe des applications web et des services backend. J'apprécie particulièrement la conception d'architectures logicielles, le développement d'outils et la création de solutions fiables et maintenables. Je suis à l'aise avec différentes technologies et capable d'intervenir sur plusieurs couches d'un projet, du backend à l'interface utilisateur.",
+    "en": "Software developer based in <span class=\"important\">France</span>, I design and develop web applications and backend services. I particularly enjoy software architecture, tool development, and building reliable, maintainable solutions. I am comfortable working with different technologies and across multiple layers of a project, from backend services to user interfaces."
+  },
+  "summary_game": {
+    "fr": "Développeur de jeux vidéo basé en <span class=\"important\">France</span>, je conçois et développe des systèmes interactifs mêlant <span class=\"important\">gameplay</span>, <span class=\"important\">architecture logicielle</span> et expérience utilisateur. Je m'intéresse particulièrement aux mécaniques de jeu complexes, aux systèmes émergents et aux jeux <span class=\"important\">4X</span> ou narratifs. J'apprécie le travail en équipe pluridisciplinaire pour transformer des idées créatives en expériences jouables.",
+    "en": "Game developer based in <span class=\"important\">France</span>, I design and implement interactive systems combining <span class=\"important\">gameplay</span>, <span class=\"important\">software architecture</span>, and user experience. I am particularly interested in complex game mechanics, emergent systems, and <span class=\"important\">4X</span> or narrative-driven games. I enjoy collaborating with multidisciplinary teams to turn creative ideas into playable experiences."
+  },
+  "summary_engine": {
+    "fr": "Développeur moteur basé en <span class=\"important\">France</span>, je m'intéresse à la conception de systèmes logiciels bas niveau et d'architectures techniques performantes. Je travaille notamment sur le <span class=\"important\">rendu graphique</span>, la gestion des ressources, la concurrence et les systèmes modulaires. J'apprécie particulièrement la compréhension des mécanismes internes d'un logiciel et la création de fondations techniques réutilisables.",
+    "en": "Engine developer based in <span class=\"important\">France</span>, I focus on low-level software systems and efficient technical architectures. My work includes <span class=\"important\">graphics rendering</span>, resource management, concurrency, and modular systems. I particularly enjoy understanding the inner workings of software and building reusable technical foundations."
+  },
   "others_title": {
-    "fr": "Langues & Permis",
-    "en": "Languages & Info"
+    "fr": "Langues et informations complémentaires",
+    "en": "Languages & Additional Information"
   },
   "game_engines_title": {
     "fr": "Moteurs de jeu",
@@ -96,7 +140,7 @@
     "en": "Custom Game Engine"
   },
   "work_fields": {
-    "en": "Technical Domains",
+    "en": "Areas of Expertise",
     "fr": "Domaines d'application"
   },
   "field_game_dev": {

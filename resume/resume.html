@@ -22,6 +22,10 @@
             <button setlang="en">English</button>
             <button setlang="fr">Français</button>
             <button id="print"><local name="print_btn"></local></button>
+
+            <label for="check_gamedev">Game</label><input type="checkbox" id="check_gamedev"/>
+            <label for="check_web">Web</label><input type="checkbox" id="check_web"/>
+            <label for="check_engine">Engine</label><input type="checkbox" id="check_engine"/>
         </div>
 
         <div id="resume">
@@ -32,7 +36,7 @@
                         <img src="../assets/SelfPhotoAnonymous.png" alt="Sylvain Tosoni" class="self"/>
                     </a>
                     <div class="title">
-                        <h1><local name="doc_title"></local></h1>
+                        <h1><local name="doc_title" id="doc_title"></local></h1>
                         <h2>Sylvain Tosoni</h2>
                         <div class="meta">
                             <span>22 <local name="age"></local></span>
@@ -81,7 +85,7 @@
                         </ul>
                     </div>
 
-                    <div class="skill">
+                    <div class="skill" opt="game">
                         <div class="skill-header">
                             <span class="skill-indicator"></span>
                             <h3><local name="game_engines_title"></local></h3>
@@ -99,14 +103,14 @@
                             <h3><local name="frameworks_apis_title"></local></h3>
                         </div>
                         <ul class="skill-list">
-                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/vulkan_logo.png" alt="Vulkan"/></span> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">Vulkan</a></p></li>
-                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/opengl_logo.jpg" alt="OpenGL"/></span> <p>OpenGL</p></li>
-                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/slang-logo.svg" alt="Slang"/></span> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">Slang</a></p></li>
+                            <li opt="engine"><span class="icon-slot"><img class="icon" src="../assets/icons/vulkan_logo.png" alt="Vulkan"/></span> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">Vulkan</a></p></li>
+                            <li opt="engine"><span class="icon-slot"><img class="icon" src="../assets/icons/opengl_logo.jpg" alt="OpenGL"/></span> <p>OpenGL</p></li>
+                            <li opt="engine"><span class="icon-slot"><img class="icon" src="../assets/icons/slang-logo.svg" alt="Slang"/></span> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">Slang</a></p></li>
                             <li><span class="icon-slot"><img class="icon" src="../assets/icons/Qt-logo-neon_900px.webp" alt="Qt"/></span> <p>Qt</p></li>
                             <li><span class="icon-slot"><img class="icon" src="../assets/icons/tauri_icon.svg" alt="Tauri"/></span> <p><a href="https://evisualuser.github.io/#overview-rust">Tauri</a></p></li>
-                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/rocket.png" alt="Rocket-rs"/></span> <p><a href="https://evisualuser.github.io/#overview-gluk-media">Rocket-rs</a></p></li>
-                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/imgui.svg" alt="ImGui"/></span> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">ImGui</a></p></li>
-                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/rmlui.png" alt="RmlUi"/></span> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">RmlUi</a></p></li>
+                            <li opt="web"><span class="icon-slot"><img class="icon" src="../assets/icons/rocket.png" alt="Rocket-rs"/></span> <p><a href="https://evisualuser.github.io/#overview-gluk-media">Rocket-rs</a></p></li>
+                            <li opt="engine" ><span class="icon-slot"><img class="icon" src="../assets/icons/imgui.svg" alt="ImGui"/></span> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">ImGui</a></p></li>
+                            <li opt="engine"><span class="icon-slot"><img class="icon" src="../assets/icons/rmlui.png" alt="RmlUi"/></span> <p><a href="https://evisualuser.github.io/#overview-pretty-engine">RmlUi</a></p></li>
                         </ul>
                     </div>
 
@@ -135,8 +139,8 @@
                             <li><span class="icon-slot"><img class="icon" src="../assets/icons/notion-logo-no-background.png" alt="Notion"/></span> <p>Notion</p></li>
                             <li><span class="icon-slot"><img class="icon" src="../assets/icons/appflowy.png" alt="Appflowy"/></span> <p>Appflowy</p></li>
                             <li><span class="icon-slot"><img class="icon" src="../assets/icons/youtrack.png" alt="Youtrack"/></span> <p>Youtrack</p></li>
-                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/docker.png" alt="Docker"/></span> <p>Docker</p></li>
-                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/renderDoc.png" alt="RenderDoc"/></span> <p>RenderDoc</p></li>
+                            <li opt="web"><span class="icon-slot"><img class="icon" src="../assets/icons/docker.png" alt="Docker"/></span> <p>Docker</p></li>
+                            <li opt="engine"><span class="icon-slot"><img class="icon" src="../assets/icons/renderDoc.png" alt="RenderDoc"/></span> <p>RenderDoc</p></li>
                         </ul>
                     </div>
 
@@ -156,7 +160,9 @@
 
                 <main class="main_content">
                     <div class="summary">
-                        <p><local name="summary"></local></p>
+                        <p><local name="summary_game" opt="game" opt-mod="block"></local></p>
+                        <p><local name="summary_web" opt="web" opt-mod="block"></local></p>
+                        <p><local name="summary_engine" opt="engine" opt-mod="block"></local></p>
                     </div>
 
                     <!-- Contains school and professional experiences -->
@@ -165,7 +171,7 @@
                             <h2><img class="icon" src="../assets/icons/internship.png" alt="Internship"/><local name="gluk_media_name"></local></h2>
                             <p><local name="gluk_media_desc"></local></p>
                         </section>
-                        <section class="project">
+                        <section opt="engine" class="project">
                             <a href="https://evisualuser.github.io/#overview-pretty-engine"><h2><img class="icon" src="../assets/icons/gamepad.png" alt="Game Project"/><local name="project_title"></local>: <local name="pretty_engine_name"></local></h2></a>
                             <p><local name="pretty_engine_desc"></local></p>
                         </section>
@@ -173,11 +179,11 @@
                             <h2><img class="icon" src="../assets/icons/school.png" alt="Education"/>Bellecour Ecole 2021-2025</h2>
                             <p><local name="bellecour_ecole_desc"></local></p>
                         </section>
-                        <section class="project">
+                        <section class="project" opt="game">
                             <a href="https://evisualuser.github.io/#overview-echoes-of-seasons"><h2><img class="icon" src="../assets/icons/gamepad.png" alt="Game Project"/><local name="project_title"></local>: Echoes of Seasons 2024-2025</h2></a>
                             <p><local name="echoes_of_seasons_desc"></local></p>
                         </section>
-                        <section class="project">
+                        <section class="project" opt="game">
                             <a href="https://evisualuser.github.io/#overview-bellum"><h2><img class="icon" src="../assets/icons/gamepad.png" alt="Game Project"/><local name="project_title"></local>: Bellum 2024</h2></a>
                             <p><local name="bellum_desc"></local></p>
                         </section>

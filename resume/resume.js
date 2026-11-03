@@ -86,23 +86,83 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (resumeEl) {
     resumeEl.style.opacity = "1";
   }
+
+  function set_all_optional(name, enabled, mod) {
+    document.querySelectorAll(`[opt="${name}"]`).forEach(element => {
+      element.style.display = enabled ? (element.getAttribute("opt-mod") === undefined || element.getAttribute("opt-mod") === null ? "block" : element.getAttribute("opt-mod")) : "none";
+    });
+  }
+
+  function update_titles(gameDev, webDev, engineDev) {
+    if (gameDev) {
+      document.getElementById("doc_title").setAttribute("name", "title_game");
+    }
+    if (webDev) {
+      document.getElementById("doc_title").setAttribute("name", "title_web");
+    }
+    if (engineDev) {
+      document.getElementById("doc_title").setAttribute("name", "title_engine");
+    }
+
+    if (gameDev && webDev) {
+      document.getElementById("doc_title").setAttribute("name", "title_game_web");
+    }
+
+    if (gameDev && engineDev) {
+      document.getElementById("doc_title").setAttribute("name", "title_game_engine");
+    }
+
+    if (webDev && engineDev) {
+      document.getElementById("doc_title").setAttribute("name", "title_web_engine");
+    }
+
+    if (webDev && engineDev && gameDev) {
+      document.getElementById("doc_title").setAttribute("name", "title_web_engine_game");
+    }
+  }
+
+  const options = {
+    check_gamedev: ["game"],
+    check_web: ["web"],
+    check_engine: ["engine"]
+  };
+
+  let gameDev = document.getElementById("check_gamedev");
+  let webDev = document.getElementById("check_web");
+  let engineDev = document.getElementById("check_engine");
+
+  for (const [id, targets] of Object.entries(options)) {
+    const checkbox = document.getElementById(id);
+
+    if (!checkbox) {
+      console.error(`Checkbox ${id} not found`);
+      continue;
+    }
+
+    const update = () => {
+      targets.forEach(target => {
+        set_all_optional(target, checkbox.checked);
+      });
+
+      update_titles(gameDev.checked, webDev.checked, engineDev.checked);
+      apply_localization(current_localization, true);
+    };
+
+    checkbox.addEventListener("change", update);
+    update();
+  }
 });
 
-async function apply_localization(newLocalization) {
-  if (newLocalization === current_localization) {
-    update_active_button(newLocalization);
-    return;
+async function apply_localization(newLocalization, force = false) {
+  if (!force) {
+    if (newLocalization === current_localization) {
+      update_active_button(newLocalization);
+      return;
+    }
   }
 
   window.location.hash = newLocalization;
   update_active_button(newLocalization);
-
-  let transition = document.createElement("div");
-  transition.classList.add("transition");
-
-  document.body.appendChild(transition);
-
-  await new Promise((resolve) => setTimeout(resolve, 300));
 
   console.log("Set localization to: " + newLocalization);
 
@@ -130,8 +190,4 @@ async function apply_localization(newLocalization) {
       }
     }
   });
-
-  await new Promise((resolve) => setTimeout(resolve, 300));
-
-  transition.remove();
 }
