@@ -73,6 +73,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
+  let theme_toggle = document.getElementById("themeToggle");
+  if (theme_toggle) {
+    theme_toggle.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+    });
+  }
+
   if (
     window.location.hash !== null &&
     window.location.hash !== undefined &&
