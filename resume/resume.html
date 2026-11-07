@@ -23,9 +23,12 @@
             <button setlang="fr">Français</button>
             <button id="print"><local name="print_btn"></local></button>
 
-            <label for="check_gamedev">Game</label><input type="checkbox" id="check_gamedev"/>
-            <label for="check_web">Web</label><input type="checkbox" id="check_web"/>
-            <label for="check_engine">Engine</label><input type="checkbox" id="check_engine"/>
+            <div class="resume_mode">
+                <label for="check_gamedev">Game</label><input type="checkbox" id="check_gamedev"/>
+                <label for="check_web">Web</label><input type="checkbox" id="check_web"/>
+                <label for="check_engine">Engine</label><input type="checkbox" id="check_engine"/>
+                <label for="check_it">IT</label><input type="checkbox" id="check_it"/>
+            </div>
 
             <button id="themeToggle">Toggle Theme</button>
         </div>
@@ -72,6 +75,40 @@
                 <aside class="skills">
                     <h2><local name="skills_title"></local></h2>
 
+                    <div class="skill" opt="it">
+                        <div class="skill-header">
+                            <span class="skill-indicator"></span>
+                            <h3><local name="os_title"></local></h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/fedora.png" alt="Linux"/></span> <p>Linux (Fedora, Debian)</p></li>
+                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/windows.svg" alt="Windows"/></span> <p>Windows</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill" opt="it">
+                        <div class="skill-header">
+                            <span class="skill-indicator"></span>
+                            <h3><local name="script_auto_title"></local></h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/bash.png" alt="Bash-Shell"/></span> <p>Bash / Shell (SH)</p></li>
+                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/powershell.png" alt="PowerShell"/></span> <p>PowerShell</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill" opt="it">
+                        <div class="skill-header">
+                            <span class="skill-indicator"></span>
+                            <h3><local name="infra_title"></local></h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/docker.png" alt="Docker"/></span> <p>Docker</p></li>
+                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/tailscale.png" alt="Tailscale"/></span> <p>Tailscale</p></li>
+                            <li><span class="icon-slot"><img class="icon" src="../assets/icons/pi.png" alt="PI"/></span> <p>Raspberry PI</p></li>
+                        </ul>
+                    </div>
+
                     <div class="skill">
                         <div class="skill-header">
                             <span class="skill-indicator"></span>
@@ -116,7 +153,7 @@
                         </ul>
                     </div>
 
-                    <div class="skill">
+                    <div class="skill" opt="!it">
                         <div class="skill-header">
                             <span class="skill-indicator"></span>
                             <h3><local name="work_fields"></local></h3>
@@ -141,7 +178,6 @@
                             <li><span class="icon-slot"><img class="icon" src="../assets/icons/notion-logo-no-background.png" alt="Notion"/></span> <p>Notion</p></li>
                             <li><span class="icon-slot"><img class="icon" src="../assets/icons/appflowy.png" alt="Appflowy"/></span> <p>Appflowy</p></li>
                             <li><span class="icon-slot"><img class="icon" src="../assets/icons/youtrack.png" alt="Youtrack"/></span> <p>Youtrack</p></li>
-                            <li opt="web"><span class="icon-slot"><img class="icon" src="../assets/icons/docker.png" alt="Docker"/></span> <p>Docker</p></li>
                             <li opt="engine"><span class="icon-slot"><img class="icon" src="../assets/icons/renderDoc.png" alt="RenderDoc"/></span> <p>RenderDoc</p></li>
                         </ul>
                     </div>
@@ -162,15 +198,21 @@
 
                 <main class="main_content">
                     <div class="summary">
-                        <p><local name="summary_prefix"></local></p>
+                        <p><local opt="!it" name="summary_prefix"></local></p>
+                        <p><local opt="it" opt-mod="block" name="summary_prefix_it"></local></p>
                         <p><local name="summary_game" opt="game" opt-mod="block"></local></p>
                         <p><local name="summary_web" opt="web" opt-mod="block"></local></p>
                         <p><local name="summary_engine" opt="engine" opt-mod="block"></local></p>
+                        <p><local name="summary_it" opt="it" opt-mod="block"></local></p>
                         <p><local name="summary_suffix"></local></p>
                     </div>
 
                     <!-- Contains school and professional experiences -->
                     <div class="experience">
+                        <section opt="it" class="project">
+                            <h2><img class="icon" src="../assets/icons/gamepad.png" alt="IT"/><local name="project_title"></local>: Home-Lab</h2>
+                            <p><local name="home_lab_desc"></local></p>
+                        </section>
                         <section class="internship">
                             <a href="https://evisualuser.github.io/#internship-gluk-media"><h2><img class="icon" src="../assets/icons/internship.png" alt="Internship"/><local name="gluk_media_name"></local></h2></a>
                             <p><local name="gluk_media_desc"></local></p>

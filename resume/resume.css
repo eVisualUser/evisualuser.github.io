@@ -700,3 +700,19 @@ div.transition {
         user-select: text;
     }
 }
+
+.resume_mode {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px 20px;
+    align-items: center;
+    width: 150px;
+}
+
+.resume_mode label {
+    text-align: left;
+}
+
+.resume_mode input[type="checkbox"] {
+    justify-self: end;
+}

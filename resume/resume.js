@@ -95,12 +95,28 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   function set_all_optional(name, enabled, mod) {
-    document.querySelectorAll(`[opt="${name}"]`).forEach(element => {
-      element.style.display = enabled ? (element.getAttribute("opt-mod") === undefined || element.getAttribute("opt-mod") === null ? "flex" : element.getAttribute("opt-mod")) : "none";
+    document.querySelectorAll("[opt]").forEach(element => {
+      const optValues = element.getAttribute("opt").split("|").map(v => v.trim());
+
+      const matches = optValues.some(v => v.replace(/^!/, "") === name);
+
+      if (!matches) return;
+
+      const hasNegative = optValues.includes("!" + name);
+
+      if (hasNegative && enabled) {
+        element.style.display = "none";
+      } else if (!hasNegative && enabled) {
+        element.style.display = element.getAttribute("opt-mod") || mod || "flex";
+      } else if (!enabled && !hasNegative) {
+        element.style.display = "none";
+      } else if (!enabled && hasNegative) {
+        element.style.display = element.getAttribute("opt-mod") || mod || "flex";
+      }
     });
   }
 
-  function update_titles(gameDev, webDev, engineDev) {
+  function update_titles(gameDev, webDev, engineDev, it) {
     if (gameDev) {
       document.getElementById("doc_title").setAttribute("name", "title_game");
     }
@@ -123,20 +139,30 @@ document.addEventListener("DOMContentLoaded", async () => {
       document.getElementById("doc_title").setAttribute("name", "title_web_engine");
     }
 
+    if (it) {
+      document.getElementById("doc_title").setAttribute("name", "title_it");
+    }
+
     if (webDev && engineDev && gameDev) {
       document.getElementById("doc_title").setAttribute("name", "title_web_engine_game");
+    }
+
+    if (!webDev && !engineDev && !gameDev && !it) {
+      document.getElementById("doc_title").setAttribute("name", "doc_title");
     }
   }
 
   const options = {
     check_gamedev: ["game"],
     check_web: ["web"],
-    check_engine: ["engine"]
+    check_engine: ["engine"],
+    check_it: ["it"],
   };
 
   let gameDev = document.getElementById("check_gamedev");
   let webDev = document.getElementById("check_web");
   let engineDev = document.getElementById("check_engine");
+  let itDev = document.getElementById("check_it");
 
   for (const [id, targets] of Object.entries(options)) {
     const checkbox = document.getElementById(id);
@@ -151,7 +177,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         set_all_optional(target, checkbox.checked);
       });
 
-      update_titles(gameDev.checked, webDev.checked, engineDev.checked);
+      update_titles(gameDev.checked, webDev.checked, engineDev.checked, itDev.checked);
       apply_localization(current_localization, true);
     };
 

@@ -35,6 +35,10 @@
     "fr": "Développeur logiciel, moteur & jeux vidéo",
     "en": "Software, Engine & Game Developer"
   },
+  "title_it": {
+    "fr": "Technicien informatique",
+    "en": "IT Technician"
+  },
   "age": {
     "fr": "ans",
     "en": "years old"
@@ -63,6 +67,10 @@
     "fr": "Développeur basé en <span class=\"important\">France</span>, spécialisé dans la conception de logiciels et de systèmes interactifs.",
     "en": "Developer based in <span class=\"important\">France</span>, focused on software and interactive systems development."
   },
+  "summary_prefix_it": {
+    "fr": "Profil orienté informatique, basé en <span class=\"important\">France</span>, avec un intérêt particulier pour <span class=\"important\">l'administration système</span>, les environnements <span class=\"important\">Linux</span> et les <span class=\"important\">infrastructures auto-hébergées</span>.",
+    "en": "IT-oriented professional based in <span class=\"important\">France</span>, with a particular interest in <span class=\"important\">system administration</span>, Linux environments, and <span class=\"important\">self-hosted infrastructure</span>."
+  },
   "summary_web": {
     "fr": "Expérience en <span class=\"important\">développement web et backend</span>, architecture logicielle et création d'outils fiables.",
     "en": "Experienced in <span class=\"important\">web and backend development</span>, software architecture, and reliable tool development."
@@ -75,6 +83,10 @@
     "fr": "Développement de <span class=\"important\">systèmes bas niveau</span>, notamment en rendu graphique, concurrence et architectures modulaires.",
     "en": "Developing <span class=\"important\">low-level systems</span>, particularly graphics rendering, concurrency, and modular architectures."
   },
+  "summary_it": {
+    "fr": "J’ai toujours été passionné par la <span class=\"important\">conception de systèmes</span>. J’ai installé un <span class=\"important\">home-lab</span>, monté mon propre ordinateur, ainsi que réalisé des petits <span class=\"important\">systèmes embarqués</span>. Je garde toujours un œil attentif sur l’évolution des technologies.",
+    "en": "I’ve always been passionate about <span class=\"important\">system design</span>. I’ve set up a <span class=\"important\">home lab</span>, built my own computer, and worked on small <span class=\"important\">embedded systems</span>. I always keep an eye on technological advancements."
+  },
   "summary_suffix": {
     "fr": "À la recherche de projets stimulants en équipe, ouvert au <span class=\"important\">télétravail</span> et à la mobilité.",
     "en": "Seeking challenging team projects, open to <span class=\"important\">remote work</span> and relocation."
@@ -82,6 +94,10 @@
   "others_title": {
     "fr": "Langues et informations complémentaires",
     "en": "Languages & Additional Information"
+  },
+  "infra_title": {
+    "fr": "Infrastructure & accès distant",
+    "en": "Infrastructure & Remote Access"
   },
   "game_engines_title": {
     "fr": "Moteurs de jeu",
@@ -116,8 +132,8 @@
     "en": "Recently completed my <span class=\"important\">bachelor's degree</span>.<br/>Over four impactful years, I gained expertise in <span class=\"important\">Unreal Engine</span>, <span class=\"important\">Unity</span>, and <span class=\"important\">Godot</span>, along with project management and programming skills in <span class=\"important\">C#</span>, <span class=\"important\">C/C++</span>, <span class=\"important\">Python</span>, <span class=\"important\">Qt</span>, and <span class=\"important\">WPF</span>.<br/><br/>Great emphasis was placed on <span class=\"important\">collaboration</span> and <span class=\"important\">communication</span>, as well as <span class=\"important\">defining requirements</span> and <span class=\"important\">decision-making</span> to ensure project success."
   },
   "echoes_of_seasons_desc": {
-    "fr": "Dans le cadre d’un <span class=\"important\">projet de fin d’études</span>, j’ai travaillé sur un jeu de puzzle 3D à la troisième personne.<br/>\nJ’ai implémenté le gameplay principal en <span class=\"important\">C++</span> et exposé des éléments manipulables par les game designers via les <span class=\"important\">Blueprints</span>.<br/>\nJ’ai également créé un système de <span class=\"important\">changement de saison</span> qui met à jour tous les visuels grâce aux <span class=\"important\">effets de matériaux</span>, simplifié à l’aide d’un <span class=\"important\">UDataAsset</span>.\nDisponible gratuitement sur <span class=\"important\">Steam</span>.",
-    "en": "As a <span class=\"important\">final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>\nI implemented core gameplay in <span class=\"important\">C++</span> and exposed designer‑tunable elements via <span class=\"important\">Blueprints</span>.<br/>\nI also built a <span class=\"important\">season‑change</span> system that updates all visuals using <span class=\"important\">material effects</span>, streamlined through a <span class=\"important\">UDataAsset</span>.\nAvailable on <span class=\"important\">Steam</span> for free."
+    "fr": "Dans le cadre d’un <span class=\"important\">projet de fin d’études</span>, j’ai travaillé sur un jeu de puzzle 3D à la troisième personne.<br/>J’ai implémenté le gameplay principal en <span class=\"important\">C++</span> et exposé des éléments manipulables par les game designers via les <span class=\"important\">Blueprints</span>.<br/>J’ai également créé un système de <span class=\"important\">changement de saison</span> qui met à jour tous les visuels grâce aux <span class=\"important\">effets de matériaux</span>, simplifié à l’aide d’un <span class=\"important\">UDataAsset</span>.Disponible gratuitement sur <span class=\"important\">Steam</span>.",
+    "en": "As a <span class=\"important\">final‑year project</span>, I worked on a 3D puzzle game with a third‑person controller.<br/>I implemented core gameplay in <span class=\"important\">C++</span> and exposed designer‑tunable elements via <span class=\"important\">Blueprints</span>.<br/>I also built a <span class=\"important\">season‑change</span> system that updates all visuals using <span class=\"important\">material effects</span>, streamlined through a <span class=\"important\">UDataAsset</span>.Available on <span class=\"important\">Steam</span> for free."
   },
   "bellum_desc": {
     "fr": "Architecturé le <span class=\"important\">core gameplay</span> et le <span class=\"important\">système UI</span>. En parallèle, une <span class=\"important\">boutique</span> qui permet de payer avec des <span class=\"important\">monnaies différentes</span>. Conçu une <span class=\"important\">finite‑state machine</span> pour gérer l’<span class=\"important\">IA</span>. Tout le code a été écrit en <span class=\"important\">C#</span>, en tirant parti de <span class=\"important\">UnityEvent</span> pour offrir aux <span class=\"important\">game designers une flexibilité</span> afin d’interconnecter les fonctionnalités. Utilisé les <span class=\"important\">ScriptableObjects</span> pour stocker et partager des données au sein du jeu sans liaison directe.",
@@ -142,6 +158,18 @@
   "pretty_engine_name": {
     "fr": "Moteur de jeu personnalisé",
     "en": "Custom Game Engine"
+  },
+  "home_lab_desc": {
+    "fr": "<p>Conception, mise en place et administration d'une infrastructure composée de deux serveurs interconnectés, avec plusieurs solutions d'accès distant : VPN privé via <strong>Tailscale</strong>, accès SSH au serveur principal et <strong>Raspberry Pi Connect</strong> pour le serveur secondaire.</p><ul><li><strong>Serveur principal (ordinateur portable sous Fedora Linux)</strong> : hébergement de services liés à l'intelligence artificielle avec <strong>Ollama</strong> et <strong>Open WebUI</strong>, ainsi que d'une instance <strong>GitLab</strong>.</li><li><strong>Serveur secondaire (Raspberry Pi 4B)</strong> : hébergement d'<strong>AppFlowy</strong>, une alternative open source à Notion, et d'<strong>UpSnap</strong>, permettant de démarrer et d'éteindre le serveur principal à distance selon les besoins.</li><li><strong>Conteneurisation</strong> : déploiement et gestion de la majorité des services à l'aide de <strong>Docker</strong>.</li></ul><p>L'infrastructure vise à optimiser la consommation énergétique, centraliser les services auto-hébergés et diversifier les moyens d'accès distant afin de limiter la dépendance à un service unique.</p>",
+    "en": "<p>Design, deployment, and administration of an infrastructure consisting of two interconnected servers, with multiple remote access methods: a private VPN using <strong>Tailscale</strong>, SSH access to the main server, and <strong>Raspberry Pi Connect</strong> for the secondary server.</p><ul><li><strong>Main server (laptop running Fedora Linux)</strong>: hosting AI-related services using <strong>Ollama</strong> and <strong>Open WebUI</strong>, alongside a <strong>GitLab</strong> instance.</li><li><strong>Secondary server (Raspberry Pi 4B)</strong>: hosting <strong>AppFlowy</strong>, an open-source alternative to Notion, and <strong>UpSnap</strong>, which allows the main server to be remotely powered on and off as needed.</li><li><strong>Containerization</strong>: deployment and management of most services using <strong>Docker</strong>.</li></ul><p>The infrastructure aims to optimize power consumption, centralize self-hosted services, and diversify remote access methods to reduce reliance on a single service.</p>"
+  },
+  "os_title": {
+    "fr": "Systèmes d'exploitation",
+    "en": "Operating System"
+  },
+  "script_auto_title": {
+    "fr": "Scripting et automatisation",
+    "en": "Scripting & Automation"
   },
   "work_fields": {
     "en": "Areas of Expertise",
